@@ -84,8 +84,65 @@
   getStateHash, get_binding, get_factor_from_complex_root, get_factor_from_real_root, get_innerprod_factors, get_next_token,
   get_printname, get_size, get_token, getdisplaystr, glyph, gp, guess, hasImaginaryCoeff, hasNegativeRationalExponent, hermite,
   hilbert, imag, imaginaryunit, index_function, init, initNRoots, inited, inner, inner_f, input_str, integral, integral_of_form,
-  integral_of_product, integral_of_sum, inv, inverse, invert_number, invg, isSimpleRoot, isSymbolLeftOfAssignment, isSymbolReclaimable, is_denominator, is_factor, is_small_integer, is_square_matrix, is_usr_symbol, isadd, isalnumorunderscore, isalpha, isalphaOrUnderscore, iscomplexnumber, iscomplexnumberdouble, iscons, isdenominator, isdigit, isdouble, iseveninteger, isfactor, isfactorial, isfloating, isfraction, isidentitymatrix, isimaginarynumber, isimaginarynumberdouble, isimaginaryunit, isinnerordot, isinteger, isintegerfactor, isinv, iskeyword, isminusone, isminusoneoversqrttwo, isminusoneovertwo, ismultiply, isnegative, isnegativenumber, isnegativeterm, isnonnegativeinteger, isnpi, isnum, isone, isoneover, isoneoversqrttwo, isoneovertwo, isplusone, isplustwo, ispoly, ispoly_expr, ispoly_factor, ispoly_term, isposint, ispositivenumber, ispower, isquarterturn, isrational, isspace, isstr, issymbol, issymbolic, istensor, istranspose, isunderscore, iszero, itab, laguerre, laguerre2, lastFoundSymbol, latexErrorSign, lcm, leading, legendre, length, lessp, level, list, logarithm, logbuf, lookupsTotal, lu_decomp, madd, makePositive, makeSignSameAs, mask, mcmp, mcmpint, mdiv, mdivrem, meta_mode, mgcd, mini_solve, mint, mmod, mmul, mod, monic, move, mp_clr_bit, mp_denominator, mp_numerator, mp_set_bit, mpow, mprime, mroot, mshiftright, msub, mtotal, multinomial_sum, multiply, multiply_all, multiply_all_noexpand, multiply_consecutive_constants, multiply_denominators, multiply_denominators_factor, multiply_denominators_term, multiply_noexpand, multiply_numbers, n_factor_number, negate, negate_expand, negate_noexpand, negate_number, new_string, newline_flag, nil_symbols, normaliseDots, normalisedCoeff, normalize_angle, nroots_a, nroots_b, nroots_c, nroots_df, nroots_dx, nroots_fa, nroots_fb, nroots_x, nroots_y, nterms, numerator, numericRootOfPolynomial, o, one, oneElement, one_as_double, out_buf, out_count, out_of_memory, outer, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, parse, parse_internal, parse_p1, parse_p2, parse_time_simplifications, partition, patternHasBeenFound, patternsinfo, peek, performing_roots, polar, polarRectAMinusOneBase, polycoeff, polyform, pop, pop_double, pop_frame, pop_integer, power, power_str, power_sum, power_tensor, predefinedSymbolsInGlobalScope_doNotTrackInDependencies, prime, primetab, print2dascii, printMode, print_ABS_latex, print_BINOMIAL_latex, print_COS_codegen, print_DEFINT_latex, print_DOT_codegen, print_DOT_latex, print_INV_codegen, print_INV_latex, print_SIN_codegen, print_SQRT_latex, print_TRANSPOSE_codegen, print_TRANSPOSE_latex, print_a_over_b, print_base, print_base_of_denom, print_char, print_denom, print_double, print_expo_of_denom, print_exponent, print_expr, print_factor, print_factorial_function, print_glyphs, print_index_function, print_list, print_multiply_sign, print_number, print_power, print_str, print_subexpr, print_tensor, print_tensor_inner, print_tensor_inner_latex, print_tensor_latex, print_term, printchar, printchar_nowrap, printline, program_buf, promote_tensor, push, pushTryNotToDuplicate, push_cars, push_double, push_factor, push_frame, push_identity_matrix, push_integer, push_rational, push_symbol, push_term_factors, push_terms, push_zero_matrix, qadd, qdiv, qmul, qpow, qpowf, quickfactor, quickpower, rational, rationalize, rationalize_coefficients, real, reciprocate, rect, recursionLevelNestedRadicalsRemoval, recursiveDependencies, ref, ref1, rememberPrint, remove_negative_exponents, resetCache, resetCacheHitMissCounts, reset_after_error, restore, restoreMetaBindings, rewrite_args, rewrite_args_tensor, roots, roots2, roots3, run, runUserDefinedSimplifications, save, saveMetaBindings, scalar_times_tensor, scan, scan_error, scan_expression, scan_factor, scan_function_call_with_function_name, scan_function_call_without_function_name, scan_index, scan_meta, scan_power, scan_relation, scan_stmt, scan_str, scan_string, scan_subexpr, scan_symbol, scan_tensor, scan_term, scanned, scanningParameters, setM, setSignTo, set_binding, set_component, setq_indexed, sfac_product, sfac_product_f, sgn, shape, show_power_debug, sign, sign_of_term, simfac, simfac_term, simpleComplexityMeasure, simplify, simplifyForCodeGeneration, simplify_1_in_products, simplify_main, simplify_nested_radicals, simplify_polar, simplify_polarRect, simplify_rectToClock, simplify_tensor, simplify_trig, simplifyfactorials, sine, sine_of_angle, sine_of_angle_sum, skipRootVariableToBeSolved, sort_stack, square, ssqrt, stack, stackAddsCount, std_symbol, step, step2, stop, strcmp, stringsEmittedByUserPrintouts, subf, subst, subtract, subtract_numbers, swap, symbol, symbolsDependencies, symbolsHavingReassignments, symbolsInExpressionsWithoutAssignments, symbolsLeftOfAssignment, symbolsRightOfAssignment, symbolsinfo, symnum, symtab, take_care_of_nested_radicals, tangent, taylor, tensor, tensor_plus_tensor, tensor_times_scalar, testApprox, test_flag, text_metric, theRandom, token, token_buf, token_str, top_level_eval, tos, totalAllCachesHits, totalAllCachesMisses, transform, transpose, transpose_unicode, trigmode, trivial_divide, try_kth_prime, turnErrorMessageToLatex, ucmp, unfreeze, unique, unique_f, update_token_buf, userSimplificationsInListForm, userSimplificationsInStringForm, usr_symbol, verbosing, version, will_be_displayed_as_fraction, ybinomial, ycosh, ydirac, yerf, yerfc, yfloor, yindex, ysinh, yyarg, yybesselj, yybessely, yyceiling, yycondense, yycontract, yycosh, yydegree, yydetg, yydivpoly, yyerf, yyerfc, yyexpand, yyfactorpoly, yyfloat, yyfloor, yyhermite, yyhermite2, yyinvg, yylcm, yylog, yymultiply, yyouter, yypower, yyrationalize, yysgn, yysimfac, yysinh, yytangent, zero, zzfloat,
-    slice = [].slice;
+  integral_of_product, integral_of_sum, inv, inverse, invert_number, invg, isSimpleRoot, isSymbolLeftOfAssignment,
+  isSymbolReclaimable, is_denominator, is_factor, is_small_integer, is_square_matrix, is_usr_symbol, isadd, 
+  isalnumorunderscore, isalpha, isalphaOrUnderscore, iscomplexnumber, iscomplexnumberdouble, iscons, isdenominator, 
+  isdigit, isdouble, iseveninteger, isfactor, isfactorial, isfloating, isfraction, isidentitymatrix, isimaginarynumber,
+  isimaginarynumberdouble, isimaginaryunit, isinnerordot, isinteger, isintegerfactor, isinv, iskeyword, isminusone,
+  isminusoneoversqrttwo, isminusoneovertwo, ismultiply, isnegative, isnegativenumber, isnegativeterm,
+  isnonnegativeinteger, isnpi, isnum, isone, isoneover, isoneoversqrttwo, isoneovertwo, isplusone,
+  isplustwo, ispoly, ispoly_expr, ispoly_factor, ispoly_term, isposint, ispositivenumber, ispower,
+  isquarterturn, isrational, isspace, isstr, issymbol, issymbolic, istensor, istranspose, 
+  isunderscore, iszero, itab, laguerre, laguerre2, lastFoundSymbol, latexErrorSign, lcm, 
+  leading, legendre, length, lessp, level, list, logarithm, logbuf, lookupsTotal, lu_decomp, 
+  madd, makePositive, makeSignSameAs, mask, mcmp, mcmpint, mdiv, mdivrem, meta_mode, mgcd,
+  mini_solve, mint, mmod, mmul, mod, monic, move, mp_clr_bit, mp_denominator, mp_numerator,
+  mp_set_bit, mpow, mprime, mroot, mshiftright, msub, mtotal, multinomial_sum, multiply,
+  multiply_all, multiply_all_noexpand, multiply_consecutive_constants, multiply_denominators, 
+  multiply_denominators_factor, multiply_denominators_term, multiply_noexpand, multiply_numbers,
+  n_factor_number, negate, negate_expand, negate_noexpand, negate_number, new_string, newline_flag, 
+  nil_symbols, normaliseDots, normalisedCoeff, normalize_angle, nroots_a, nroots_b, nroots_c, nroots_df, 
+  nroots_dx, nroots_fa, nroots_fb, nroots_x, nroots_y, nterms, numerator, numericRootOfPolynomial, o, one, 
+  oneElement, one_as_double, out_buf, out_count, out_of_memory, outer, p0, p1, p2, p3, p4, p5, p6, p7, p8,
+  p9, parse, parse_internal, parse_p1, parse_p2, parse_time_simplifications, partition, patternHasBeenFound, 
+  patternsinfo, peek, performing_roots, polar, polarRectAMinusOneBase, polycoeff, polyform, pop, pop_double,
+  pop_frame, pop_integer, power, power_str, power_sum, power_tensor,
+  predefinedSymbolsInGlobalScope_doNotTrackInDependencies, prime, primetab, print2dascii, 
+  printMode, print_ABS_latex, print_BINOMIAL_latex, print_COS_codegen, print_DEFINT_latex, 
+  print_DOT_codegen, print_DOT_latex, print_INV_codegen, print_INV_latex, print_SIN_codegen,
+  print_SQRT_latex, print_TRANSPOSE_codegen, print_TRANSPOSE_latex, print_a_over_b, print_base, 
+  print_base_of_denom, print_char, print_denom, print_double, print_expo_of_denom, print_exponent, 
+  print_expr, print_factor, print_factorial_function, print_glyphs, print_index_function, print_list,
+  print_multiply_sign, print_number, print_power, print_str, print_subexpr, print_tensor, print_tensor_inner,
+  print_tensor_inner_latex, print_tensor_latex, print_term, printchar, printchar_nowrap, printline, program_buf,
+  promote_tensor, push, pushTryNotToDuplicate, push_cars, push_double, push_factor, push_frame, push_identity_matrix,
+  push_integer, push_rational, push_symbol, push_term_factors, push_terms, push_zero_matrix, qadd, qdiv, qmul, 
+  qpow, qpowf, quickfactor, quickpower, rational, rationalize, rationalize_coefficients, real, reciprocate, rect,
+  recursionLevelNestedRadicalsRemoval, recursiveDependencies, ref, ref1, rememberPrint, remove_negative_exponents,
+  resetCache, resetCacheHitMissCounts, reset_after_error, restore, restoreMetaBindings, rewrite_args, 
+  rewrite_args_tensor, roots, roots2, roots3, run, runUserDefinedSimplifications, save, saveMetaBindings,
+  scalar_times_tensor, scan, scan_error, scan_expression, scan_factor, scan_function_call_with_function_name, 
+  scan_function_call_without_function_name, scan_index, scan_meta, scan_power, scan_relation, scan_stmt, scan_str,
+  scan_string, scan_subexpr, scan_symbol, scan_tensor, scan_term, scanned, scanningParameters, setM, setSignTo, 
+  set_binding, set_component, setq_indexed, sfac_product, sfac_product_f, sgn, shape, show_power_debug,
+  sign, sign_of_term, simfac, simfac_term, simpleComplexityMeasure, simplify, simplifyForCodeGeneration,
+  simplify_1_in_products, simplify_main, simplify_nested_radicals, simplify_polar, simplify_polarRect,
+  simplify_rectToClock, simplify_tensor, simplify_trig, simplifyfactorials, sine, sine_of_angle, 
+  sine_of_angle_sum, skipRootVariableToBeSolved, sort_stack, square, ssqrt, stack, stackAddsCount,
+  std_symbol, step, step2, stop, strcmp, stringsEmittedByUserPrintouts, subf, subst, subtract, 
+  subtract_numbers, swap, symbol, symbolsDependencies, symbolsHavingReassignments,
+  symbolsInExpressionsWithoutAssignments, symbolsLeftOfAssignment, symbolsRightOfAssignment, 
+  symbolsinfo, symnum, symtab, take_care_of_nested_radicals, tangent, taylor, tensor,
+tensor_plus_tensor, tensor_times_scalar, testApprox, test_flag, text_metric, theRandom, 
+token, token_buf, token_str, top_level_eval, tos, totalAllCachesHits, totalAllCachesMisses, 
+transform, transpose, transpose_unicode, trigmode, trivial_divide, try_kth_prime, turnErrorMessageToLatex,
+ucmp, unfreeze, unique, unique_f, update_token_buf, userSimplificationsInListForm, 
+userSimplificationsInStringForm, usr_symbol, verbosing, version, will_be_displayed_as_fraction, 
+ybinomial, ycosh, ydirac, yerf, yerfc, yfloor, yindex, ysinh, yyarg, yybesselj, yybessely, yyceiling,
+yycondense, yycontract, yycosh, yydegree, yydetg, yydivpoly, yyerf, yyerfc, yyexpand, yyfactorpoly,
+yyfloat, yyfloor, yyhermite, yyhermite2, yyinvg, yylcm, yylog, yymultiply, yyouter, yypower, yyrationalize,
+yysgn, yysimfac, yysinh, yytangent, zero, zzfloat,
+  slice = [].slice;
 
   bigInt = require('big-integer');
 
@@ -1045,51 +1102,45 @@
   $.SYM = SYM;
 
 
-  /* abs =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the absolute value of a real number, the magnitude of a complex number, or the vector length.
-   */
+  /*
+	 * abs =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the absolute value of a
+	 * real number, the magnitude of a complex number, or the vector length.
+	 */
 
 
   /*
-   Absolute value of a number,or magnitude of complex z, or norm of a vector
-  
-  	z		abs(z)
-  	-		------
-  
-  	a		a
-  
-  	-a		a
-  
-  	(-1)^a		1
-  
-  	exp(a + i b)	exp(a)
-  
-  	a b		abs(a) abs(b)
-  
-  	a + i b		sqrt(a^2 + b^2)
-  
-  Notes
-  
-  	1. Handles mixed polar and rectangular forms, e.g. 1 + exp(i pi/3)
-  
-  	2. jean-francois.debroux reports that when z=(a+i*b)/(c+i*d) then
-  
-  		abs(numerator(z)) / abs(denominator(z))
-  
-  	   must be used to get the correct answer. Now the operation is
-  	   automatic.
-   */
+	 * Absolute value of a number,or magnitude of complex z, or norm of a vector
+	 * 
+	 * z abs(z) - ------
+	 * 
+	 * a a
+	 * 
+	 * -a a
+	 * 
+	 * (-1)^a 1
+	 * 
+	 * exp(a + i b) exp(a)
+	 * 
+	 * a b abs(a) abs(b)
+	 * 
+	 * a + i b sqrt(a^2 + b^2)
+	 * 
+	 * Notes
+	 * 
+	 * 1. Handles mixed polar and rectangular forms, e.g. 1 + exp(i pi/3)
+	 * 
+	 * 2. jean-francois.debroux reports that when z=(a+i*b)/(c+i*d) then
+	 * 
+	 * abs(numerator(z)) / abs(denominator(z))
+	 * 
+	 * must be used to get the correct answer. Now the operation is automatic.
+	 */
 
   DEBUG_ABS = false;
 
@@ -1278,35 +1329,24 @@
     }
 
     /*
-    	 * Evaluation via zzfloat()
-    	 * ...while this is in theory a powerful mechanism, I've commented it
-    	 * out because I've refined this method enough to not need this.
-    	 * Evaling via zzfloat() is in principle more problematic because it could
-    	 * require further evaluations which could end up in further "abs" which
-    	 * would end up in infinite loops. Better not use it if not necessary.
-    
-    	 * we look directly at the float evaluation of the argument
-    	 * to see if we end up with a number, which would mean that there
-    	 * is no imaginary component and we can just return the input
-    	 * (or its negation) as the result.
-    	push p1
-    	zzfloat()
-    	floatEvaluation = pop()
-    
-    	if (isnegativenumber(floatEvaluation))
-    		if DEBUG_ABS then console.log " abs: " + p1 + " just a negative"
-    		push(p1)
-    		negate()
-    		restore()
-    		return
-    
-    	if (ispositivenumber(floatEvaluation))
-    		if DEBUG_ABS then console.log " abs: " + p1 + " just a positive"
-    		push(p1)
-    		if DEBUG_ABS then console.log " --> ABS of " + input + " : " + stack[tos-1]
-    		restore()
-    		return
-     */
+	 * Evaluation via zzfloat() ...while this is in theory a powerful mechanism,
+	 * I've commented it out because I've refined this method enough to not need
+	 * this. Evaling via zzfloat() is in principle more problematic because it
+	 * could require further evaluations which could end up in further "abs"
+	 * which would end up in infinite loops. Better not use it if not necessary.
+	 * 
+	 * we look directly at the float evaluation of the argument to see if we end
+	 * up with a number, which would mean that there is no imaginary component
+	 * and we can just return the input (or its negation) as the result. push p1
+	 * zzfloat() floatEvaluation = pop()
+	 * 
+	 * if (isnegativenumber(floatEvaluation)) if DEBUG_ABS then console.log "
+	 * abs: " + p1 + " just a negative" push(p1) negate() restore() return
+	 * 
+	 * if (ispositivenumber(floatEvaluation)) if DEBUG_ABS then console.log "
+	 * abs: " + p1 + " just a positive" push(p1) if DEBUG_ABS then console.log "
+	 * --> ABS of " + input + " : " + stack[tos-1] restore() return
+	 */
     if (istensor(p1)) {
       absval_tensor();
       restore();
@@ -1345,27 +1385,27 @@
 
 
   /*
-   Symbolic addition
-  
-  	Terms in a sum are combined if they are identical modulo rational
-  	coefficients.
-  
-  	For example, A + 2A becomes 3A.
-  
-  	However, the sum A + sqrt(2) A is not modified.
-  
-  	Combining terms can lead to second-order effects.
-  
-  	For example, consider the case of
-  
-  		1/sqrt(2) A + 3/sqrt(2) A + sqrt(2) A
-  
-  	The first two terms are combined to yield 2 sqrt(2) A.
-  
-  	This result can now be combined with the third term to yield
-  
-  		3 sqrt(2) A
-   */
+	 * Symbolic addition
+	 * 
+	 * Terms in a sum are combined if they are identical modulo rational
+	 * coefficients.
+	 * 
+	 * For example, A + 2A becomes 3A.
+	 * 
+	 * However, the sum A + sqrt(2) A is not modified.
+	 * 
+	 * Combining terms can lead to second-order effects.
+	 * 
+	 * For example, consider the case of
+	 * 
+	 * 1/sqrt(2) A + 3/sqrt(2) A + sqrt(2) A
+	 * 
+	 * The first two terms are combined to yield 2 sqrt(2) A.
+	 * 
+	 * This result can now be combined with the third term to yield
+	 * 
+	 * 3 sqrt(2) A
+	 */
 
   flag = 0;
 
@@ -1497,12 +1537,12 @@
 
 
   /*
-   Compare adjacent terms in s[] and combine if possible.
-  
-  	Returns the number of terms remaining in s[].
-  
-  	n	number of terms in s[] initially
-   */
+	 * Compare adjacent terms in s[] and combine if possible.
+	 * 
+	 * Returns the number of terms remaining in s[].
+	 * 
+	 * n number of terms in s[] initially
+	 */
 
   combine_terms = function(s, n) {
     var ac, ad, ae, af, i, j, o, ref, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, t;
@@ -1672,20 +1712,16 @@
   };
 
 
-  /* adj =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  m
-  
-  General description
-  -------------------
-  Returns the adjunct of matrix m. The inverse of m is equal to adj(m) divided by det(m).
-   */
+  /*
+	 * adj =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- m
+	 * 
+	 * General description ------------------- Returns the adjunct of matrix m.
+	 * The inverse of m is equal to adj(m) divided by det(m).
+	 */
 
   Eval_adj = function() {
     push(cadr(p1));
@@ -1722,8 +1758,8 @@
 
 
   /*
-   Guesses a rational for each float in the passed expression
-   */
+	 * Guesses a rational for each float in the passed expression
+	 */
 
   Eval_approxratio = function() {
     var theArgument;
@@ -2809,20 +2845,16 @@
   $.testApprox = testApprox;
 
 
-  /* arccos =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the inverse cosine of x.
-   */
+  /*
+	 * arccos
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the inverse cosine of x.
+	 */
 
   Eval_arccos = function() {
     push(cadr(p1));
@@ -2935,20 +2967,17 @@
   };
 
 
-  /* arccosh =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the inverse hyperbolic cosine of x.
-   */
+  /*
+	 * arccosh
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the inverse hyperbolic
+	 * cosine of x.
+	 */
 
   Eval_arccosh = function() {
     push(cadr(p1));
@@ -2988,20 +3017,16 @@
   };
 
 
-  /* arcsin =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the inverse sine of x.
-   */
+  /*
+	 * arcsin
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the inverse sine of x.
+	 */
 
   Eval_arcsin = function() {
     push(cadr(p1));
@@ -3112,20 +3137,17 @@
   };
 
 
-  /* arcsinh =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the inverse hyperbolic sine of x.
-   */
+  /*
+	 * arcsinh
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the inverse hyperbolic
+	 * sine of x.
+	 */
 
   Eval_arcsinh = function() {
     push(cadr(p1));
@@ -3162,20 +3184,16 @@
   };
 
 
-  /* arctan =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the inverse tangent of x.
-   */
+  /*
+	 * arctan
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the inverse tangent of x.
+	 */
 
   Eval_arctan = function() {
     push(cadr(p1));
@@ -3269,20 +3287,17 @@
   };
 
 
-  /* arctanh =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the inverse hyperbolic tangent of x.
-   */
+  /*
+	 * arctanh
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the inverse hyperbolic
+	 * tangent of x.
+	 */
 
   Eval_arctanh = function() {
     push(cadr(p1));
@@ -3322,70 +3337,62 @@
   };
 
 
-  /* arg =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  z
-  
-  General description
-  -------------------
-  Returns the angle of complex z.
-   */
+  /*
+	 * arg =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- z
+	 * 
+	 * General description ------------------- Returns the angle of complex z.
+	 */
 
 
   /*
-   Argument (angle) of complex z
-  
-  	z		arg(z)
-  	-		------
-  
-  	a		0
-  
-  	-a		-pi			See note 3 below
-  
-  	(-1)^a		a pi
-  
-  	exp(a + i b)	b
-  
-  	a b		arg(a) + arg(b)
-  
-  	a + i b		arctan(b/a)
-  
-  Result by quadrant
-  
-  	z		arg(z)
-  	-		------
-  
-  	1 + i		1/4 pi
-  
-  	1 - i		-1/4 pi
-  
-  	-1 + i		3/4 pi
-  
-  	-1 - i		-3/4 pi
-  
-  Notes
-  
-  	1. Handles mixed polar and rectangular forms, e.g. 1 + exp(i pi/3)
-  
-  	2. Symbols in z are assumed to be positive and real.
-  
-  	3. Negative direction adds -pi to angle.
-  
-  	   Example: z = (-1)^(1/3), abs(z) = 1/3 pi, abs(-z) = -2/3 pi
-  
-  	4. jean-francois.debroux reports that when z=(a+i*b)/(c+i*d) then
-  
-  		arg(numerator(z)) - arg(denominator(z))
-  
-  	   must be used to get the correct answer. Now the operation is
-  	   automatic.
-   */
+	 * Argument (angle) of complex z
+	 * 
+	 * z arg(z) - ------
+	 * 
+	 * a 0
+	 * 
+	 * -a -pi See note 3 below
+	 * 
+	 * (-1)^a a pi
+	 * 
+	 * exp(a + i b) b
+	 * 
+	 * a b arg(a) + arg(b)
+	 * 
+	 * a + i b arctan(b/a)
+	 * 
+	 * Result by quadrant
+	 * 
+	 * z arg(z) - ------
+	 * 
+	 * 1 + i 1/4 pi
+	 * 
+	 * 1 - i -1/4 pi
+	 * 
+	 * -1 + i 3/4 pi
+	 * 
+	 * -1 - i -3/4 pi
+	 * 
+	 * Notes
+	 * 
+	 * 1. Handles mixed polar and rectangular forms, e.g. 1 + exp(i pi/3)
+	 * 
+	 * 2. Symbols in z are assumed to be positive and real.
+	 * 
+	 * 3. Negative direction adds -pi to angle.
+	 * 
+	 * Example: z = (-1)^(1/3), abs(z) = 1/3 pi, abs(-z) = -2/3 pi
+	 * 
+	 * 4. jean-francois.debroux reports that when z=(a+i*b)/(c+i*d) then
+	 * 
+	 * arg(numerator(z)) - arg(denominator(z))
+	 * 
+	 * must be used to get the correct answer. Now the operation is automatic.
+	 */
 
   DEBUG_ARG = false;
 
@@ -3658,43 +3665,41 @@
   };
 
 
-  /* besselj =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x,n
-  
-  General description
-  -------------------
-  
-  Returns a solution to the Bessel differential equation (Bessel function of first kind).
-  
-  Recurrence relation:
-  
-  	besselj(x,n) = (2/x) (n-1) besselj(x,n-1) - besselj(x,n-2)
-  
-  	besselj(x,1/2) = sqrt(2/pi/x) sin(x)
-  
-  	besselj(x,-1/2) = sqrt(2/pi/x) cos(x)
-  
-  For negative n, reorder the recurrence relation as:
-  
-  	besselj(x,n-2) = (2/x) (n-1) besselj(x,n-1) - besselj(x,n)
-  
-  Substitute n+2 for n to obtain
-  
-  	besselj(x,n) = (2/x) (n+1) besselj(x,n+1) - besselj(x,n+2)
-  
-  Examples:
-  
-  	besselj(x,3/2) = (1/x) besselj(x,1/2) - besselj(x,-1/2)
-  
-  	besselj(x,-3/2) = -(1/x) besselj(x,-1/2) - besselj(x,1/2)
-   */
+  /*
+	 * besselj
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x,n
+	 * 
+	 * General description -------------------
+	 * 
+	 * Returns a solution to the Bessel differential equation (Bessel function
+	 * of first kind).
+	 * 
+	 * Recurrence relation:
+	 * 
+	 * besselj(x,n) = (2/x) (n-1) besselj(x,n-1) - besselj(x,n-2)
+	 * 
+	 * besselj(x,1/2) = sqrt(2/pi/x) sin(x)
+	 * 
+	 * besselj(x,-1/2) = sqrt(2/pi/x) cos(x)
+	 * 
+	 * For negative n, reorder the recurrence relation as:
+	 * 
+	 * besselj(x,n-2) = (2/x) (n-1) besselj(x,n-1) - besselj(x,n)
+	 * 
+	 * Substitute n+2 for n to obtain
+	 * 
+	 * besselj(x,n) = (2/x) (n+1) besselj(x,n+1) - besselj(x,n+2)
+	 * 
+	 * Examples:
+	 * 
+	 * besselj(x,3/2) = (1/x) besselj(x,1/2) - besselj(x,-1/2)
+	 * 
+	 * besselj(x,-3/2) = -(1/x) besselj(x,-1/2) - besselj(x,1/2)
+	 */
 
   Eval_besselj = function() {
     push(cadr(p1));
@@ -3828,21 +3833,18 @@
   };
 
 
-  /* bessely =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x,n
-  
-  General description
-  -------------------
-  
-  Bessel function of second kind.
-   */
+  /*
+	 * bessely
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x,n
+	 * 
+	 * General description -------------------
+	 * 
+	 * Bessel function of second kind.
+	 */
 
   Eval_bessely = function() {
     push(cadr(p1));
@@ -3936,87 +3938,49 @@
 
 
   /*
-  mnew = (n) ->
-  	if (n < MP_MIN_SIZE)
-  		n = MP_MIN_SIZE
-  	if (n == MP_MIN_SIZE && mfreecount)
-  		p = free_stack[--mfreecount]
-  	else
-  		p = [] #(unsigned int *) malloc((n + 3) * sizeof (int))
-  		#if (p == 0)
-  		 *	stop("malloc failure")
-  	p[0] = n
-  	mtotal += n
-  	return p[3]
-   */
+	 * mnew = (n) -> if (n < MP_MIN_SIZE) n = MP_MIN_SIZE if (n == MP_MIN_SIZE &&
+	 * mfreecount) p = free_stack[--mfreecount] else p = [] #(unsigned int *)
+	 * malloc((n + 3) * sizeof (int)) #if (p == 0) stop("malloc failure") p[0] =
+	 * n mtotal += n return p[3]
+	 */
 
 
   /*
-  mfree = (array, p) ->
-  	p -= 3
-  	mtotal -= array[p]
-  	if (array[p] == MP_MIN_SIZE && mfreecount < MP_MAX_FREE)
-  		free_stack[mfreecount++] = p
-  	else
-  		free(p)
-   */
+	 * mfree = (array, p) -> p -= 3 mtotal -= array[p] if (array[p] ==
+	 * MP_MIN_SIZE && mfreecount < MP_MAX_FREE) free_stack[mfreecount++] = p
+	 * else free(p)
+	 */
 
 
   /*
-  mint = (n) ->
-  	p = mnew(1)
-  	if (n < 0)
-  		 * !!! this is FU
-  		 * MSIGN(p) = -1
-  		fu = true
-  	else
-  		 * !!! this is FU
-  		#MSIGN(p) = 1
-  		fu = true
-  	 * !!! this is FU
-  	#MLENGTH(p) = 1
-  	p[0] = Math.abs(n)
-  	return p
-   */
+	 * mint = (n) -> p = mnew(1) if (n < 0) !!! this is FU MSIGN(p) = -1 fu =
+	 * true else !!! this is FU #MSIGN(p) = 1 fu = true !!! this is FU
+	 * #MLENGTH(p) = 1 p[0] = Math.abs(n) return p
+	 */
 
 
   /*
-  mcopy = (a) ->
-  	#unsigned int *b
-  
-  	b = mnew(MLENGTH(a))
-  
-  	 * !!! fu
-  	#MSIGN(b) = MSIGN(a)
-  	#MLENGTH(b) = MLENGTH(a)
-  
-  	for i in [0...MLENGTH(a)]
-  		b[i] = a[i]
-  
-  	return b
-   */
+	 * mcopy = (a) -> #unsigned int *b
+	 * 
+	 * b = mnew(MLENGTH(a))
+	 * 
+	 * !!! fu #MSIGN(b) = MSIGN(a) #MLENGTH(b) = MLENGTH(a)
+	 * 
+	 * for i in [0...MLENGTH(a)] b[i] = a[i]
+	 * 
+	 * return b
+	 */
 
 
   /*
-   * 
-   * ge not invoked from anywhere - is you need ge
-   * just use the bigNum's ge implementation
-   * leaving it here just in case I decide to backport to C
-   *
-   * a >= b ?
-   * and and b arrays of ints, len is an int
-  ge = (a, b, len) ->
-  	i = 0
-  	for i in [0...len]
-  		if (a[i] == b[i])
-  			continue
-  		else
-  			break
-  	if (a[i] >= b[i])
-  		return 1
-  	else
-  		return 0
-   */
+	 * 
+	 * ge not invoked from anywhere - is you need ge just use the bigNum's ge
+	 * implementation leaving it here just in case I decide to backport to C
+	 * 
+	 * a >= b ? and and b arrays of ints, len is an int ge = (a, b, len) -> i =
+	 * 0 for i in [0...len] if (a[i] == b[i]) continue else break if (a[i] >=
+	 * b[i]) return 1 else return 0
+	 */
 
   add_numbers = function() {
     var a, b, theResult;
@@ -4311,15 +4275,9 @@
   push_rational = function(a, b) {
 
     /*
-    	save()
-    	p1 = new U()
-    	p1.k = NUM
-    	p1.q.a = bigInt(a)
-    	p1.q.b = bigInt(b)
-    	## FIXME -- normalize ##
-    	push(p1)
-    	restore()
-     */
+	 * save() p1 = new U() p1.k = NUM p1.q.a = bigInt(a) p1.q.b = bigInt(b) ##
+	 * FIXME -- normalize ## push(p1) restore()
+	 */
     var p;
     p = new U();
     p.k = NUM;
@@ -4562,21 +4520,18 @@
   };
 
 
-  /* ceiling =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  
-  Returns the smallest integer not less than x.
-   */
+  /*
+	 * ceiling
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description -------------------
+	 * 
+	 * Returns the smallest integer not less than x.
+	 */
 
   Eval_ceiling = function() {
     push(cadr(p1));
@@ -4623,29 +4578,22 @@
   };
 
 
-  /* choose =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  n,k
-  
-  General description
-  -------------------
-  
-  Returns the number of combinations of n items taken k at a time.
-  
-  For example, the number of five card hands is choose(52,5)
-  
-  ```
-                            n!
-        choose(n,k) = -------------
-                       k! (n - k)!
-  ```
-   */
+  /*
+	 * choose
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- n,k
+	 * 
+	 * General description -------------------
+	 * 
+	 * Returns the number of combinations of n items taken k at a time.
+	 * 
+	 * For example, the number of five card hands is choose(52,5)
+	 * 
+	 * ``` n! choose(n,k) = ------------- k! (n - k)! ```
+	 */
 
   Eval_choose = function() {
     push(cadr(p1));
@@ -4690,21 +4638,19 @@
   };
 
 
-  /* circexp =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  
-  Returns expression x with circular and hyperbolic functions converted to exponential forms. Sometimes this will simplify an expression.
-   */
+  /*
+	 * circexp
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description -------------------
+	 * 
+	 * Returns expression x with circular and hyperbolic functions converted to
+	 * exponential forms. Sometimes this will simplify an expression.
+	 */
 
   Eval_circexp = function() {
     push(cadr(p1));
@@ -4828,18 +4774,17 @@
   };
 
 
-  /* clearall =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  
-  General description
-  -------------------
-  
-  Completely wipes all variables from the environment.
-   */
+  /*
+	 * clearall
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * 
+	 * General description -------------------
+	 * 
+	 * Completely wipes all variables from the environment.
+	 */
 
   Eval_clearall = function() {
     do_clearall();
@@ -4877,21 +4822,19 @@
   };
 
 
-  /* clear =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  
-  Completely wipes a variable from the environment (while doing x = quote(x) just unassigns it).
-   */
+  /*
+	 * clear
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description -------------------
+	 * 
+	 * Completely wipes a variable from the environment (while doing x =
+	 * quote(x) just unassigns it).
+	 */
 
   Eval_clear = function() {
     var indexFound, variableToBeCleared;
@@ -4913,16 +4856,16 @@
 
 
   /*
-   Convert complex z to clock form
-  
-  	Input:		push	z
-  
-  	Output:		Result on stack
-  
-  	clock(z) = abs(z) * (-1) ^ (arg(z) / pi)
-  
-  	For example, clock(exp(i pi/3)) gives the result (-1)^(1/3)
-   */
+	 * Convert complex z to clock form
+	 * 
+	 * Input: push z
+	 * 
+	 * Output: Result on stack
+	 * 
+	 * clock(z) = abs(z) * (-1) ^ (arg(z) / pi)
+	 * 
+	 * For example, clock(exp(i pi/3)) gives the result (-1)^(1/3)
+	 */
 
   DEBUG_CLOCKFORM = false;
 
@@ -4966,35 +4909,24 @@
     }
 
     /*
-    	p1 = pop()
-    	push(p1)
-    	abs()
-    	push(symbol(E))
-    	push(p1)
-    	arg()
-    	push(imaginaryunit)
-    	multiply()
-    	power()
-    	multiply()
-     */
+	 * p1 = pop() push(p1) abs() push(symbol(E)) push(p1) arg()
+	 * push(imaginaryunit) multiply() power() multiply()
+	 */
     return restore();
   };
 
 
-  /* coeff =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  p,x,n
-  
-  General description
-  -------------------
-  Returns the coefficient of x^n in polynomial p. The x argument can be omitted for polynomials in x.
-   */
+  /*
+	 * coeff
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- p,x,n
+	 * 
+	 * General description ------------------- Returns the coefficient of x^n in
+	 * polynomial p. The x argument can be omitted for polynomials in x.
+	 */
 
   Eval_coeff = function() {
     push(cadr(p1));
@@ -5053,22 +4985,18 @@
   };
 
 
-  /* cofactor =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  m,i,j
-  
-  General description
-  -------------------
-  Cofactor of a matrix component.
-  Let c be the cofactor matrix of matrix m, i.e. tranpose(c) = adj(m).
-  This function returns c[i,j].
-   */
+  /*
+	 * cofactor
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- m,i,j
+	 * 
+	 * General description ------------------- Cofactor of a matrix component.
+	 * Let c be the cofactor matrix of matrix m, i.e. tranpose(c) = adj(m). This
+	 * function returns c[i,j].
+	 */
 
   Eval_cofactor = function() {
     var doNothing, i, j, n;
@@ -5163,20 +5091,17 @@
   };
 
 
-  /* conj =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  z
-  
-  General description
-  -------------------
-  Returns the complex conjugate of z.
-   */
+  /*
+	 * conj
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- z
+	 * 
+	 * General description ------------------- Returns the complex conjugate of
+	 * z.
+	 */
 
   Eval_conj = function() {
     push(cadr(p1));
@@ -5218,31 +5143,26 @@
     p.cons.car = pop();
 
     /*
-    	console.log "cons new cdr.k = " + p.cons.cdr.k + "\nor more in detail:"
-    	console.log print_list p.cons.cdr
-    	console.log "cons new car.k = " + p.cons.car.k + "\nor more in detail:"
-    	console.log print_list p.cons.car
-     */
+	 * console.log "cons new cdr.k = " + p.cons.cdr.k + "\nor more in detail:"
+	 * console.log print_list p.cons.cdr console.log "cons new car.k = " +
+	 * p.cons.car.k + "\nor more in detail:" console.log print_list p.cons.car
+	 */
     return push(p);
   };
 
 
-  /* contract =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  a,i,j
-  
-  General description
-  -------------------
-  Contract across tensor indices i.e. returns "a" summed over indices i and j.
-  If i and j are omitted then 1 and 2 are used.
-  contract(m) is equivalent to the trace of matrix m.
-   */
+  /*
+	 * contract
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- a,i,j
+	 * 
+	 * General description ------------------- Contract across tensor indices
+	 * i.e. returns "a" summed over indices i and j. If i and j are omitted then
+	 * 1 and 2 are used. contract(m) is equivalent to the trace of matrix m.
+	 */
 
   Eval_contract = function() {
     push(cadr(p1));
@@ -5350,20 +5270,15 @@
   };
 
 
-  /* cos =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the cosine of x.
-   */
+  /*
+	 * cos =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the cosine of x.
+	 */
 
   Eval_cos = function() {
     push(cadr(p1));
@@ -5504,26 +5419,19 @@
   };
 
 
-  /* cosh =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the hyperbolic cosine of x
-  
-  ```
-  	          exp(x) + exp(-x)
-  	cosh(x) = ----------------
-  	                 2
-  ```
-   */
+  /*
+	 * cosh
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the hyperbolic cosine of
+	 * x
+	 * 
+	 * ``` exp(x) + exp(-x) cosh(x) = ---------------- 2 ```
+	 */
 
   Eval_cosh = function() {
     push(cadr(p1));
@@ -5748,24 +5656,20 @@
   };
 
 
-  /* defint =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  f,x,a,b[,y,c,d...]
-  
-  General description
-  -------------------
-  Returns the definite integral of f with respect to x evaluated from "a" to b.
-  The argument list can be extended for multiple integrals (or "iterated
-  integrals"), for example a double integral (which can represent for
-  example a volume under a surface), or a triple integral, etc. For
-  example, defint(f,x,a,b,y,c,d).
-   */
+  /*
+	 * defint
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- f,x,a,b[,y,c,d...]
+	 * 
+	 * General description ------------------- Returns the definite integral of
+	 * f with respect to x evaluated from "a" to b. The argument list can be
+	 * extended for multiple integrals (or "iterated integrals"), for example a
+	 * double integral (which can represent for example a volume under a
+	 * surface), or a triple integral, etc. For example, defint(f,x,a,b,y,c,d).
+	 */
 
   Eval_defint = function() {
     push(cadr(p1));
@@ -5806,20 +5710,16 @@
   };
 
 
-  /* deg =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  p,x
-  
-  General description
-  -------------------
-  Returns the degree of polynomial p(x).
-   */
+  /*
+	 * deg =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- p,x
+	 * 
+	 * General description ------------------- Returns the degree of polynomial
+	 * p(x).
+	 */
 
   Eval_degree = function() {
     push(cadr(p1));
@@ -5867,20 +5767,17 @@
   };
 
 
-  /* denominator =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Returns the denominator of expression x.
-   */
+  /*
+	 * denominator
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Returns the denominator of
+	 * expression x.
+	 */
 
   Eval_denominator = function() {
     push(cadr(p1));
@@ -6555,26 +6452,20 @@
   };
 
 
-  /* det =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  m
-  
-  General description
-  -------------------
-  Returns the determinant of matrix m.
-  Uses Gaussian elimination for numerical matrices.
-  
-  Example:
-  
-    det(((1,2),(3,4)))
-    > -2
-   */
+  /*
+	 * det =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- m
+	 * 
+	 * General description ------------------- Returns the determinant of matrix
+	 * m. Uses Gaussian elimination for numerical matrices.
+	 * 
+	 * Example:
+	 * 
+	 * det(((1,2),(3,4))) > -2
+	 */
 
   DET_check_arg = function() {
     if (!istensor(p1)) {
@@ -7023,84 +6914,79 @@
   };
 
 
-  /* eigen =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  m
-  
-  General description
-  -------------------
-  Compute eigenvalues and eigenvectors. Matrix m must be both numerical and symmetric.
-  The eigenval function returns a matrix with the eigenvalues along the diagonal.
-  The eigenvec function returns a matrix with the eigenvectors arranged as row vectors.
-  The eigen function does not return anything but stores the eigenvalue matrix in D
-  and the eigenvector matrix in Q.
-  
-  Input:		stack[tos - 1]		symmetric matrix
-  
-  Output:		D			diagnonal matrix
-  			Q			eigenvector matrix
-  
-  D and Q have the property that
-  
-  	A == dot(transpose(Q),D,Q)
-  
-  where A is the original matrix.
-  
-  The eigenvalues are on the diagonal of D.
-  The eigenvectors are row vectors in Q.
-  
-  The eigenvalue relation:
-  
-  	A X = lambda X
-  
-  can be checked as follows:
-  
-  	lambda = D[1,1]
-  	X = Q[1]
-  	dot(A,X) - lambda X
-  
-  Example 1. Check the relation AX = lambda X where lambda is an eigenvalue and X is the associated eigenvector.
-  
-  Enter:
-  
-       A = hilbert(3)
-  
-       eigen(A)
-  
-       lambda = D[1,1]
-  
-       X = Q[1]
-  
-       dot(A,X) - lambda X
-  
-  Result:
-  
-       -1.16435e-14
-   
-       -6.46705e-15
-   
-       -4.55191e-15
-  
-  Example 2: Check the relation A = QTDQ.
-  
-  Enter:
-  
-    A - dot(transpose(Q),D,Q)
-  
-  Result: 
-  
-    6.27365e-12    -1.58236e-11   1.81902e-11
-   
-    -1.58236e-11   -1.95365e-11   2.56514e-12
-   
-    1.81902e-11    2.56514e-12    1.32627e-11
-   */
+  /*
+	 * eigen
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- m
+	 * 
+	 * General description ------------------- Compute eigenvalues and
+	 * eigenvectors. Matrix m must be both numerical and symmetric. The eigenval
+	 * function returns a matrix with the eigenvalues along the diagonal. The
+	 * eigenvec function returns a matrix with the eigenvectors arranged as row
+	 * vectors. The eigen function does not return anything but stores the
+	 * eigenvalue matrix in D and the eigenvector matrix in Q.
+	 * 
+	 * Input: stack[tos - 1] symmetric matrix
+	 * 
+	 * Output: D diagnonal matrix Q eigenvector matrix
+	 * 
+	 * D and Q have the property that
+	 * 
+	 * A == dot(transpose(Q),D,Q)
+	 * 
+	 * where A is the original matrix.
+	 * 
+	 * The eigenvalues are on the diagonal of D. The eigenvectors are row
+	 * vectors in Q.
+	 * 
+	 * The eigenvalue relation:
+	 * 
+	 * A X = lambda X
+	 * 
+	 * can be checked as follows:
+	 * 
+	 * lambda = D[1,1] X = Q[1] dot(A,X) - lambda X
+	 * 
+	 * Example 1. Check the relation AX = lambda X where lambda is an eigenvalue
+	 * and X is the associated eigenvector.
+	 * 
+	 * Enter:
+	 * 
+	 * A = hilbert(3)
+	 * 
+	 * eigen(A)
+	 * 
+	 * lambda = D[1,1]
+	 * 
+	 * X = Q[1]
+	 * 
+	 * dot(A,X) - lambda X
+	 * 
+	 * Result:
+	 * 
+	 * -1.16435e-14
+	 * 
+	 * -6.46705e-15
+	 * 
+	 * -4.55191e-15
+	 * 
+	 * Example 2: Check the relation A = QTDQ.
+	 * 
+	 * Enter:
+	 * 
+	 * A - dot(transpose(Q),D,Q)
+	 * 
+	 * Result:
+	 * 
+	 * 6.27365e-12 -1.58236e-11 1.81902e-11
+	 * 
+	 * -1.58236e-11 -1.95365e-11 2.56514e-12
+	 * 
+	 * 1.81902e-11 2.56514e-12 1.32627e-11
+	 */
 
   EIG_N = 0;
 
@@ -7121,20 +7007,17 @@
   };
 
 
-  /* eigenval =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  m
-  
-  General description
-  -------------------
-  Compute eigenvalues of m. See "eigen" for more info.
-   */
+  /*
+	 * eigenval
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- m
+	 * 
+	 * General description ------------------- Compute eigenvalues of m. See
+	 * "eigen" for more info.
+	 */
 
   Eval_eigenval = function() {
     if (EIG_check_arg() === 0) {
@@ -7148,20 +7031,17 @@
   };
 
 
-  /* eigenvec =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  m
-  
-  General description
-  -------------------
-  Compute eigenvectors of m. See "eigen" for more info.
-   */
+  /*
+	 * eigenvec
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- m
+	 * 
+	 * General description ------------------- Compute eigenvectors of m. See
+	 * "eigen" for more info.
+	 */
 
   Eval_eigenvec = function() {
     if (EIG_check_arg() === 0) {
@@ -7325,25 +7205,18 @@
   };
 
 
-  /* erf =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Authors
-  -------
-  philippe.billet@noos.fr
-  
-  Parameters
-  ----------
-  x
-  
-  General description
-  -------------------
-  Error function erf(x).
-  erf(-x)=erf(x)
-   */
+  /*
+	 * erf =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Authors ------- philippe.billet@noos.fr
+	 * 
+	 * Parameters ---------- x
+	 * 
+	 * General description ------------------- Error function erf(x).
+	 * erf(-x)=erf(x)
+	 */
 
   Eval_erf = function() {
     push(cadr(p1));
@@ -7422,10 +7295,8 @@
 
 
   /*
-  	 * commented-out test
-  	"float(erfc(1))",
-  	"0.157299",
-   */
+	 * commented-out test "float(erfc(1))", "0.157299",
+	 */
 
   Eval = function() {
     var willEvaluateAsFloats;
@@ -7790,22 +7661,19 @@
   };
 
 
-  /* check =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  p
-  
-  General description
-  -------------------
-  Checks the predicate p, e.g. check(a = b)
-  Note how "check" can turn what normally would be an assignment into a test,
-  so in the case above "a" is not assigned anything.
-   */
+  /*
+	 * check
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- p
+	 * 
+	 * General description ------------------- Checks the predicate p, e.g.
+	 * check(a = b) Note how "check" can turn what normally would be an
+	 * assignment into a test, so in the case above "a" is not assigned
+	 * anything.
+	 */
 
   Eval_check = function() {
     push(cadr(p1));
@@ -7821,20 +7689,16 @@
   };
 
 
-  /* dim =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  m,n
-  
-  General description
-  -------------------
-  Returns the cardinality of the nth index of tensor "m".
-   */
+  /*
+	 * dim =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- m,n
+	 * 
+	 * General description ------------------- Returns the cardinality of the
+	 * nth index of tensor "m".
+	 */
 
   Eval_dim = function() {
     var n;
@@ -7864,20 +7728,16 @@
   };
 
 
-  /* do =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  a,b,...
-  
-  General description
-  -------------------
-  Evaluates each argument from left to right. Returns the result of the last argument.
-   */
+  /*
+	 * do =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- a,b,...
+	 * 
+	 * General description ------------------- Evaluates each argument from left
+	 * to right. Returns the result of the last argument.
+	 */
 
   Eval_do = function() {
     var results;
@@ -8931,14 +8791,9 @@
           }
 
           /*
-          				if (isnegativeterm(p4))
-          					push(p8)
-          					negate()
-          					p8 = pop()
-          					push(p7)
-          					negate_noexpand()
-          					p7 = pop()
-           */
+			 * if (isnegativeterm(p4)) push(p8) negate() p8 = pop() push(p7)
+			 * negate_noexpand() p7 = pop()
+			 */
           push(p7);
           push(p8);
           multiply_noexpand();
@@ -8976,14 +8831,9 @@
           }
 
           /*
-          				if (isnegativeterm(p4))
-          					push(p8)
-          					negate()
-          					p8 = pop()
-          					push(p7)
-          					negate_noexpand()
-          					p7 = pop()
-           */
+			 * if (isnegativeterm(p4)) push(p8) negate() p8 = pop() push(p7)
+			 * negate_noexpand() p7 = pop()
+			 */
           push(p7);
           previousFactorisation = pop();
           push(p7);
@@ -9034,14 +8884,12 @@
           }
 
           /*
-          				if compare_numbers(startingDegree, remainingDegree)
-          					 * ok even if we found a complex root that
-          					 * together with the conjugate generates a poly in Z,
-          					 * that doesn't mean that the division would end up in Z.
-          					 * Example: 1+x^2+x^4+x^6 has +i and -i as one of its roots
-          					 * so a factor is 1+x^2 ( = (x+i)*(x-i))
-          					 * BUT
-           */
+			 * if compare_numbers(startingDegree, remainingDegree) ok even if we
+			 * found a complex root that together with the conjugate generates a
+			 * poly in Z, that doesn't mean that the division would end up in Z.
+			 * Example: 1+x^2+x^4+x^6 has +i and -i as one of its roots so a
+			 * factor is 1+x^2 ( = (x+i)*(x-i)) BUT
+			 */
           for (i = ad = 0, ref2 = factpoly_expo; 0 <= ref2 ? ad <= ref2 : ad >= ref2; i = 0 <= ref2 ? ++ad : --ad) {
             pop();
           }
@@ -9379,12 +9227,12 @@
 
 
   /*
-  Remove terms that involve a given symbol or expression. For example...
-  
-  	filter(x^2 + x + 1, x)		=>	1
-  
-  	filter(x^2 + x + 1, x^2)	=>	x + 1
-   */
+	 * Remove terms that involve a given symbol or expression. For example...
+	 * 
+	 * filter(x^2 + x + 1, x) => 1
+	 * 
+	 * filter(x^2 + x + 1, x^2) => x + 1
+	 */
 
   Eval_filter = function() {
     var results;
@@ -9404,13 +9252,10 @@
 
 
   /*
-   For example...
-  
-  	push(F)
-  	push(X)
-  	filter()
-  	F = pop()
-   */
+	 * For example...
+	 * 
+	 * push(F) push(X) filter() F = pop()
+	 */
 
   filter = function() {
     save();
@@ -9587,14 +9432,10 @@
 
 
   /*
-  x=0
-  y=2
-  for(k,1,9,x=sqrt(2+x),y=2*y/x)
-  float(y)
-  
-  X: k
-  B: 1...9
-   */
+	 * x=0 y=2 for(k,1,9,x=sqrt(2+x),y=2*y/x) float(y)
+	 * 
+	 * X: k B: 1...9
+	 */
 
   Eval_for = function() {
     var i, j, k, o, ref, ref1;
@@ -10070,15 +9911,14 @@
 
 
   /*
-   Returns the coefficient of the imaginary part of complex z
-  
-  	z		imag(z)
-  	-		-------
-  
-  	a + i b		b
-  
-  	exp(i a)	sin(a)
-   */
+	 * Returns the coefficient of the imaginary part of complex z
+	 * 
+	 * z imag(z) - -------
+	 * 
+	 * a + i b b
+	 * 
+	 * exp(i a) sin(a)
+	 */
 
   DEBUG_IMAG = false;
 
@@ -10252,76 +10092,65 @@
   };
 
 
-  /* dot =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  a,b,...
-  
-  General description
-  -------------------
-  
-  The inner (or dot) operator gives products of vectors,
-  matrices, and tensors.
-  
-  Note that for Algebrite, the elements of a vector/matrix
-  can only be scalars. This allows for example to flesh out
-  matrix multiplication using the usual multiplication.
-  So for example block-representations are not allowed.
-  
-  There is an aweful lot of confusion between sw packages on
-  what dot and inner do.
-  
-  First off, the "dot" operator is different from the
-  mathematical notion of dot product, which can be
-  slightly confusing.
-  
-  The mathematical notion of dot product is here:
-    http://mathworld.wolfram.com/DotProduct.html
-  
-  However, "dot" does that and a bunch of other things,
-  i.e. in Algebrite
-  dot/inner does what the dot of Mathematica does, i.e.:
-  
-  scalar product of vectors:
-  
-    inner((a, b, c), (x, y, z))
-    > a x + b y + c z
-  
-  products of matrices and vectors:
-  
-    inner(((a, b), (c,d)), (x, y))
-    > (a x + b y,c x + d y)
-  
-    inner((x, y), ((a, b), (c,d)))
-    > (a x + c y,b x + d y)
-  
-    inner((x, y), ((a, b), (c,d)), (r, s))
-    > a r x + b s x + c r y + d s y
-  
-  matrix product:
-  
-    inner(((a,b),(c,d)),((r,s),(t,u)))
-    > ((a r + b t,a s + b u),(c r + d t,c s + d u))
-  
-  the "dot/inner" operator is associative and
-  distributive but not commutative.
-  
-  In Mathematica, Inner is a generalisation of Dot where
-  the user can specify the multiplication and the addition
-  operators.
-  But here in Algebrite they do the same thing.
-  
-   https://reference.wolfram.com/language/ref/Dot.html
-   https://reference.wolfram.com/language/ref/Inner.html
-  
-   http://uk.mathworks.com/help/matlab/ref/dot.html
-   http://uk.mathworks.com/help/matlab/ref/mtimes.html
-   */
+  /*
+	 * dot =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- a,b,...
+	 * 
+	 * General description -------------------
+	 * 
+	 * The inner (or dot) operator gives products of vectors, matrices, and
+	 * tensors.
+	 * 
+	 * Note that for Algebrite, the elements of a vector/matrix can only be
+	 * scalars. This allows for example to flesh out matrix multiplication using
+	 * the usual multiplication. So for example block-representations are not
+	 * allowed.
+	 * 
+	 * There is an aweful lot of confusion between sw packages on what dot and
+	 * inner do.
+	 * 
+	 * First off, the "dot" operator is different from the mathematical notion
+	 * of dot product, which can be slightly confusing.
+	 * 
+	 * The mathematical notion of dot product is here:
+	 * http://mathworld.wolfram.com/DotProduct.html
+	 * 
+	 * However, "dot" does that and a bunch of other things, i.e. in Algebrite
+	 * dot/inner does what the dot of Mathematica does, i.e.:
+	 * 
+	 * scalar product of vectors:
+	 * 
+	 * inner((a, b, c), (x, y, z)) > a x + b y + c z
+	 * 
+	 * products of matrices and vectors:
+	 * 
+	 * inner(((a, b), (c,d)), (x, y)) > (a x + b y,c x + d y)
+	 * 
+	 * inner((x, y), ((a, b), (c,d))) > (a x + c y,b x + d y)
+	 * 
+	 * inner((x, y), ((a, b), (c,d)), (r, s)) > a r x + b s x + c r y + d s y
+	 * 
+	 * matrix product:
+	 * 
+	 * inner(((a,b),(c,d)),((r,s),(t,u))) > ((a r + b t,a s + b u),(c r + d t,c
+	 * s + d u))
+	 * 
+	 * the "dot/inner" operator is associative and distributive but not
+	 * commutative.
+	 * 
+	 * In Mathematica, Inner is a generalisation of Dot where the user can
+	 * specify the multiplication and the addition operators. But here in
+	 * Algebrite they do the same thing.
+	 * 
+	 * https://reference.wolfram.com/language/ref/Dot.html
+	 * https://reference.wolfram.com/language/ref/Inner.html
+	 * 
+	 * http://uk.mathworks.com/help/matlab/ref/dot.html
+	 * http://uk.mathworks.com/help/matlab/ref/mtimes.html
+	 */
 
   Eval_inner = function() {
     var ac, ad, ae, difference, i, moretheArguments, o, operands, ref, ref1, ref2, ref3, refinedOperands, results, secondArgument, shift, theArguments;
@@ -10593,16 +10422,17 @@
 
 
   /*
-   Table of integrals
-  
-  The symbol f is just a dummy symbol for creating a list f(A,B,C,C,...) where
-  
-  	A	is the template expression
-  
-  	B	is the result expression
-  
-  	C	is an optional list of conditional expressions
-   */
+	 * Table of integrals
+	 * 
+	 * The symbol f is just a dummy symbol for creating a list f(A,B,C,C,...)
+	 * where
+	 * 
+	 * A is the template expression
+	 * 
+	 * B is the result expression
+	 * 
+	 * C is an optional list of conditional expressions
+	 */
 
   itab = ["f(a,a*x)", "f(1/x,log(x))", "f(x^a,x^(a+1)/(a+1))", "f(exp(a*x),1/a*exp(a*x))", "f(exp(a*x+b),1/a*exp(a*x+b))", "f(x*exp(a*x^2),exp(a*x^2)/(2*a))", "f(x*exp(a*x^2+b),exp(a*x^2+b)/(2*a))", "f(log(a*x),x*log(a*x)-x)", "f(a^x,a^x/log(a),or(not(number(a)),a>0))", "f(1/(a+x^2),1/sqrt(a)*arctan(x/sqrt(a)),or(not(number(a)),a>0))", "f(1/(a-x^2),1/sqrt(a)*arctanh(x/sqrt(a)))", "f(1/sqrt(a-x^2),arcsin(x/(sqrt(a))))", "f(1/sqrt(a+x^2),log(x+sqrt(a+x^2)))", "f(1/(a+b*x),1/b*log(a+b*x))", "f(1/(a+b*x)^2,-1/(b*(a+b*x)))", "f(1/(a+b*x)^3,-1/(2*b)*1/(a+b*x)^2)", "f(x/(a+b*x),x/b-a*log(a+b*x)/b/b)", "f(x/(a+b*x)^2,1/b^2*(log(a+b*x)+a/(a+b*x)))", "f(x^2/(a+b*x),1/b^2*(1/2*(a+b*x)^2-2*a*(a+b*x)+a^2*log(a+b*x)))", "f(x^2/(a+b*x)^2,1/b^3*(a+b*x-2*a*log(a+b*x)-a^2/(a+b*x)))", "f(x^2/(a+b*x)^3,1/b^3*(log(a+b*x)+2*a/(a+b*x)-1/2*a^2/(a+b*x)^2))", "f(1/x*1/(a+b*x),-1/a*log((a+b*x)/x))", "f(1/x*1/(a+b*x)^2,1/a*1/(a+b*x)-1/a^2*log((a+b*x)/x))", "f(1/x*1/(a+b*x)^3,1/a^3*(1/2*((2*a+b*x)/(a+b*x))^2+log(x/(a+b*x))))", "f(1/x^2*1/(a+b*x),-1/(a*x)+b/a^2*log((a+b*x)/x))", "f(1/x^3*1/(a+b*x),(2*b*x-a)/(2*a^2*x^2)+b^2/a^3*log(x/(a+b*x)))", "f(1/x^2*1/(a+b*x)^2,-(a+2*b*x)/(a^2*x*(a+b*x))+2*b/a^3*log((a+b*x)/x))", "f(1/(a+b*x^2),1/sqrt(a*b)*arctan(x*sqrt(a*b)/a),or(not(number(a*b)),a*b>0))", "f(1/(a+b*x^2),1/(2*sqrt(-a*b))*log((a+x*sqrt(-a*b))/(a-x*sqrt(-a*b))),or(not(number(a*b)),a*b<0))", "f(x/(a+b*x^2),1/2*1/b*log(a+b*x^2))", "f(x^2/(a+b*x^2),x/b-a/b*integral(1/(a+b*x^2),x))", "f(1/(a+b*x^2)^2,x/(2*a*(a+b*x^2))+1/2*1/a*integral(1/(a+b*x^2),x))", "f(1/x*1/(a+b*x^2),1/2*1/a*log(x^2/(a+b*x^2)))", "f(1/x^2*1/(a+b*x^2),-1/(a*x)-b/a*integral(1/(a+b*x^2),x))", "f(1/(a+b*x^3),1/3*1/a*(a/b)^(1/3)*(1/2*log(((a/b)^(1/3)+x)^3/(a+b*x^3))+sqrt(3)*arctan((2*x-(a/b)^(1/3))*(a/b)^(-1/3)/sqrt(3))))", "f(x^2/(a+b*x^3),1/3*1/b*log(a+b*x^3))", "f(x/(a+b*x^4),1/2*sqrt(b/a)/b*arctan(x^2*sqrt(b/a)),or(not(number(a*b)),a*b>0))", "f(x/(a+b*x^4),1/4*sqrt(-b/a)/b*log((x^2-sqrt(-a/b))/(x^2+sqrt(-a/b))),or(not(number(a*b)),a*b<0))", "f(x^3/(a+b*x^4),1/4*1/b*log(a+b*x^4))", "f(sqrt(a+b*x),2/3*1/b*sqrt((a+b*x)^3))", "f(x*sqrt(a+b*x),-2*(2*a-3*b*x)*sqrt((a+b*x)^3)/15/b^2)", "f(x^2*sqrt(a+b*x),2*(8*a^2-12*a*b*x+15*b^2*x^2)*sqrt((a+b*x)^3)/105/b^3)", "f(sqrt(a+b*x)/x,2*sqrt(a+b*x)+a*integral(1/x*1/sqrt(a+b*x),x))", "f(sqrt(a+b*x)/x^2,-sqrt(a+b*x)/x+b/2*integral(1/x*1/sqrt(a+b*x),x))", "f(1/sqrt(a+b*x),2*sqrt(a+b*x)/b)", "f(x/sqrt(a+b*x),-2/3*(2*a-b*x)*sqrt(a+b*x)/b^2)", "f(x^2/sqrt(a+b*x),2/15*(8*a^2-4*a*b*x+3*b^2*x^2)*sqrt(a+b*x)/b^3)", "f(1/x*1/sqrt(a+b*x),1/sqrt(a)*log((sqrt(a+b*x)-sqrt(a))/(sqrt(a+b*x)+sqrt(a))),or(not(number(a)),a>0))", "f(1/x*1/sqrt(a+b*x),2/sqrt(-a)*arctan(sqrt(-(a+b*x)/a)),or(not(number(a)),a<0))", "f(1/x^2*1/sqrt(a+b*x),-sqrt(a+b*x)/a/x-1/2*b/a*integral(1/x*1/sqrt(a+b*x),x))", "f(sqrt(x^2+a),1/2*(x*sqrt(x^2+a)+a*log(x+sqrt(x^2+a))))", "f(1/sqrt(x^2+a),log(x+sqrt(x^2+a)))", "f(1/x*1/sqrt(x^2+a),arcsec(x/sqrt(-a))/sqrt(-a),or(not(number(a)),a<0))", "f(1/x*1/sqrt(x^2+a),-1/sqrt(a)*log((sqrt(a)+sqrt(x^2+a))/x),or(not(number(a)),a>0))", "f(sqrt(x^2+a)/x,sqrt(x^2+a)-sqrt(a)*log((sqrt(a)+sqrt(x^2+a))/x),or(not(number(a)),a>0))", "f(sqrt(x^2+a)/x,sqrt(x^2+a)-sqrt(-a)*arcsec(x/sqrt(-a)),or(not(number(a)),a<0))", "f(x/sqrt(x^2+a),sqrt(x^2+a))", "f(x*sqrt(x^2+a),1/3*sqrt((x^2+a)^3))", "f(sqrt(a+x^6+3*a^(1/3)*x^4+3*a^(2/3)*x^2),1/4*(x*sqrt((x^2+a^(1/3))^3)+3/2*a^(1/3)*x*sqrt(x^2+a^(1/3))+3/2*a^(2/3)*log(x+sqrt(x^2+a^(1/3)))))", "f(sqrt(-a+x^6-3*a^(1/3)*x^4+3*a^(2/3)*x^2),1/4*(x*sqrt((x^2-a^(1/3))^3)-3/2*a^(1/3)*x*sqrt(x^2-a^(1/3))+3/2*a^(2/3)*log(x+sqrt(x^2-a^(1/3)))))", "f(1/sqrt(a+x^6+3*a^(1/3)*x^4+3*a^(2/3)*x^2),x/a^(1/3)/sqrt(x^2+a^(1/3)))", "f(x/sqrt(a+x^6+3*a^(1/3)*x^4+3*a^(2/3)*x^2),-1/sqrt(x^2+a^(1/3)))", "f(x*sqrt(a+x^6+3*a^(1/3)*x^4+3*a^(2/3)*x^2),1/5*sqrt((x^2+a^(1/3))^5))", "f(x^2*sqrt(x^2+a),1/4*x*sqrt((x^2+a)^3)-1/8*a*x*sqrt(x^2+a)-1/8*a^2*log(x+sqrt(x^2+a)))", "f(x^3*sqrt(x^2+a),(1/5*x^2-2/15*a)*sqrt((x^2+a)^3),and(number(a),a>0))", "f(x^3*sqrt(x^2+a),sqrt((x^2+a)^5)/5-a*sqrt((x^2+a)^3)/3,and(number(a),a<0))", "f(x^2/sqrt(x^2+a),1/2*x*sqrt(x^2+a)-1/2*a*log(x+sqrt(x^2+a)))", "f(x^3/sqrt(x^2+a),1/3*sqrt((x^2+a)^3)-a*sqrt(x^2+a))", "f(1/x^2*1/sqrt(x^2+a),-sqrt(x^2+a)/a/x)", "f(1/x^3*1/sqrt(x^2+a),-1/2*sqrt(x^2+a)/a/x^2+1/2*log((sqrt(a)+sqrt(x^2+a))/x)/a^(3/2),or(not(number(a)),a>0))", "f(1/x^3*1/sqrt(x^2-a),1/2*sqrt(x^2-a)/a/x^2+1/2*1/(a^(3/2))*arcsec(x/(a^(1/2))),or(not(number(a)),a>0))", "f(x^2*sqrt(a+x^6+3*a^(1/3)*x^4+3*a^(2/3)*x^2),1/6*x*sqrt((x^2+a^(1/3))^5)-1/24*a^(1/3)*x*sqrt((x^2+a^(1/3))^3)-1/16*a^(2/3)*x*sqrt(x^2+a^(1/3))-1/16*a*log(x+sqrt(x^2+a^(1/3))),or(not(number(a)),a>0))", "f(x^2*sqrt(-a-3*a^(1/3)*x^4+3*a^(2/3)*x^2+x^6),1/6*x*sqrt((x^2-a^(1/3))^5)+1/24*a^(1/3)*x*sqrt((x^2-a^(1/3))^3)-1/16*a^(2/3)*x*sqrt(x^2-a^(1/3))+1/16*a*log(x+sqrt(x^2-a^(1/3))),or(not(number(a)),a>0))", "f(x^3*sqrt(a+x^6+3*a^(1/3)*x^4+3*a^(2/3)*x^2),1/7*sqrt((x^2+a^(1/3))^7)-1/5*a^(1/3)*sqrt((x^2+a^(1/3))^5),or(not(number(a)),a>0))", "f(x^3*sqrt(-a-3*a^(1/3)*x^4+3*a^(2/3)*x^2+x^6),1/7*sqrt((x^2-a^(1/3))^7)+1/5*a^(1/3)*sqrt((x^2-a^(1/3))^5),or(not(number(a)),a>0))", "f(1/(x-a)/sqrt(x^2-a^2),-sqrt(x^2-a^2)/a/(x-a))", "f(1/(x+a)/sqrt(x^2-a^2),sqrt(x^2-a^2)/a/(x+a))", "f(sqrt(a-x^2),1/2*(x*sqrt(a-x^2)+a*arcsin(x/sqrt(abs(a)))))", "f(1/x*1/sqrt(a-x^2),-1/sqrt(a)*log((sqrt(a)+sqrt(a-x^2))/x),or(not(number(a)),a>0))", "f(sqrt(a-x^2)/x,sqrt(a-x^2)-sqrt(a)*log((sqrt(a)+sqrt(a-x^2))/x),or(not(number(a)),a>0))", "f(x/sqrt(a-x^2),-sqrt(a-x^2))", "f(x*sqrt(a-x^2),-1/3*sqrt((a-x^2)^3))", "f(x^2*sqrt(a-x^2),-x/4*sqrt((a-x^2)^3)+1/8*a*(x*sqrt(a-x^2)+a*arcsin(x/sqrt(a))),or(not(number(a)),a>0))", "f(x^3*sqrt(a-x^2),(-1/5*x^2-2/15*a)*sqrt((a-x^2)^3),or(not(number(a)),a>0))", "f(x^2/sqrt(a-x^2),-x/2*sqrt(a-x^2)+a/2*arcsin(x/sqrt(a)),or(not(number(a)),a>0))", "f(1/x^2*1/sqrt(a-x^2),-sqrt(a-x^2)/a/x,or(not(number(a)),a>0))", "f(sqrt(a-x^2)/x^2,-sqrt(a-x^2)/x-arcsin(x/sqrt(a)),or(not(number(a)),a>0))", "f(sqrt(a-x^2)/x^3,-1/2*sqrt(a-x^2)/x^2+1/2*log((sqrt(a)+sqrt(a-x^2))/x)/sqrt(a),or(not(number(a)),a>0))", "f(sqrt(a-x^2)/x^4,-1/3*sqrt((a-x^2)^3)/a/x^3,or(not(number(a)),a>0))", "f(sqrt(a*x^2+b),x*sqrt(a*x^2+b)/2+b*log(x*sqrt(a)+sqrt(a*x^2+b))/2/sqrt(a),and(number(a),a>0))", "f(sqrt(a*x^2+b),x*sqrt(a*x^2+b)/2+b*arcsin(x*sqrt(-a/b))/2/sqrt(-a),and(number(a),a<0))", "f(sin(a*x),-cos(a*x)/a)", "f(cos(a*x),sin(a*x)/a)", "f(tan(a*x),-log(cos(a*x))/a)", "f(1/tan(a*x),log(sin(a*x))/a)", "f(1/cos(a*x),log(tan(pi/4+a*x/2))/a)", "f(1/sin(a*x),log(tan(a*x/2))/a)", "f(sin(a*x)^2,x/2-sin(2*a*x)/(4*a))", "f(sin(a*x)^3,-cos(a*x)*(sin(a*x)^2+2)/(3*a))", "f(sin(a*x)^4,3/8*x-sin(2*a*x)/(4*a)+sin(4*a*x)/(32*a))", "f(cos(a*x)^2,x/2+sin(2*a*x)/(4*a))", "f(cos(a*x)^3,sin(a*x)*(cos(a*x)^2+2)/(3*a))", "f(cos(a*x)^4,3/8*x+sin(2*a*x)/(4*a)+sin(4*a*x)/(32*a))", "f(1/sin(a*x)^2,-1/(a*tan(a*x)))", "f(1/cos(a*x)^2,tan(a*x)/a)", "f(sin(a*x)*cos(a*x),sin(a*x)^2/(2*a))", "f(sin(a*x)^2*cos(a*x)^2,-sin(4*a*x)/(32*a)+x/8)", "f(sin(a*x)/cos(a*x)^2,1/(a*cos(a*x)))", "f(sin(a*x)^2/cos(a*x),(log(tan(pi/4+a*x/2))-sin(a*x))/a)", "f(cos(a*x)/sin(a*x)^2,-1/(a*sin(a*x)))", "f(1/(sin(a*x)*cos(a*x)),log(tan(a*x))/a)", "f(1/(sin(a*x)*cos(a*x)^2),(1/cos(a*x)+log(tan(a*x/2)))/a)", "f(1/(sin(a*x)^2*cos(a*x)),(log(tan(pi/4+a*x/2))-1/sin(a*x))/a)", "f(1/(sin(a*x)^2*cos(a*x)^2),-2/(a*tan(2*a*x)))", "f(sin(a+b*x),-cos(a+b*x)/b)", "f(cos(a+b*x),sin(a+b*x)/b)", "f(1/(b+b*sin(a*x)),-tan(pi/4-a*x/2)/a/b)", "f(1/(b-b*sin(a*x)),tan(pi/4+a*x/2)/a/b)", "f(1/(b+b*cos(a*x)),tan(a*x/2)/a/b)", "f(1/(b-b*cos(a*x)),-1/tan(a*x/2)/a/b)", "f(1/(a+b*sin(x)),1/sqrt(b^2-a^2)*log((a*tan(x/2)+b-sqrt(b^2-a^2))/(a*tan(x/2)+b+sqrt(b^2-a^2))),b^2-a^2)", "f(1/(a+b*cos(x)),1/sqrt(b^2-a^2)*log((sqrt(b^2-a^2)*tan(x/2)+a+b)/(sqrt(b^2-a^2)*tan(x/2)-a-b)),b^2-a^2)", "f(x*sin(a*x),sin(a*x)/a^2-x*cos(a*x)/a)", "f(x^2*sin(a*x),2*x*sin(a*x)/a^2-(a^2*x^2-2)*cos(a*x)/a^3)", "f(x*cos(a*x),cos(a*x)/a^2+x*sin(a*x)/a)", "f(x^2*cos(a*x),2*x*cos(a*x)/a^2+(a^2*x^2-2)*sin(a*x)/a^3)", "f(arcsin(a*x),x*arcsin(a*x)+sqrt(1-a^2*x^2)/a)", "f(arccos(a*x),x*arccos(a*x)-sqrt(1-a^2*x^2)/a)", "f(arctan(a*x),x*arctan(a*x)-1/2*log(1+a^2*x^2)/a)", "f(log(a*x),x*log(a*x)-x)", "f(x*log(a*x),x^2*log(a*x)/2-x^2/4)", "f(x^2*log(a*x),x^3*log(a*x)/3-1/9*x^3)", "f(log(x)^2,x*log(x)^2-2*x*log(x)+2*x)", "f(1/x*1/(a+log(x)),log(a+log(x)))", "f(log(a*x+b),(a*x+b)*log(a*x+b)/a-x)", "f(log(a*x+b)/x^2,a/b*log(x)-(a*x+b)*log(a*x+b)/b/x)", "f(sinh(x),cosh(x))", "f(cosh(x),sinh(x))", "f(tanh(x),log(cosh(x)))", "f(x*sinh(x),x*cosh(x)-sinh(x))", "f(x*cosh(x),x*sinh(x)-cosh(x))", "f(sinh(x)^2,sinh(2*x)/4-x/2)", "f(tanh(x)^2,x-tanh(x))", "f(cosh(x)^2,sinh(2*x)/4+x/2)", "f(x^3*exp(a*x^2),exp(a*x^2)*(x^2/a-1/(a^2))/2)", "f(x^3*exp(a*x^2+b),exp(a*x^2)*exp(b)*(x^2/a-1/(a^2))/2)", "f(exp(a*x^2),-i*sqrt(pi)*erf(i*sqrt(a)*x)/sqrt(a)/2)", "f(erf(a*x),x*erf(a*x)+exp(-a^2*x^2)/a/sqrt(pi))", "f(x^2*(1-x^2)^(3/2),(x*sqrt(1-x^2)*(-8*x^4+14*x^2-3)+3*arcsin(x))/48)", "f(x^2*(1-x^2)^(5/2),(x*sqrt(1-x^2)*(48*x^6-136*x^4+118*x^2-15)+15*arcsin(x))/384)", "f(x^4*(1-x^2)^(3/2),(-x*sqrt(1-x^2)*(16*x^6-24*x^4+2*x^2+3)+3*arcsin(x))/128)", "f(x*exp(a*x),exp(a*x)*(a*x-1)/(a^2))", "f(x*exp(a*x+b),exp(a*x+b)*(a*x-1)/(a^2))", "f(x^2*exp(a*x),exp(a*x)*(a^2*x^2-2*a*x+2)/(a^3))", "f(x^2*exp(a*x+b),exp(a*x+b)*(a^2*x^2-2*a*x+2)/(a^3))", "f(x^3*exp(a*x),exp(a*x)*x^3/a-3/a*integral(x^2*exp(a*x),x))", "f(x^3*exp(a*x+b),exp(a*x+b)*x^3/a-3/a*integral(x^2*exp(a*x+b),x))", 0];
 
@@ -11492,30 +11322,28 @@
 
 
   /*
-   Laguerre function
-  
-  Example
-  
-  	laguerre(x,3)
-  
-  Result
-  
-  	   1   3    3   2
-  	- --- x  + --- x  - 3 x + 1
-  	   6        2
-  
-  The computation uses the following recurrence relation.
-  
-  	L(x,0,k) = 1
-  
-  	L(x,1,k) = -x + k + 1
-  
-  	n*L(x,n,k) = (2*(n-1)+1-x+k)*L(x,n-1,k) - (n-1+k)*L(x,n-2,k)
-  
-  In the "for" loop i = n-1 so the recurrence relation becomes
-  
-  	(i+1)*L(x,n,k) = (2*i+1-x+k)*L(x,n-1,k) - (i+k)*L(x,n-2,k)
-   */
+	 * Laguerre function
+	 * 
+	 * Example
+	 * 
+	 * laguerre(x,3)
+	 * 
+	 * Result
+	 * 
+	 * 1 3 3 2 - --- x + --- x - 3 x + 1 6 2
+	 * 
+	 * The computation uses the following recurrence relation.
+	 * 
+	 * L(x,0,k) = 1
+	 * 
+	 * L(x,1,k) = -x + k + 1
+	 * 
+	 * n*L(x,n,k) = (2*(n-1)+1-x+k)*L(x,n-1,k) - (n-1+k)*L(x,n-2,k)
+	 * 
+	 * In the "for" loop i = n-1 so the recurrence relation becomes
+	 * 
+	 * (i+1)*L(x,n,k) = (2*i+1-x+k)*L(x,n-1,k) - (i+k)*L(x,n-2,k)
+	 */
 
   Eval_laguerre = function() {
     push(cadr(p1));
@@ -11636,18 +11464,18 @@
 
 
   /*
-   Return the leading coefficient of a polynomial.
-  
-  Example
-  
-  	leading(5x^2+x+1,x)
-  
-  Result
-  
-  	5
-  
-  The result is undefined if P is not a polynomial.
-   */
+	 * Return the leading coefficient of a polynomial.
+	 * 
+	 * Example
+	 * 
+	 * leading(5x^2+x+1,x)
+	 * 
+	 * Result
+	 * 
+	 * 5
+	 * 
+	 * The result is undefined if P is not a polynomial.
+	 */
 
   Eval_leading = function() {
     push(cadr(p1));
@@ -11683,34 +11511,32 @@
 
 
   /*
-   Legendre function
-  
-  Example
-  
-  	legendre(x,3,0)
-  
-  Result
-  
-  	 5   3    3
-  	--- x  - --- x
-  	 2        2
-  
-  The computation uses the following recurrence relation.
-  
-  	P(x,0) = 1
-  
-  	P(x,1) = x
-  
-  	n*P(x,n) = (2*(n-1)+1)*x*P(x,n-1) - (n-1)*P(x,n-2)
-  
-  In the "for" loop we have i = n-1 so the recurrence relation becomes
-  
-  	(i+1)*P(x,n) = (2*i+1)*x*P(x,n-1) - i*P(x,n-2)
-  
-  For m > 0
-  
-  	P(x,n,m) = (-1)^m * (1-x^2)^(m/2) * d^m/dx^m P(x,n)
-   */
+	 * Legendre function
+	 * 
+	 * Example
+	 * 
+	 * legendre(x,3,0)
+	 * 
+	 * Result
+	 * 
+	 * 5 3 3 --- x - --- x 2 2
+	 * 
+	 * The computation uses the following recurrence relation.
+	 * 
+	 * P(x,0) = 1
+	 * 
+	 * P(x,1) = x
+	 * 
+	 * n*P(x,n) = (2*(n-1)+1)*x*P(x,n-1) - (n-1)*P(x,n-2)
+	 * 
+	 * In the "for" loop we have i = n-1 so the recurrence relation becomes
+	 * 
+	 * (i+1)*P(x,n) = (2*i+1)*x*P(x,n-1) - i*P(x,n-2)
+	 * 
+	 * For m > 0
+	 * 
+	 * P(x,n,m) = (-1)^m * (1-x^2)^(m/2) * d^m/dx^m P(x,n)
+	 */
 
   Eval_legendre = function() {
     push(cadr(p1));
@@ -12169,49 +11995,20 @@
 
 
   /*
-  static void
-  addf(unsigned int *a, unsigned int *b, int len)
-  {
-  	int i
-  	long long t = 0; # can be signed or unsigned 
-  	for (i = 0; i < len; i++) {
-  		t += (long long) a[i] + b[i]
-  		a[i] = (unsigned int) t
-  		t >>= 32
-  	}
-  }
-  
-  // a = a - b
-  
-  static void
-  subf(unsigned int *a, unsigned int *b, int len)
-  {
-  	int i
-  	long long t = 0; # must be signed
-  	for (i = 0; i < len; i++) {
-  		t += (long long) a[i] - b[i]
-  		a[i] = (unsigned int) t
-  		t >>= 32
-  	}
-  }
-  
-  // a = b * c
-  
-  // 0xffffffff + 0xffffffff * 0xffffffff == 0xffffffff00000000
-  
-  static void
-  mulf(unsigned int *a, unsigned int *b, int len, unsigned int c)
-  {
-  	int i
-  	unsigned long long t = 0; # must be unsigned
-  	for (i = 0; i < len; i++) {
-  		t += (unsigned long long) b[i] * c
-  		a[i] = (unsigned int) t
-  		t >>= 32
-  	}
-  	a[i] = (unsigned int) t
-  }
-   */
+	 * static void addf(unsigned int *a, unsigned int *b, int len) { int i long
+	 * long t = 0; # can be signed or unsigned for (i = 0; i < len; i++) { t +=
+	 * (long long) a[i] + b[i] a[i] = (unsigned int) t t >>= 32 } } // a = a - b
+	 * 
+	 * static void subf(unsigned int *a, unsigned int *b, int len) { int i long
+	 * long t = 0; # must be signed for (i = 0; i < len; i++) { t += (long long)
+	 * a[i] - b[i] a[i] = (unsigned int) t t >>= 32 } } // a = b * c //
+	 * 0xffffffff + 0xffffffff * 0xffffffff == 0xffffffff00000000
+	 * 
+	 * static void mulf(unsigned int *a, unsigned int *b, int len, unsigned int
+	 * c) { int i unsigned long long t = 0; # must be unsigned for (i = 0; i <
+	 * len; i++) { t += (unsigned long long) b[i] * c a[i] = (unsigned int) t t
+	 * >>= 32 } a[i] = (unsigned int) t }
+	 */
 
   mmod = function(a, b) {
     return a.mod(b);
@@ -13114,20 +12911,20 @@
 
 
   /*
-   Partition a term
-  
-  	Input stack:
-  
-  		term (factor or product of factors)
-  
-  		free variable
-  
-  	Output stack:
-  
-  		constant expression
-  
-  		variable expression
-   */
+	 * Partition a term
+	 * 
+	 * Input stack:
+	 * 
+	 * term (factor or product of factors)
+	 * 
+	 * free variable
+	 * 
+	 * Output stack:
+	 * 
+	 * constant expression
+	 * 
+	 * variable expression
+	 */
 
   partition = function() {
     save();
@@ -13158,12 +12955,11 @@
 
 
   /*
-  	Add a pattern i.e. a substitution rule.
-  	Substitution rule needs a template as first argument
-  	and what to transform it to as second argument.
-  	Optional third argument is a boolean test which
-  	adds conditions to when the rule is applied.
-   */
+	 * Add a pattern i.e. a substitution rule. Substitution rule needs a
+	 * template as first argument and what to transform it to as second
+	 * argument. Optional third argument is a boolean test which adds conditions
+	 * to when the rule is applied.
+	 */
 
   Eval_silentpattern = function() {
     Eval_pattern();
@@ -13212,8 +13008,8 @@
 
 
   /*
-  	Clear all patterns
-   */
+	 * Clear all patterns
+	 */
 
   do_clearPatterns = function() {
     userSimplificationsInListForm = [];
@@ -13247,14 +13043,14 @@
 
 
   /*
-  Convert complex z to polar form
-  
-  	Input:		push	z
-  
-  	Output:		Result on stack
-  
-  	polar(z) = abs(z) * exp(i * arg(z))
-   */
+	 * Convert complex z to polar form
+	 * 
+	 * Input: push z
+	 * 
+	 * Output: Result on stack
+	 * 
+	 * polar(z) = abs(z) * exp(i * arg(z))
+	 */
 
   Eval_polar = function() {
     push(cadr(p1));
@@ -13414,14 +13210,15 @@
   };
 
 
-  /* Power function
-  
-  	Input:		push	Base
-  
-  			push	Exponent
-  
-  	Output:		Result on stack
-   */
+  /*
+	 * Power function
+	 * 
+	 * Input: push Base
+	 * 
+	 * push Exponent
+	 * 
+	 * Output: Result on stack
+	 */
 
   DEBUG_POWER = false;
 
@@ -13973,13 +13770,9 @@
       p2 = pop();
 
       /*
-      		if (issymbol(car(p)) && car(p) != p2)
-      			push_symbol(SETQ);
-      			push(car(p));
-      			push(p2);
-      			list(3);
-      			p2 = pop();
-       */
+		 * if (issymbol(car(p)) && car(p) != p2) push_symbol(SETQ);
+		 * push(car(p)); push(p2); list(3); p2 = pop();
+		 */
       origPrintMode = printMode;
       if (passedPrintMode === PRINTMODE_FULL) {
         printMode = PRINTMODE_FULL;
@@ -15030,24 +14823,18 @@
 
 
   /*
-  
-  Prints in "2d", e.g. instead of 1/(x+1)^2 :
-  
-        1
-   ----------
-           2
-    (1 + x)
-  
-   Note that although this looks more natural, a) it's not parsable and
-   b) it can be occasionally be ambiguous, such as:
-  
-     1
-   ----
-     2
-   x
-  
-  is 1/x^2 but it also looks a little like x^(1/2)
-   */
+	 * 
+	 * Prints in "2d", e.g. instead of 1/(x+1)^2 :
+	 * 
+	 * 1 ---------- 2 (1 + x)
+	 * 
+	 * Note that although this looks more natural, a) it's not parsable and b)
+	 * it can be occasionally be ambiguous, such as:
+	 * 
+	 * 1 ---- 2 x
+	 * 
+	 * is 1/x^2 but it also looks a little like x^(1/2)
+	 */
 
   YMAX = 10000;
 
@@ -16061,36 +15848,24 @@
     return emit_x = x + w;
 
     /*
-    	if 0
-    
-    		 * left brace
-    
-    		for (i = 0; i < h; i++) {
-    			if (yindex == YMAX)
-    				break
-    			chartab[yindex].c = '|'
-    			chartab[yindex].x = x - 2
-    			chartab[yindex].y = y + i
-    			yindex++
-    		}
-    
-    		 * right brace
-    
-    		emit_x++
-    
-    		for (i = 0; i < h; i++) {
-    			if (yindex == YMAX)
-    				break
-    			chartab[yindex].c = '|'
-    			chartab[yindex].x = emit_x
-    			chartab[yindex].y = y + i
-    			yindex++
-    		}
-    
-    		emit_x++
-    
-    	endif
-     */
+	 * if 0
+	 * 
+	 * left brace
+	 * 
+	 * for (i = 0; i < h; i++) { if (yindex == YMAX) break chartab[yindex].c =
+	 * '|' chartab[yindex].x = x - 2 chartab[yindex].y = y + i yindex++ }
+	 * 
+	 * right brace
+	 * 
+	 * emit_x++
+	 * 
+	 * for (i = 0; i < h; i++) { if (yindex == YMAX) break chartab[yindex].c =
+	 * '|' chartab[yindex].x = emit_x chartab[yindex].y = y + i yindex++ }
+	 * 
+	 * emit_x++
+	 * 
+	 * endif
+	 */
   };
 
   emit_flat_tensor = function(p) {
@@ -16667,15 +16442,14 @@
 
 
   /*
-   Returns the real part of complex z
-  
-  	z		real(z)
-  	-		-------
-  
-  	a + i b		a
-  
-  	exp(i a)	cos(a)
-   */
+	 * Returns the real part of complex z
+	 * 
+	 * z real(z) - -------
+	 * 
+	 * a + i b a
+	 * 
+	 * exp(i a) cos(a)
+	 */
 
   Eval_real = function() {
     push(cadr(p1));
@@ -16698,12 +16472,12 @@
 
 
   /*
-  Convert complex z to rectangular form
-  
-  	Input:		push	z
-  
-  	Output:		Result on stack
-   */
+	 * Convert complex z to rectangular form
+	 * 
+	 * Input: push z
+	 * 
+	 * Output: Result on stack
+	 */
 
   DEBUG_RECT = false;
 
@@ -17812,146 +17586,83 @@
           R_r = p7;
 
           /*
-          				 * Descartes' solution
-          				 * https://en.wikipedia.org/wiki/Quartic_function#Descartes.27_solution
-          				 * finding the "u" in the depressed equation
-          
-          				push_integer(2)
-          				push(R_p)
-          				multiply()
-          				coeff2 = pop()
-          
-          				push_integer(-4)
-          				push(R_p)
-          				push_integer(2)
-          				power()
-          				multiply()
-          				push(R_r)
-          				multiply()
-          				coeff3 = pop()
-          
-          				push(R_q)
-          				push_integer(2)
-          				power()
-          				negate()
-          				coeff4 = pop()
-          
-          				 * now build the polynomial
-          				push(symbol(SECRETX))
-          				push_integer(3)
-          				power()
-          
-          				push(coeff2)
-          				push(symbol(SECRETX))
-          				push_integer(2)
-          				power()
-          				multiply()
-          
-          				push(coeff3)
-          				push(symbol(SECRETX))
-          				multiply()
-          
-          				push(coeff4)
-          
-          				add()
-          				add()
-          				add()
-          
-          				console.log("Descarte's resolventCubic: " +  stack[tos-1].toString())
-          				push(symbol(SECRETX))
-          
-          				roots()
-          
-          				resolventCubicSolutions = pop()
-          				console.log("Descarte's resolventCubic solutions: " +  resolventCubicSolutions)
-          				console.log("tos: " +  tos)
-          
-          				R_u = null
-          				#R_u = resolventCubicSolutions.tensor.elem[1]
-          				for eachSolution in resolventCubicSolutions.tensor.elem
-          					console.log("examining solution: " +  eachSolution)
-          					push(eachSolution)
-          					push_integer(2)
-          					multiply()
-          					push(R_p)
-          					add()
-          
-          					absValFloat()
-          					toBeCheckedIFZero = pop()
-          					console.log("abs value is: " +  eachSolution)
-          					if !iszero(toBeCheckedIFZero)
-          						R_u = eachSolution
-          						break
-          
-          				console.log("chosen solution: " +  R_u)
-          
-          				push(R_u)
-          				negate()
-          				R_s = pop()
-          
-          				push(R_p)
-          				push(R_u)
-          				push_integer(2)
-          				power()
-          				push(R_q)
-          				push(R_u)
-          				divide()
-          				add()
-          				add()
-          				push_integer(2)
-          				divide()
-          				R_t = pop()
-          
-          				push(R_p)
-          				push(R_u)
-          				push_integer(2)
-          				power()
-          				push(R_q)
-          				push(R_u)
-          				divide()
-          				subtract()
-          				add()
-          				push_integer(2)
-          				divide()
-          				R_v = pop()
-          
-          				 * factoring the quartic into two quadratics:
-          
-          				 * now build the polynomial
-          				push(symbol(SECRETX))
-          				push_integer(2)
-          				power()
-          
-          				push(R_s)
-          				push(symbol(SECRETX))
-          				multiply()
-          
-          				push(R_t)
-          
-          				add()
-          				add()
-          
-          				console.log("factored quartic 1: " + stack[tos-1].toString())
-          
-          				push(symbol(SECRETX))
-          				push_integer(2)
-          				power()
-          
-          				push(R_u)
-          				push(symbol(SECRETX))
-          				multiply()
-          
-          				push(R_v)
-          
-          				add()
-          				add()
-          
-          				console.log("factored quartic 2: " + stack[tos-1].toString())
-          				pop()
-          
-          				restore()
-          				return
-           */
+			 * Descartes' solution
+			 * https://en.wikipedia.org/wiki/Quartic_function#Descartes.27_solution
+			 * finding the "u" in the depressed equation
+			 * 
+			 * push_integer(2) push(R_p) multiply() coeff2 = pop()
+			 * 
+			 * push_integer(-4) push(R_p) push_integer(2) power() multiply()
+			 * push(R_r) multiply() coeff3 = pop()
+			 * 
+			 * push(R_q) push_integer(2) power() negate() coeff4 = pop()
+			 * 
+			 * now build the polynomial push(symbol(SECRETX)) push_integer(3)
+			 * power()
+			 * 
+			 * push(coeff2) push(symbol(SECRETX)) push_integer(2) power()
+			 * multiply()
+			 * 
+			 * push(coeff3) push(symbol(SECRETX)) multiply()
+			 * 
+			 * push(coeff4)
+			 * 
+			 * add() add() add()
+			 * 
+			 * console.log("Descarte's resolventCubic: " +
+			 * stack[tos-1].toString()) push(symbol(SECRETX))
+			 * 
+			 * roots()
+			 * 
+			 * resolventCubicSolutions = pop() console.log("Descarte's
+			 * resolventCubic solutions: " + resolventCubicSolutions)
+			 * console.log("tos: " + tos)
+			 * 
+			 * R_u = null #R_u = resolventCubicSolutions.tensor.elem[1] for
+			 * eachSolution in resolventCubicSolutions.tensor.elem
+			 * console.log("examining solution: " + eachSolution)
+			 * push(eachSolution) push_integer(2) multiply() push(R_p) add()
+			 * 
+			 * absValFloat() toBeCheckedIFZero = pop() console.log("abs value
+			 * is: " + eachSolution) if !iszero(toBeCheckedIFZero) R_u =
+			 * eachSolution break
+			 * 
+			 * console.log("chosen solution: " + R_u)
+			 * 
+			 * push(R_u) negate() R_s = pop()
+			 * 
+			 * push(R_p) push(R_u) push_integer(2) power() push(R_q) push(R_u)
+			 * divide() add() add() push_integer(2) divide() R_t = pop()
+			 * 
+			 * push(R_p) push(R_u) push_integer(2) power() push(R_q) push(R_u)
+			 * divide() subtract() add() push_integer(2) divide() R_v = pop()
+			 * 
+			 * factoring the quartic into two quadratics:
+			 * 
+			 * now build the polynomial push(symbol(SECRETX)) push_integer(2)
+			 * power()
+			 * 
+			 * push(R_s) push(symbol(SECRETX)) multiply()
+			 * 
+			 * push(R_t)
+			 * 
+			 * add() add()
+			 * 
+			 * console.log("factored quartic 1: " + stack[tos-1].toString())
+			 * 
+			 * push(symbol(SECRETX)) push_integer(2) power()
+			 * 
+			 * push(R_u) push(symbol(SECRETX)) multiply()
+			 * 
+			 * push(R_v)
+			 * 
+			 * add() add()
+			 * 
+			 * console.log("factored quartic 2: " + stack[tos-1].toString())
+			 * pop()
+			 * 
+			 * restore() return
+			 */
           push_rational(5, 2);
           push(R_p);
           multiply();
@@ -19159,13 +18870,8 @@
     }
 
     /*
-    	push_integer(2)
-    	push(p1)
-    	heaviside()
-    	multiply()
-    	push_integer(-1)
-    	add()
-     */
+	 * push_integer(2) push(p1) heaviside() multiply() push_integer(-1) add()
+	 */
     push_symbol(SGN);
     push(p1);
     return list(2);
@@ -19212,31 +18918,26 @@
 
 
   /*
-   Simplify factorials
-  
-  The following script
-  
-  	F(n,k) = k binomial(n,k)
-  	(F(n,k) + F(n,k-1)) / F(n+1,k)
-  
-  generates
-  
-         k! n!             n! (1 - k + n)!              k! n!
-   -------------------- + -------------------- - ----------------------
-   (-1 + k)! (1 + n)!     (1 + n)! (-k + n)!     k (-1 + k)! (1 + n)!
-  
-  Simplify each term to get
-  
-      k       1 - k + n       1
-   ------- + ----------- - -------
-    1 + n       1 + n       1 + n
-  
-  Then simplify the sum to get
-  
-      n
-   -------
-    1 + n
-   */
+	 * Simplify factorials
+	 * 
+	 * The following script
+	 * 
+	 * F(n,k) = k binomial(n,k) (F(n,k) + F(n,k-1)) / F(n+1,k)
+	 * 
+	 * generates
+	 * 
+	 * k! n! n! (1 - k + n)! k! n! -------------------- + -------------------- -
+	 * ---------------------- (-1 + k)! (1 + n)! (1 + n)! (-k + n)! k (-1 + k)!
+	 * (1 + n)!
+	 * 
+	 * Simplify each term to get
+	 * 
+	 * k 1 - k + n 1 ------- + ----------- - ------- 1 + n 1 + n 1 + n
+	 * 
+	 * Then simplify the sum to get
+	 * 
+	 * n ------- 1 + n
+	 */
 
   Eval_simfac = function() {
     push(cadr(p1));
@@ -19267,38 +18968,14 @@
 
 
   /*
-  void
-  simfac(void)
-  {
-  	int h
-  	save()
-  	p1 = pop()
-  	if (car(p1) == symbol(ADD)) {
-  		h = tos
-  		p1 = cdr(p1)
-  		while (p1 != symbol(NIL)) {
-  			push(car(p1))
-  			simfac_term()
-  			p1 = cdr(p1)
-  		}
-  		addk(tos - h)
-  		p1 = pop()
-  		if (find(p1, symbol(FACTORIAL))) {
-  			push(p1)
-  			if (car(p1) == symbol(ADD)) {
-  				Condense()
-  				simfac_term()
-  			}
-  		}
-  	} else {
-  		push(p1)
-  		simfac_term()
-  	}
-  	restore()
-  }
-  
-  #endif
-   */
+	 * void simfac(void) { int h save() p1 = pop() if (car(p1) == symbol(ADD)) {
+	 * h = tos p1 = cdr(p1) while (p1 != symbol(NIL)) { push(car(p1))
+	 * simfac_term() p1 = cdr(p1) } addk(tos - h) p1 = pop() if (find(p1,
+	 * symbol(FACTORIAL))) { push(p1) if (car(p1) == symbol(ADD)) { Condense()
+	 * simfac_term() } } } else { push(p1) simfac_term() } restore() }
+	 * 
+	 * #endif
+	 */
 
   simfac_term = function() {
     var doNothing, h;
@@ -20042,47 +19719,24 @@
         SOLUTION = possibleRationalSolutions[whichRationalSolution];
 
         /*
-        			#possibleNewExpressions = []
-        			#realOfPossibleNewExpressions = []
-        			 * pick the solution which cubic root has no radicals
-        			lowercase_b = null
-        			for SOLUTION in possibleSolutions
-        				console.log("testing solution: " + SOLUTION.toString())
-        
-        				debugger
-        				if equalq(exponent,1,3)
-        					push(A)
-        					push(SOLUTION)
-        					push_integer(3)
-        					power()
-        					push_integer(3)
-        					push(C)
-        					multiply()
-        					push(SOLUTION)
-        					multiply()
-        					add()
-        					divide()
-        					console.log("argument of cubic root: " + stack[tos-1].toString())
-        					push_rational(1,3)
-        					power()
-        				else if equalq(exponent,1,2)
-        					push(A)
-        					push(SOLUTION)
-        					push_integer(2)
-        					power()
-        					push(C)
-        					add()
-        					divide()
-        					console.log("argument of cubic root: " + stack[tos-1].toString())
-        					push_rational(1,2)
-        					power()
-        				console.log("b is: " + stack[tos-1].toString())
-        
-        				lowercase_b = pop()
-        
-        				if !Find(lowercase_b, symbol(POWER))
-        					break
-         */
+		 * #possibleNewExpressions = [] #realOfPossibleNewExpressions = [] pick
+		 * the solution which cubic root has no radicals lowercase_b = null for
+		 * SOLUTION in possibleSolutions console.log("testing solution: " +
+		 * SOLUTION.toString())
+		 * 
+		 * debugger if equalq(exponent,1,3) push(A) push(SOLUTION)
+		 * push_integer(3) power() push_integer(3) push(C) multiply()
+		 * push(SOLUTION) multiply() add() divide() console.log("argument of
+		 * cubic root: " + stack[tos-1].toString()) push_rational(1,3) power()
+		 * else if equalq(exponent,1,2) push(A) push(SOLUTION) push_integer(2)
+		 * power() push(C) add() divide() console.log("argument of cubic root: " +
+		 * stack[tos-1].toString()) push_rational(1,2) power() console.log("b
+		 * is: " + stack[tos-1].toString())
+		 * 
+		 * lowercase_b = pop()
+		 * 
+		 * if !Find(lowercase_b, symbol(POWER)) break
+		 */
         if (equalq(exponent, 1, 3)) {
           push(A);
           push(SOLUTION);
@@ -20370,16 +20024,16 @@
 
 
   /*
-  	Substitute new expr for old expr in expr.
-  
-  	Input:	push	expr
-  
-  		push	old expr
-  
-  		push	new expr
-  
-  	Output:	Result on stack
-   */
+	 * Substitute new expr for old expr in expr.
+	 * 
+	 * Input: push expr
+	 * 
+	 * push old expr
+	 * 
+	 * push new expr
+	 * 
+	 * Output: Result on stack
+	 */
 
   subst = function() {
     var ae, af, i, ref2, ref3;
@@ -20583,14 +20237,10 @@
 
 
   /*
-  Taylor expansion of a function
-  
-  	push(F)
-  	push(X)
-  	push(N)
-  	push(A)
-  	taylor()
-   */
+	 * Taylor expansion of a function
+	 * 
+	 * push(F) push(X) push(N) push(A) taylor()
+	 */
 
   Eval_taylor = function() {
     p1 = cdr(p1);
@@ -20684,53 +20334,45 @@
   };
 
 
-  /* tensor =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  General description
-  -------------------
-  Tensors are a strange in-between of matrices and "computer"
-  rectangular data structures.
-  
-  Tensors, unlike matrices, and like rectangular data structures,
-  can have an arbitrary number of dimensions (rank), although a tensor with
-  rank zero is just a scalar.
-  
-  Tensors, like matrices and unlike many computer rectangular data structures,
-  must be "contiguous" i.e. have no empty spaces within its size, and "uniform",
-  i.e. each element must have the same shape and hence the same rank.
-  
-  Also tensors have necessarily to make a distinction between row vectors,
-  column vectors (which have a rank of 2) and uni-dimensional vectors (rank 1).
-  They look very similar but they are fundamentally different.
-  
-  Tensors with elements that are also tensors get promoted to a higher rank
-  , this is so we can represent and get the rank of a matrix correctly.
-  Example:
-  Start with a tensor of rank 1 with 2 elements (i.e. shape: 2)
-  if you put in both its elements another 2 tensors
-  of rank 1 with 2 elements (i.e. shape: 2)
-  then the result is a tensor of rank 2 with shape 2,2
-  i.e. the dimension of a tensor at all times must be
-  the number of nested tensors in it.
-  Also, all tensors must be "uniform" i.e. they must be accessed
-  uniformly, which means that all existing elements of a tensor
-  must be contiguous and have the same shape.
-  Implication of it all is that you can't put arbitrary
-  tensors inside tensors (like you would do to represent block matrices)
-  Rather, all tensors inside tensors must have same shape (and hence, rank)
-  
-  Limitations
-  -----------
-  n.a.
-  
-  Implementation info
-  -------------------
-  Tensors are implemented...
-   */
+  /*
+	 * tensor
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * General description ------------------- Tensors are a strange in-between
+	 * of matrices and "computer" rectangular data structures.
+	 * 
+	 * Tensors, unlike matrices, and like rectangular data structures, can have
+	 * an arbitrary number of dimensions (rank), although a tensor with rank
+	 * zero is just a scalar.
+	 * 
+	 * Tensors, like matrices and unlike many computer rectangular data
+	 * structures, must be "contiguous" i.e. have no empty spaces within its
+	 * size, and "uniform", i.e. each element must have the same shape and hence
+	 * the same rank.
+	 * 
+	 * Also tensors have necessarily to make a distinction between row vectors,
+	 * column vectors (which have a rank of 2) and uni-dimensional vectors (rank
+	 * 1). They look very similar but they are fundamentally different.
+	 * 
+	 * Tensors with elements that are also tensors get promoted to a higher rank ,
+	 * this is so we can represent and get the rank of a matrix correctly.
+	 * Example: Start with a tensor of rank 1 with 2 elements (i.e. shape: 2) if
+	 * you put in both its elements another 2 tensors of rank 1 with 2 elements
+	 * (i.e. shape: 2) then the result is a tensor of rank 2 with shape 2,2 i.e.
+	 * the dimension of a tensor at all times must be the number of nested
+	 * tensors in it. Also, all tensors must be "uniform" i.e. they must be
+	 * accessed uniformly, which means that all existing elements of a tensor
+	 * must be contiguous and have the same shape. Implication of it all is that
+	 * you can't put arbitrary tensors inside tensors (like you would do to
+	 * represent block matrices) Rather, all tensors inside tensors must have
+	 * same shape (and hence, rank)
+	 * 
+	 * Limitations ----------- n.a.
+	 * 
+	 * Implementation info ------------------- Tensors are implemented...
+	 */
 
   Eval_tensor = function() {
     var a, ae, af, b, i, ndim, nelem, ref2, ref3;
@@ -21208,20 +20850,16 @@
   };
 
 
-  /* and =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  a,b,...
-  
-  General description
-  -------------------
-  Logical-and of predicate expressions.
-   */
+  /*
+	 * and =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- a,b,...
+	 * 
+	 * General description ------------------- Logical-and of predicate
+	 * expressions.
+	 */
 
   Eval_and = function() {
     p1 = cdr(p1);
@@ -21297,32 +20935,30 @@
 
 
   /*
-  Transform an expression using a pattern. The
-  pattern can come from the integrals table or
-  the user-defined patterns.
-  
-  The expression and free variable are on the stack.
-  
-  The argument s is a null terminated list of transform rules.
-  
-  For example, see the itab (integrals table)
-  
-  Internally, the following symbols are used:
-  
-  	F	input expression
-  
-  	X	free variable, i.e. F of X
-  
-  	A	template expression
-  
-  	B	result expression
-  
-  	C	list of conditional expressions
-  
-  Puts the final expression on top of stack
-  (whether it's transformed or not) and returns
-  true is successful, false if not.
-   */
+	 * Transform an expression using a pattern. The pattern can come from the
+	 * integrals table or the user-defined patterns.
+	 * 
+	 * The expression and free variable are on the stack.
+	 * 
+	 * The argument s is a null terminated list of transform rules.
+	 * 
+	 * For example, see the itab (integrals table)
+	 * 
+	 * Internally, the following symbols are used:
+	 * 
+	 * F input expression
+	 * 
+	 * X free variable, i.e. F of X
+	 * 
+	 * A template expression
+	 * 
+	 * B result expression
+	 * 
+	 * C list of conditional expressions
+	 * 
+	 * Puts the final expression on top of stack (whether it's transformed or
+	 * not) and returns true is successful, false if not.
+	 */
 
   transform = function(s, generalTransform) {
     var ae, af, ag, bookmarkTosToPrintDecomps, eachTransformEntry, i, len, len1, numberOfDecomps, ref2, restTerm, secondTerm, success, theTransform, transform_h, transformationSuccessful, transformedTerms;
@@ -21380,13 +21016,10 @@
         p7 = cddr(p1);
 
         /*
-        			p5 = p1.tensor.elem[0]
-        			p6 = p1.tensor.elem[1]
-        			for i in [2..(p1.tensor.elem.length-1)]
-        				push p1.tensor.elem[i]
-        			list(p1.tensor.elem.length - 2)
-        			p7 = pop()
-         */
+		 * p5 = p1.tensor.elem[0] p6 = p1.tensor.elem[1] for i in
+		 * [2..(p1.tensor.elem.length-1)] push p1.tensor.elem[i]
+		 * list(p1.tensor.elem.length - 2) p7 = pop()
+		 */
         if (f_equals_a(transform_h, generalTransform)) {
           transformationSuccessful = true;
         } else {
@@ -21450,13 +21083,10 @@
           p7 = cdddr(p1);
 
           /*
-          				p5 = p1.tensor.elem[0]
-          				p6 = p1.tensor.elem[1]
-          				for i in [2..(p1.tensor.elem.length-1)]
-          					push p1.tensor.elem[i]
-          				list(p1.tensor.elem.length - 2)
-          				p7 = pop()
-           */
+			 * p5 = p1.tensor.elem[0] p6 = p1.tensor.elem[1] for i in
+			 * [2..(p1.tensor.elem.length-1)] push p1.tensor.elem[i]
+			 * list(p1.tensor.elem.length - 2) p7 = pop()
+			 */
           if (f_equals_a(transform_h, generalTransform)) {
             transformationSuccessful = true;
             break;
@@ -21734,20 +21364,16 @@
   };
 
 
-  /* d =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept
-  
-  Parameters
-  ----------
-  f,x
-  
-  General description
-  -------------------
-  Returns the partial derivative of f with respect to x. x can be a vector e.g. [x,y].
-   */
+  /*
+	 * d =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept
+	 * 
+	 * Parameters ---------- f,x
+	 * 
+	 * General description ------------------- Returns the partial derivative of
+	 * f with respect to x. x can be a vector e.g. [x,y].
+	 */
 
   Eval_user_function = function() {
     var bodyAndFormalArguments, h;
@@ -21910,38 +21536,19 @@
 
 
   /*
-  // up to 100 blocks of 100,000 atoms
-  
-  #define M 100
-  #define N 100000
-  
-  U *mem[M]
-  int mcount
-  
-  U *free_list
-  int free_count
-  
-  U *
-  alloc(void)
-  {
-  	U *p
-  	if (free_count == 0) {
-  		if (mcount == 0)
-  			alloc_mem()
-  		else {
-  			gc()
-  			if (free_count < N * mcount / 2)
-  				alloc_mem()
-  		}
-  		if (free_count == 0)
-  			stop("atom space exhausted")
-  	}
-  	p = free_list
-  	free_list = free_list->u.cons.cdr
-  	free_count--
-  	return p
-  }
-   */
+	 * // up to 100 blocks of 100,000 atoms
+	 * 
+	 * #define M 100 #define N 100000
+	 * 
+	 * U *mem[M] int mcount
+	 * 
+	 * U *free_list int free_count
+	 * 
+	 * U * alloc(void) { U *p if (free_count == 0) { if (mcount == 0)
+	 * alloc_mem() else { gc() if (free_count < N * mcount / 2) alloc_mem() } if
+	 * (free_count == 0) stop("atom space exhausted") } p = free_list free_list =
+	 * free_list->u.cons.cdr free_count-- return p }
+	 */
 
   allocatedId = 0;
 
@@ -21963,143 +21570,58 @@
 
 
   /*
-  // garbage collector
-  
-  void
-  gc(void)
-  {
-  	int i, j
-  	U *p
-  
-  	// tag everything
-  
-  	for (i = 0; i < mcount; i++) {
-  		p = mem[i]
-  		for (j = 0; j < N; j++)
-  			p[j].tag = 1
-  	}
-  
-  	// untag what's used
-  
-  	untag(p0)
-  	untag(p1)
-  	untag(p2)
-  	untag(p3)
-  	untag(p4)
-  	untag(p5)
-  	untag(p6)
-  	untag(p7)
-  	untag(p8)
-  	untag(p9)
-  
-  	untag(one)
-  	untag(zero)
-  	untag(imaginaryunit)
-  
-  	for (i = 0; i < NSYM; i++) {
-  		untag(binding[i])
-  		untag(arglist[i])
-  	}
-  
-  	for (i = 0; i < tos; i++)
-  		untag(stack[i])
-  
-  	for (i = (int) (frame - stack); i < TOS; i++)
-  		untag(stack[i])
-  
-  	// collect everything that's still tagged
-  
-  	free_count = 0
-  
-  	for (i = 0; i < mcount; i++) {
-  		p = mem[i]
-  		for (j = 0; j < N; j++) {
-  			if (p[j].tag == 0)
-  				continue
-  			// still tagged so it's unused, put on free list
-  			switch (p[j].k) {
-  			case TENSOR:
-  				free(p[j].u.tensor)
-  				break
-  			case STR:
-  				free(p[j].u.str)
-  				break
-  			case NUM:
-  				mfree(p[j].u.q.a)
-  				mfree(p[j].u.q.b)
-  				break
-  			}
-  			p[j].k = CONS; // so no double free occurs above
-  			p[j].u.cons.cdr = free_list
-  			free_list = p + j
-  			free_count++
-  		}
-  	}
-  }
-  
-  void
-  untag(U *p)
-  {
-  	int i
-  
-  	if (iscons(p)) {
-  		do {
-  			if (p->tag == 0)
-  				return
-  			p->tag = 0
-  			untag(p->u.cons.car)
-  			p = p->u.cons.cdr
-  		} while (iscons(p))
-  		untag(p)
-  		return
-  	}
-  
-  	if (p->tag) {
-  		p->tag = 0
-   		if (istensor(p)) {
-  			for (i = 0; i < p->u.tensor->nelem; i++)
-  				untag(p->u.tensor->elem[i])
-  		}
-  	}
-  }
-  
-  // get memory for 100,000 atoms
-  
-  void
-  alloc_mem(void)
-  {
-  	int i
-  	U *p
-  	if (mcount == M)
-  		return
-  	p = (U *) malloc(N * sizeof (struct U))
-  	if (p == NULL)
-  		return
-  	mem[mcount++] = p
-  	for (i = 0; i < N; i++) {
-  		p[i].k = CONS; // so no free in gc
-  		p[i].u.cons.cdr = p + i + 1
-  	}
-  	p[N - 1].u.cons.cdr = free_list
-  	free_list = p
-  	free_count += N
-  }
-  
-  void
-  print_mem_info(void)
-  {
-  	char buf[100]
-  
-  	sprintf(buf, "%d blocks (%d bytes/block)\n", N * mcount, (int) sizeof (U))
-  	printstr(buf)
-  
-  	sprintf(buf, "%d free\n", free_count)
-  	printstr(buf)
-  
-  	sprintf(buf, "%d used\n", N * mcount - free_count)
-  	printstr(buf)
-  }
-   */
+	 * // garbage collector
+	 * 
+	 * void gc(void) { int i, j U *p // tag everything
+	 * 
+	 * for (i = 0; i < mcount; i++) { p = mem[i] for (j = 0; j < N; j++)
+	 * p[j].tag = 1 } // untag what's used
+	 * 
+	 * untag(p0) untag(p1) untag(p2) untag(p3) untag(p4) untag(p5) untag(p6)
+	 * untag(p7) untag(p8) untag(p9)
+	 * 
+	 * untag(one) untag(zero) untag(imaginaryunit)
+	 * 
+	 * for (i = 0; i < NSYM; i++) { untag(binding[i]) untag(arglist[i]) }
+	 * 
+	 * for (i = 0; i < tos; i++) untag(stack[i])
+	 * 
+	 * for (i = (int) (frame - stack); i < TOS; i++) untag(stack[i]) // collect
+	 * everything that's still tagged
+	 * 
+	 * free_count = 0
+	 * 
+	 * for (i = 0; i < mcount; i++) { p = mem[i] for (j = 0; j < N; j++) { if
+	 * (p[j].tag == 0) continue // still tagged so it's unused, put on free list
+	 * switch (p[j].k) { case TENSOR: free(p[j].u.tensor) break case STR:
+	 * free(p[j].u.str) break case NUM: mfree(p[j].u.q.a) mfree(p[j].u.q.b)
+	 * break } p[j].k = CONS; // so no double free occurs above p[j].u.cons.cdr =
+	 * free_list free_list = p + j free_count++ } } }
+	 * 
+	 * void untag(U *p) { int i
+	 * 
+	 * if (iscons(p)) { do { if (p->tag == 0) return p->tag = 0
+	 * untag(p->u.cons.car) p = p->u.cons.cdr } while (iscons(p)) untag(p)
+	 * return }
+	 * 
+	 * if (p->tag) { p->tag = 0 if (istensor(p)) { for (i = 0; i <
+	 * p->u.tensor->nelem; i++) untag(p->u.tensor->elem[i]) } } } // get memory
+	 * for 100,000 atoms
+	 * 
+	 * void alloc_mem(void) { int i U *p if (mcount == M) return p = (U *)
+	 * malloc(N * sizeof (struct U)) if (p == NULL) return mem[mcount++] = p for
+	 * (i = 0; i < N; i++) { p[i].k = CONS; // so no free in gc p[i].u.cons.cdr =
+	 * p + i + 1 } p[N - 1].u.cons.cdr = free_list free_list = p free_count += N }
+	 * 
+	 * void print_mem_info(void) { char buf[100]
+	 * 
+	 * sprintf(buf, "%d blocks (%d bytes/block)\n", N * mcount, (int) sizeof
+	 * (U)) printstr(buf)
+	 * 
+	 * sprintf(buf, "%d free\n", free_count) printstr(buf)
+	 * 
+	 * sprintf(buf, "%d used\n", N * mcount - free_count) printstr(buf) }
+	 */
 
   Find = function(p, q) {
     var ae, i, ref2;
@@ -22200,36 +21722,31 @@
   };
 
 
-  /* cross =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept, script_defined
-  
-  Parameters
-  ----------
-  u,v
-  
-  General description
-  -------------------
-  Returns the cross product of vectors u and v.
-   */
+  /*
+	 * cross
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept,
+	 * script_defined
+	 * 
+	 * Parameters ---------- u,v
+	 * 
+	 * General description ------------------- Returns the cross product of
+	 * vectors u and v.
+	 */
 
 
-  /* curl =====================================================================
-  
-  Tags
-  ----
-  scripting, JS, internal, treenode, general concept, script_defined
-  
-  Parameters
-  ----------
-  u
-  
-  General description
-  -------------------
-  Returns the curl of vector u.
-   */
+  /*
+	 * curl
+	 * =====================================================================
+	 * 
+	 * Tags ---- scripting, JS, internal, treenode, general concept,
+	 * script_defined
+	 * 
+	 * Parameters ---------- u
+	 * 
+	 * General description ------------------- Returns the curl of vector u.
+	 */
 
   defn_str = ["version=\"" + version + "\"", "e=exp(1)", "i=sqrt(-1)", "autoexpand=1", "assumeRealVariables=1", "trange=[-pi,pi]", "xrange=[-10,10]", "yrange=[-10,10]", "last=0", "trace=0", "printLeaveEAlone=1", "printLeaveXAlone=0", "cross(u,v)=[u[2]*v[3]-u[3]*v[2],u[3]*v[1]-u[1]*v[3],u[1]*v[2]-u[2]*v[1]]", "curl(v)=[d(v[3],y)-d(v[2],z),d(v[1],z)-d(v[3],x),d(v[2],x)-d(v[1],y)]", "div(v)=d(v[1],x)+d(v[2],y)+d(v[3],z)", "ln(x)=log(x)"];
 
@@ -22479,40 +21996,17 @@
 
 
   /*
-  #if SELFTEST
-  
-  void
-  test_mcmp(void)
-  {
-  	int i, j, k
-  	unsigned int *x, *y
-  	logout("testing mcmp\n")
-  	for (i = -1000; i < 1000; i++) {
-  		x = mint(i)
-  		for (j = -1000; j < 1000; j++) {
-  			y = mint(j)
-  			k = mcmp(x, y)
-  			if (i == j && k != 0) {
-  				logout("failed\n")
-  				errout()
-  			}
-  			if (i < j && k != -1) {
-  				logout("failed\n")
-  				errout()
-  			}
-  			if (i > j && k != 1) {
-  				logout("failed\n")
-  				errout()
-  			}
-  			mfree(y)
-  		}
-  		mfree(x)
-  	}
-  	logout("ok\n")
-  }
-  
-  #endif
-   */
+	 * #if SELFTEST
+	 * 
+	 * void test_mcmp(void) { int i, j, k unsigned int *x, *y logout("testing
+	 * mcmp\n") for (i = -1000; i < 1000; i++) { x = mint(i) for (j = -1000; j <
+	 * 1000; j++) { y = mint(j) k = mcmp(x, y) if (i == j && k != 0) {
+	 * logout("failed\n") errout() } if (i < j && k != -1) { logout("failed\n")
+	 * errout() } if (i > j && k != 1) { logout("failed\n") errout() } mfree(y) }
+	 * mfree(x) } logout("ok\n") }
+	 * 
+	 * #endif
+	 */
 
   strcmp = function(str1, str2) {
     if (str1 === str2) {
@@ -22883,25 +22377,18 @@
             } else {
 
               /*
-              						 * using this paragraph instead of the following one
-              						 * creates methods signatures that
-              						 * are slightly less efficient
-              						 * i.e. variables compare even if they are
-              						 * simplified away.
-              						 * In theory these signatures are more stable, but
-              						 * in practice signatures vary quite a bit anyways
-              						 * depending on previous assignments for example,
-              						 * so it's unclear whether going for stability
-              						 * is sensible at all..
-              						if recursedDependencies.length != 0
-              							parameters = "("
-              							for i in recursedDependencies
-              								if i.indexOf("'") != 0
-              									parameters += i + ", "
-              								else
-              									if recursedDependencies.indexOf(i.substring(1)) == -1
-              										parameters += i.substring(1) + ", "
-               */
+				 * using this paragraph instead of the following one creates
+				 * methods signatures that are slightly less efficient i.e.
+				 * variables compare even if they are simplified away. In theory
+				 * these signatures are more stable, but in practice signatures
+				 * vary quite a bit anyways depending on previous assignments
+				 * for example, so it's unclear whether going for stability is
+				 * sensible at all.. if recursedDependencies.length != 0
+				 * parameters = "(" for i in recursedDependencies if
+				 * i.indexOf("'") != 0 parameters += i + ", " else if
+				 * recursedDependencies.indexOf(i.substring(1)) == -1 parameters +=
+				 * i.substring(1) + ", "
+				 */
               userVariablesMentioned = userVariablesMentioned.filter(function(x) {
                 return predefinedSymbolsInGlobalScope_doNotTrackInDependencies.indexOf(x + "") === -1;
               });
@@ -23619,14 +23106,10 @@
     indexFound = symtab.indexOf(p);
 
     /*
-    	if indexFound == -1
-    		debugger
-    		for i in [0...symtab.length]
-    			if p.printname == symtab[i].printname
-    				indexFound = i
-    				console.log "remedied an index not found!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-    				break
-     */
+	 * if indexFound == -1 debugger for i in [0...symtab.length] if p.printname ==
+	 * symtab[i].printname indexFound = i console.log "remedied an index not
+	 * found!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" break
+	 */
     if (symtab.indexOf(p, indexFound + 1) !== -1) {
       console.log("ops, more than one element!");
       debugger;
@@ -23646,14 +23129,10 @@
     indexFound = symtab.indexOf(p);
 
     /*
-    	if indexFound == -1
-    		debugger
-    		for i in [0...symtab.length]
-    			if p.printname == symtab[i].printname
-    				indexFound = i
-    				console.log "remedied an index not found!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-    				break
-     */
+	 * if indexFound == -1 debugger for i in [0...symtab.length] if p.printname ==
+	 * symtab[i].printname indexFound = i console.log "remedied an index not
+	 * found!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" break
+	 */
     if (symtab.indexOf(p, indexFound + 1) !== -1) {
       console.log("ops, more than one element!");
       debugger;
@@ -24143,7 +23622,9 @@ var bigInt = (function (undefined) {
         return -MAX_INT < n && n < MAX_INT;
     }
 
-    function smallToArray(n) { // For performance reasons doesn't reference BASE, need to change this function if BASE changes
+    function smallToArray(n) { // For performance reasons doesn't reference
+								// BASE, need to change this function if BASE
+								// changes
         if (n < 1e7)
             return [n];
         if (n < 1e14)
@@ -24151,7 +23632,8 @@ var bigInt = (function (undefined) {
         return [n % 1e7, Math.floor(n / 1e7) % 1e7, Math.floor(n / 1e14)];
     }
 
-    function arrayToSmall(arr) { // If BASE changes this function may need to change
+    function arrayToSmall(arr) { // If BASE changes this function may need to
+									// change
         trim(arr);
         var length = arr.length;
         if (length < 4 && compareAbs(arr, MAX_INT_ARR) < 0) {
@@ -24171,7 +23653,9 @@ var bigInt = (function (undefined) {
         v.length = i + 1;
     }
 
-    function createArray(length) { // function shamelessly stolen from Yaffle's library https://github.com/Yaffle/BigInteger
+    function createArray(length) { // function shamelessly stolen from Yaffle's
+									// library
+									// https://github.com/Yaffle/BigInteger
         var x = new Array(length);
         var i = -1;
         while (++i < length) {
@@ -24185,7 +23669,8 @@ var bigInt = (function (undefined) {
         return Math.ceil(n);
     }
 
-    function add(a, b) { // assumes a and b are arrays with a.length >= b.length
+    function add(a, b) { // assumes a and b are arrays with a.length >=
+							// b.length
         var l_a = a.length,
             l_b = b.length,
             r = new Array(l_a),
@@ -24211,7 +23696,8 @@ var bigInt = (function (undefined) {
         return add(b, a);
     }
 
-    function addSmall(a, carry) { // assumes a is array, carry is number with 0 <= carry < MAX_INT
+    function addSmall(a, carry) { // assumes a is array, carry is number with
+									// 0 <= carry < MAX_INT
         var l = a.length,
             r = new Array(l),
             base = BASE,
@@ -24304,7 +23790,8 @@ var bigInt = (function (undefined) {
         return new BigInteger(value, sign);
     }
 
-    function subtractSmall(a, b, sign) { // assumes a is array, b is number with 0 <= b < MAX_INT
+    function subtractSmall(a, b, sign) { // assumes a is array, b is number
+											// with 0 <= b < MAX_INT
         var l = a.length,
             r = new Array(l),
             carry = -b,
@@ -24387,7 +23874,8 @@ var bigInt = (function (undefined) {
         return r;
     }
 
-    function multiplySmall(a, b) { // assumes a is array, b is number with |b| < BASE
+    function multiplySmall(a, b) { // assumes a is array, b is number with |b|
+									// < BASE
         var l = a.length,
             r = new Array(l),
             base = BASE,
@@ -24431,8 +23919,10 @@ var bigInt = (function (undefined) {
         return product;
     }
 
-    // The following function is derived from a surface fit of a graph plotting the performance difference
-    // between long multiplication and karatsuba multiplication versus the lengths of the two arrays.
+    // The following function is derived from a surface fit of a graph plotting
+	// the performance difference
+    // between long multiplication and karatsuba multiplication versus the
+	// lengths of the two arrays.
     function useKaratsuba(l1, l2) {
         return -0.012 * l1 - 0.012 * l2 + 0.000015 * l1 * l2 > 0;
     }
@@ -24452,7 +23942,8 @@ var bigInt = (function (undefined) {
             }
             b = smallToArray(abs);
         }
-        if (useKaratsuba(a.length, b.length)) // Karatsuba is only faster for certain array sizes
+        if (useKaratsuba(a.length, b.length)) // Karatsuba is only faster for
+												// certain array sizes
             return new BigInteger(multiplyKaratsuba(a, b), sign);
         return new BigInteger(multiplyLong(a, b), sign);
     };
@@ -24511,7 +24002,8 @@ var bigInt = (function (undefined) {
         return new BigInteger(square(smallToArray(Math.abs(this.value))), false);
     };
 
-    function divMod1(a, b) { // Left over from previous version. Performs faster than divMod2 on smaller input sizes.
+    function divMod1(a, b) { // Left over from previous version. Performs
+								// faster than divMod2 on smaller input sizes.
         var a_l = a.length,
             b_l = b.length,
             base = BASE,
@@ -24569,7 +24061,9 @@ var bigInt = (function (undefined) {
         return [arrayToSmall(result), arrayToSmall(remainder)];
     }
 
-    function divMod2(a, b) { // Implementation idea shamelessly stolen from Silent Matt's library http://silentmatt.com/biginteger/
+    function divMod2(a, b) { // Implementation idea shamelessly stolen from
+								// Silent Matt's library
+								// http://silentmatt.com/biginteger/
         // Performs faster than divMod1 on larger input sizes.
         var a_l = a.length,
             b_l = b.length,
@@ -24928,7 +24422,8 @@ var bigInt = (function (undefined) {
         // use the Fermat primality test
         for (var i = 0; i < t; i++) {
             var a = bigInt.randBetween(2, n.minus(2));
-            if (!a.modPow(n.prev(), n).isUnit()) return false; // definitely composite
+            if (!a.modPow(n.prev(), n).isUnit()) return false; // definitely
+																// composite
         }
         return true; // large chance of being prime
     };
@@ -25011,11 +24506,15 @@ var bigInt = (function (undefined) {
         var xBits = [], yBits = [];
         var xStop = false, yStop = false;
         while (!xStop || !yStop) {
-            if (xRem.isZero()) { // virtual sign extension for simulating two's complement
+            if (xRem.isZero()) { // virtual sign extension for simulating
+									// two's complement
                 xStop = true;
                 xBits.push(xSign ? 1 : 0);
             }
-            else if (xSign) xBits.push(xRem.isEven() ? 1 : 0); // two's complement for negative numbers
+            else if (xSign) xBits.push(xRem.isEven() ? 1 : 0); // two's
+																// complement
+																// for negative
+																// numbers
             else xBits.push(xRem.isEven() ? 0 : 1);
 
             if (yRem.isZero()) {

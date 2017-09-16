@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="description" content="SIMACT home page">
-    <meta name="keywords" content="TODO">
-    <meta name="author" content="Markus Lamprecht">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta charset="utf-8">
+<meta name="description" content="SIMACT home page">
+<meta name="keywords" content="TODO">
+<meta name="author" content="Markus Lamprecht">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <title>SIMACT</title>
+<title>SIMACT</title>
 
-    <!-- base href="http://algebrite.org/" -->
+<!-- base href="http://algebrite.org/" -->
 
-    <link rel="stylesheet" href="simact.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
+<link rel="stylesheet" href="simact.css">
+<meta name="viewport" content="width=device-width">
+<!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
 
 <!-- High Charts Scripts: (offline source): -->
 <script type="text/javascript" src="libs/HighCharts/code/highcharts.js"></script>
-<script type="text/javascript" src="libs/HighCharts/code/highcharts-3d.js"></script>
-<script type="text/javascript" src="libs/HighCharts/code/modules/exporting.js"></script>
+<script type="text/javascript"
+	src="libs/HighCharts/code/highcharts-3d.js"></script>
+<script type="text/javascript"
+	src="libs/HighCharts/code/modules/exporting.js"></script>
 <script type="text/javascript" src="libs/jquery-3.2.1.min.js"></script>
 
 
 <!-- KATEX-Latex fast rendering: and information sites:     -->
-<link rel="stylesheet" type="text/css" href="libs/katex/katex.min.css"/>
+<link rel="stylesheet" type="text/css" href="libs/katex/katex.min.css" />
 <script type="text/javascript" src="libs/katex/katex.min.js"></script>
 
 <!-- Load Numeric.js for eigenvalues!: -->
- <script type="text/javascript" src="libs/numeric.js"></script>
+<script type="text/javascript" src="libs/numeric.js"></script>
 <!-- script for Matrices etc. Damit kann man math.im und math.re(...) nutzen geht das mit der standart Math. Bibliothek nicht? TODO-->
 <script type="text/javascript" src="libs/math2.js"></script>
 <!-- Load Algebrite: -->
@@ -40,75 +43,163 @@
 <!-- logic for this website -->
 <script type="text/javascript" src="simact.js"></script>
 
-  </head>
-  <body>
-        <div class="heading">
-            <h1>Zustandsraumdarstellung (ZRD)</h1>
-        </div>
-    <div class="wrapper">
-      <header> <!-- the right part -->
-        <a href="http://simact.org/index.html"><img src="img/simactlogo.png" alt="simact logo" width="60%">
-        <h1>SIMACT</h1></a>
-        <p>Simulative Adaptive Control Theory.<br>
-        <small><a href="https://github.com/davidedc/Algebrite">View on GitHub</a> <br>
-        <a href="http://simact.org/index_de.html"><img src="img/de.png" alt="de logo" width="10%">
-        <a href="http://simact.org/index.html"><img src="img/en.png" alt="de logo" width="10%">
-        <a href="http://simact.org/index_sp.html"><img src="img/sp.png" alt="de logo" width="10%">
-        <a href="http://simact.org/index_ch.html"><img src="img/ch.png" alt="de logo" width="10%">
-        </small>
-        </p>
+</head>
+<body>
+	<div class="heading">
+		<h1>Zustandsraumdarstellung (ZRD)</h1>
+	</div>
+	<div class="wrapper">
+		<header>
+			<!-- the right part -->
+			<a href="http://simact.org/index.html"><img
+				src="img/simactlogo.png" alt="simact logo" width="60%">
+				<h1>SIMACT</h1></a>
+			<p>
+				Simulative Adaptive Control Theory.<br> <small><a
+					href="https://github.com/davidedc/Algebrite">View on GitHub</a> <br>
+					<a href="http://simact.org/index_de.html"><img src="img/de.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index.html"><img src="img/en.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_sp.html"><img src="img/sp.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_ch.html"><img src="img/ch.png"
+						alt="de logo" width="10%"></a> </small>
+			</p>
 
-        <p class="view"><strong>Sites</strong>
-        <br><small><a href="file:///home/markus/eclipse_web/SIMACT/SIMACT.html">ZRD</a> <a href="file:///home/markus/eclipse_web/SIMACT/ZRD_ex.html">   ex</a>
-        <br><a href="file:///home/markus/eclipse_web/SIMACT/engine.html">engine</a>
-        </small>
-        </p>
+			<p class="view">
+				<strong>Sites</strong> <br>
+				<small><a href="SIMACT.html">ZRD</a> <a href="ZRD_ex.html">
+						ex</a> <br>
+				<a href="engine.html">engine</a> </small>
+			</p>
 
-        <strong>
-        <p class="view"><a href="http://algebrite.org/docs/latest-stable/index.html">ZRD Theory</a></p>
-        <p class="view"><a href="http://algebrite.org/sandboxes/latest-stable/sandbox.html">Contact</a></p>
-        <p class="view"><a href="http://algebrite.org/docs/index.html">Credits/links</a></p>
-        </strong>
-      </header>
-      <section>
+			<strong>
+				<p class="view">
+					<a href="http://algebrite.org/docs/latest-stable/index.html">ZRD
+						Theory</a>
+				</p>
+				<p class="view">
+					<a href="http://algebrite.org/sandboxes/latest-stable/sandbox.html">Contact</a>
+				</p>
+				<p class="view">
+					<a href="http://algebrite.org/docs/index.html">Credits/links</a>
+				</p>
+			</strong>
+		</header>
+		<section>
 
-<div class="topbox" >
-<div class="pic" >
-<img src="img/ZRD.png" alt="Selfhtml" width="100%" />
-</div> <!--end of image box-->
+			<div class="topbox">
+				<div class="pic">
+					<img src="img/ZRD.png" alt="Selfhtml" width="100%" />
+				</div>
+				<!--end of image box-->
 
-<div class="explbox" >
+				<div class="explbox">
 
-<div id ="expl_1" class="equation" data-expr="\mathbf{x}(t): (n \times 1) \text{  Zustandsvektor}" ></div>
-<div id ="expl_2" class="equation" data-expr="\mathbf{y}(t): (q \times 1) \text{  Ausgangsvektor}" ></div>
-<div id ="expl_3" class="equation" data-expr="\mathbf{u}(t): (p \times 1) \text{  Stellgröße}" ></div>
-<div id ="expl_4" class="equation" data-expr="\mathbf{A}(t): (n \times n) \text{  Systemmatrix}" ></div>
-<div id ="expl_5" class="equation" data-expr="\mathbf{B}(t): (p \times n) \text{  Eingangsmatrix}" ></div>
-<div id ="expl_6" class="equation" data-expr="\mathbf{C}(t): (q \times n) \text{  Ausgangsmatrix}" ></div>
-<div id ="expl_7" class="equation" data-expr="\mathbf{D}(t): (q \times p) \text{  Durchgriffsmatrix}" ></div>
-<div id ="expl_8" class="equation" data-expr="q\quad  	\; \; :  \textnormal{  Mess oder Regelgrößen}" ></div>
-<div id ="expl_9" class="equation" data-expr="p\quad  	\; \; :  \textnormal{  Stellgrößen}" ></div>
-<div id ="expl_10" class="equation" data-expr="n\quad  	\; \; :  \textnormal{  Zustände}" ></div>
-<script>katex.render("\\mathbf{x}(t): (n \\times 1) \\text{  Zustandsvektor}", expl_1);</script>
-<script>katex.render("\\mathbf{y}(t): (q \\times 1) \\text{  Ausgangsvektor}", expl_2);</script>
-<script>katex.render("\\mathbf{u}(t): (p \\times 1) \\text{  Stellgröße}", expl_3);</script>
-<script>katex.render("\\mathbf{A}(t): (n \\times n) \\text{  Systemmatrix}", expl_4);</script>
-<script>katex.render("\\mathbf{B}(t): (p \\times n) \\text{  Eingangsmatrix}", expl_5);</script>
-<script>katex.render("\\mathbf{C}(t): (q \\times n) \\text{  Ausgangsmatrix}", expl_6);</script>
-<script>katex.render("\\mathbf{D}(t): (q \\times p) \\text{  Durchgriffsmatrix}", expl_7);</script>
-<script>katex.render("q\\quad  	\\; \\; :  \\textnormal{  Mess oder Regelgrößen}", expl_8);</script>
-<script>katex.render("p\\quad  	\\; \\; :  \\textnormal{  Stellgrößen}", expl_9);</script>
-<script>katex.render("n\\quad  	\\; \\; :  \\textnormal{  Zustände}", expl_10);</script>
+					<div id="expl_1" class="equation"
+						data-expr="\mathbf{x}(t): (n \times 1) \text{  Zustandsvektor}"></div>
+					<div id="expl_2" class="equation"
+						data-expr="\mathbf{y}(t): (q \times 1) \text{  Ausgangsvektor}"></div>
+					<div id="expl_3" class="equation"
+						data-expr="\mathbf{u}(t): (p \times 1) \text{  Stellgröße}"></div>
+					<div id="expl_4" class="equation"
+						data-expr="\mathbf{A}(t): (n \times n) \text{  Systemmatrix}"></div>
+					<div id="expl_5" class="equation"
+						data-expr="\mathbf{B}(t): (p \times n) \text{  Eingangsmatrix}"></div>
+					<div id="expl_6" class="equation"
+						data-expr="\mathbf{C}(t): (q \times n) \text{  Ausgangsmatrix}"></div>
+					<div id="expl_7" class="equation"
+						data-expr="\mathbf{D}(t): (q \times p) \text{  Durchgriffsmatrix}"></div>
+					<div id="expl_8" class="equation"
+						data-expr="q\quad  	\; \; :  \textnormal{  Mess oder Regelgrößen}"></div>
+					<div id="expl_9" class="equation"
+						data-expr="p\quad  	\; \; :  \textnormal{  Stellgrößen}"></div>
+					<div id="expl_10" class="equation"
+						data-expr="n\quad  	\; \; :  \textnormal{  Zustände}"></div>
+					<script>
+						katex
+								.render(
+										"\\mathbf{x}(t): (n \\times 1) \\text{  Zustandsvektor}",
+										expl_1);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{y}(t): (q \\times 1) \\text{  Ausgangsvektor}",
+										expl_2);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{u}(t): (p \\times 1) \\text{  Stellgröße}",
+										expl_3);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{A}(t): (n \\times n) \\text{  Systemmatrix}",
+										expl_4);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{B}(t): (p \\times n) \\text{  Eingangsmatrix}",
+										expl_5);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{C}(t): (q \\times n) \\text{  Ausgangsmatrix}",
+										expl_6);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{D}(t): (q \\times p) \\text{  Durchgriffsmatrix}",
+										expl_7);
+					</script>
+					<script>
+						katex
+								.render(
+										"q\\quad  	\\; \\; :  \\textnormal{  Mess oder Regelgrößen}",
+										expl_8);
+					</script>
+					<script>
+						katex
+								.render(
+										"p\\quad  	\\; \\; :  \\textnormal{  Stellgrößen}",
+										expl_9);
+					</script>
+					<script>
+						katex
+								.render(
+										"n\\quad  	\\; \\; :  \\textnormal{  Zustände}",
+										expl_10);
+					</script>
 
-<div id ="systemgleichungl1" class="equation" data-expr="{   \dot{\mathbf{x}}(t)=\mathbf{A}(t) \mathbf{x}(t) +\mathbf{B}  \mathbf{u}(t) }"></div>
-<div id ="systemgleichungl2" class="equation" data-expr="{   \mathbf{y}(t)=\mathbf{C} \mathbf{x}(t) +\mathbf{D}  \mathbf{u}(t) }"></div>
-<script>katex.render("{   \\dot{\\mathbf{x}}(t)=\\mathbf{A}(t) \\mathbf{x}(t) +\\mathbf{B}  \\mathbf{u}(t) }", systemgleichungl1);</script>
-<script>katex.render("{   \\mathbf{y}(t)=\\mathbf{C} \\mathbf{x}(t) +\\mathbf{D}  \\mathbf{u}(t) }", systemgleichungl2);</script>
+					<div id="systemgleichungl1" class="equation"
+						data-expr="{   \dot{\mathbf{x}}(t)=\mathbf{A}(t) \mathbf{x}(t) +\mathbf{B}  \mathbf{u}(t) }"></div>
+					<div id="systemgleichungl2" class="equation"
+						data-expr="{   \mathbf{y}(t)=\mathbf{C} \mathbf{x}(t) +\mathbf{D}  \mathbf{u}(t) }"></div>
+					<script>
+						katex
+								.render(
+										"{   \\dot{\\mathbf{x}}(t)=\\mathbf{A}(t) \\mathbf{x}(t) +\\mathbf{B}  \\mathbf{u}(t) }",
+										systemgleichungl1);
+					</script>
+					<script>
+						katex
+								.render(
+										"{   \\mathbf{y}(t)=\\mathbf{C} \\mathbf{x}(t) +\\mathbf{D}  \\mathbf{u}(t) }",
+										systemgleichungl2);
+					</script>
 
-</div>
+				</div>
 
-<div class="inputarea" >
-<textarea rows="5" cols="30" type="text" id="textarea1" class="textarea">A=[[1,2],[4,5]];
+				<div class="inputarea">
+					<textarea rows="5" cols="30" type="text" id="textarea1"
+						class="textarea">A=[[1,2],[4,5]];
 B=[[0],[1]];
 C=[[1,0]];
 
@@ -116,139 +207,301 @@ Pole Placement:
 PR(s)=[-10,-20];
 PL(s)=[-40,-50]; (Observer)
 </textarea>
-<br> <br>
-<button class="button" id="button_Gleichung" onclick="main()">RUN</button>
+					<br> <br>
+					<button class="button" id="button_Gleichung" onclick="main()">RUN</button>
 
-<button class="button" id="button_next" onclick="next()">Next</button>
-</div>
+					<button class="button" id="button_next" onclick="next()">Next</button>
+				</div>
 
-<div class="clearer"></div>
-</div> <!--end of top box-->
-
-
-<div class="mainbox">
-
-<div class="left">
-<h3> Systemgleichungen: </h3>
-<div id ="systemgleichung_werte1" class="equation_small" data-expr="" ></div>
-<div id ="systemgleichung_werte2" class="equation_small" data-expr="" ></div>
-<script>katex.render("{   \\underbrace{\\dot{\\mathbf{x}}(t)}_{n \\times 1}=\\underbrace{\\mathbf{A}}_{n \\times n} \\mathbf{x}(t) +\\underbrace{\\mathbf{B}}_{p \\times n}  \\mathbf{u}(t) }", systemgleichung_werte1);</script>
-<script>katex.render("{   \\underbrace{\\mathbf{y}(t)}_{q \\times 1}=\\underbrace{\\mathbf{C}}_{q \\times n} \\mathbf{x}(t) +\\underbrace{\\mathbf{D}}_{p \\times q}  \\mathbf{u}(t) }", systemgleichung_werte2);</script>
-
-<h3> Transformations: </h3>
-<div id ="trans1" class="equation_small" data-expr=" \mathbf{x}=\mathbf{T} \mathbf{\tilde{x}}\; \; \dot{\mathbf{\tilde{x}}}(t)=\mathbf{T^{-1}}\mathbf{A}\mathbf{T}\mathbf{\tilde{x}}(t) +\mathbf{T^{-1} B}\mathbf{u}(t)" ></div>
-<div id ="trans2" class="equation_small" data-expr=" \mathbf{y}(t)=\mathbf{C T \tilde{x}}(t)" ></div>
-<br>
-<div id ="trans3" class="equation_small" data-expr="" ></div>
-<div id ="trans4" class="equation_small" data-expr="" ></div>
-<div id ="trans5" class="equation_small" data-expr="" ></div>
-<br>
-<div id ="trans6" class="equation_small" data-expr="" ></div>
-<div id ="trans7" class="equation_small" data-expr="" ></div>
-<div id ="trans8" class="equation_small" data-expr="" ></div>
-<br>
-<div id ="trans9" class="equation_small" data-expr="" ></div>
-<div id ="trans10" class="equation_small" data-expr="" ></div>
-<div id ="trans11" class="equation_small" data-expr="" ></div>
-<script>katex.render(" \\mathbf{x}=\\mathbf{T} \\mathbf{\\tilde{x}}\\; \\; \\dot{\\mathbf{\\tilde{x}}}(t)=\\mathbf{T^{-1}}\\mathbf{A}\\mathbf{T}\\mathbf{\\tilde{x}}(t) +\\mathbf{T^{-1} B}\\mathbf{u}(t)", trans1);</script>
-<script>katex.render(" \\mathbf{y}(t)=\\mathbf{C T \\tilde{x}}(t)", trans2);</script>
-<script>katex.render(" \\mathbf{T}_{JNF}=\\begin{bmatrix}v_1&...&v_n \\end{bmatrix} \\; \\; \\text{Eigenvectors}\\; v_i", trans3);</script>
-<script>katex.render("\\mathbf{T_{BNF}}=\\begin{bmatrix}\\tilde{q}_n&...&A^{n-1}\\tilde{q}_n \\end{bmatrix}", trans4);</script>
-<script>katex.render("\\mathbf{T^{-1}}_{SNF}=\\begin{bmatrix}{q}_n^T\\\\\\vdots\\\\q_n^T A^{n-1}\\end{bmatrix}", trans5);</script>
-
-<div id ="SNF1" class="equation_small" data-expr="" ></div>
-<div id ="SNF2" class="equation_small" data-expr="" ></div>
-<script>katex.render(" \\text{SNF:}\\; \\; \\dot{\\mathbf{x}}(t)=\\begin{bmatrix}0&1&0&0\\\\0&0&\\ddots&0\\\\0&0&0&1\\\\-a_0&-a_1&...&-a_{n-1} \\end{bmatrix}\\mathbf{x}(t) +\\begin{bmatrix}0\\\\0\\\\\\vdots\\\\1 \\end{bmatrix}\\mathbf{u}(t)", SNF1);</script>
-<script>katex.render(" {   \\mathbf{y}(t)=\\begin{bmatrix}b_0&b_1&... &b_{n-1}\\end{bmatrix} \\mathbf{x}(t)}", SNF2);</script>
-
-<div id ="BNF1" class="equation_small" data-expr="" ></div>
-<div id ="BNF2" class="equation_small" data-expr="" ></div>
-<script>katex.render(" \\text{BNF:}\\; \\; \\dot{\\mathbf{x}}(t)=\\begin{bmatrix}0&0&0&-a_0\\\\1&0&0&-a_1\\\\0&\\ddots&0&\\vdots\\\\0&0&1&-a_{n-1} \\end{bmatrix}\\mathbf{x}(t) +\\begin{bmatrix}b_0\\\\\\vdots\\\\b_{n-1}  \\end{bmatrix}\\mathbf{u}(t)", BNF1);</script>
-<script>katex.render(" {   \\mathbf{y}(t)=\\begin{bmatrix}0&0&... &1\\end{bmatrix} \\mathbf{x}(t)}", BNF2);</script>
-
-<div id ="JNF1" class="equation_small" data-expr="" ></div>
-<div id ="JNF2" class="equation_small" data-expr="" ></div>
-<script>katex.render(" \\text{JNF:}\\; \\; \\dot{\\mathbf{x}}(t)=\\begin{bmatrix}\\lambda_i&0&0\\\\0&\\ddots&0\\\\0&0&\\lambda_n     \\end{bmatrix}\\mathbf{x}(t) +\\begin{bmatrix}1\\\\\\vdots\\\\1 \\end{bmatrix}\\mathbf{u}(t)", JNF1);</script>
-<script>katex.render(" {   \\mathbf{y}(t)=\\begin{bmatrix}r_1&...&r_n\\end{bmatrix} \\mathbf{x}(t)} \\; \\; r_i: \\text{Residuuen}", JNF2);</script>
-
-</div>
-
-<div class="right">
-
-<h3> Stability: </h3>
-<div id ="stablility1" class="equation_small" data-expr="" ></div>
-<div id ="stablility2" class="equation_small" data-expr="" ></div>
-<div id ="stablility3" class="equation_small" data-expr="" ></div>
-<script>katex.render("\\text{Sys is stable if Eigenvalues}", stablility1);</script>
-<script>katex.render("\\text{are all on the left plane of the}", stablility2);</script>
-<script>katex.render("\\text{IM Axis cause }e^{\\text{eigenvalue t}} \\text{function decays}", stablility3);</script>
-
-<h3> Transfere Function: </h3>
-<div id ="transfereopen1" class="equation_small" data-expr="" ></div>
-<script>katex.render("G_O(s)=C(sI_n-A)^{-1} B", transfereopen1);</script><!-- open loop!-->
-
-<div id ="transfereopen2" class="equation_small" data-expr="" ></div>
-<script>katex.render("G_O(s)=\\frac{b_{n-1}s^{n-1}+...+b_0}{s^n+a_{n-1}z^{n-1}+...+a_0}", transfereopen2);</script><!-- open loop!-->
-
-<div id ="transfereopen3" class="equation_small" data-expr="" ></div>
-<script>katex.render("Y(s)= \\sum_{i=1}^n r_i \\frac{1}{s-\\lambda_i} \\; \\; \\text{for JNF}", transfereopen3);</script><!-- open loop!-->
+				<div class="clearer"></div>
+			</div>
+			<!--end of top box-->
 
 
+			<div class="mainbox">
+
+				<div class="left">
+					<h3>Systemgleichungen:</h3>
+					<div id="systemgleichung_werte1" class="equation_small"
+						data-expr=""></div>
+					<div id="systemgleichung_werte2" class="equation_small"
+						data-expr=""></div>
+					<script>
+						katex
+								.render(
+										"{   \\underbrace{\\dot{\\mathbf{x}}(t)}_{n \\times 1}=\\underbrace{\\mathbf{A}}_{n \\times n} \\mathbf{x}(t) +\\underbrace{\\mathbf{B}}_{p \\times n}  \\mathbf{u}(t) }",
+										systemgleichung_werte1);
+					</script>
+					<script>
+						katex
+								.render(
+										"{   \\underbrace{\\mathbf{y}(t)}_{q \\times 1}=\\underbrace{\\mathbf{C}}_{q \\times n} \\mathbf{x}(t) +\\underbrace{\\mathbf{D}}_{p \\times q}  \\mathbf{u}(t) }",
+										systemgleichung_werte2);
+					</script>
+
+					<h3>Transformations:</h3>
+					<div id="trans1" class="equation_small"
+						data-expr=" \mathbf{x}=\mathbf{T} \mathbf{\tilde{x}}\; \; \dot{\mathbf{\tilde{x}}}(t)=\mathbf{T^{-1}}\mathbf{A}\mathbf{T}\mathbf{\tilde{x}}(t) +\mathbf{T^{-1} B}\mathbf{u}(t)"></div>
+					<div id="trans2" class="equation_small"
+						data-expr=" \mathbf{y}(t)=\mathbf{C T \tilde{x}}(t)"></div>
+					<br>
+					<div id="trans3" class="equation_small" data-expr=""></div>
+					<div id="trans4" class="equation_small" data-expr=""></div>
+					<div id="trans5" class="equation_small" data-expr=""></div>
+					<br>
+					<div id="trans6" class="equation_small" data-expr=""></div>
+					<div id="trans7" class="equation_small" data-expr=""></div>
+					<div id="trans8" class="equation_small" data-expr=""></div>
+					<br>
+					<div id="trans9" class="equation_small" data-expr=""></div>
+					<div id="trans10" class="equation_small" data-expr=""></div>
+					<div id="trans11" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										" \\mathbf{x}=\\mathbf{T} \\mathbf{\\tilde{x}}\\; \\; \\dot{\\mathbf{\\tilde{x}}}(t)=\\mathbf{T^{-1}}\\mathbf{A}\\mathbf{T}\\mathbf{\\tilde{x}}(t) +\\mathbf{T^{-1} B}\\mathbf{u}(t)",
+										trans1);
+					</script>
+					<script>
+						katex.render(
+								" \\mathbf{y}(t)=\\mathbf{C T \\tilde{x}}(t)",
+								trans2);
+					</script>
+					<script>
+						katex
+								.render(
+										" \\mathbf{T}_{JNF}=\\begin{bmatrix}v_1&...&v_n \\end{bmatrix} \\; \\; \\text{Eigenvectors}\\; v_i",
+										trans3);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{T_{BNF}}=\\begin{bmatrix}\\tilde{q}_n&...&A^{n-1}\\tilde{q}_n \\end{bmatrix}",
+										trans4);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{T^{-1}}_{SNF}=\\begin{bmatrix}{q}_n^T\\\\\\vdots\\\\q_n^T A^{n-1}\\end{bmatrix}",
+										trans5);
+					</script>
+
+					<div id="SNF1" class="equation_small" data-expr=""></div>
+					<div id="SNF2" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										" \\text{SNF:}\\; \\; \\dot{\\mathbf{x}}(t)=\\begin{bmatrix}0&1&0&0\\\\0&0&\\ddots&0\\\\0&0&0&1\\\\-a_0&-a_1&...&-a_{n-1} \\end{bmatrix}\\mathbf{x}(t) +\\begin{bmatrix}0\\\\0\\\\\\vdots\\\\1 \\end{bmatrix}\\mathbf{u}(t)",
+										SNF1);
+					</script>
+					<script>
+						katex
+								.render(
+										" {   \\mathbf{y}(t)=\\begin{bmatrix}b_0&b_1&... &b_{n-1}\\end{bmatrix} \\mathbf{x}(t)}",
+										SNF2);
+					</script>
+
+					<div id="BNF1" class="equation_small" data-expr=""></div>
+					<div id="BNF2" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										" \\text{BNF:}\\; \\; \\dot{\\mathbf{x}}(t)=\\begin{bmatrix}0&0&0&-a_0\\\\1&0&0&-a_1\\\\0&\\ddots&0&\\vdots\\\\0&0&1&-a_{n-1} \\end{bmatrix}\\mathbf{x}(t) +\\begin{bmatrix}b_0\\\\\\vdots\\\\b_{n-1}  \\end{bmatrix}\\mathbf{u}(t)",
+										BNF1);
+					</script>
+					<script>
+						katex
+								.render(
+										" {   \\mathbf{y}(t)=\\begin{bmatrix}0&0&... &1\\end{bmatrix} \\mathbf{x}(t)}",
+										BNF2);
+					</script>
+
+					<div id="JNF1" class="equation_small" data-expr=""></div>
+					<div id="JNF2" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										" \\text{JNF:}\\; \\; \\dot{\\mathbf{x}}(t)=\\begin{bmatrix}\\lambda_i&0&0\\\\0&\\ddots&0\\\\0&0&\\lambda_n     \\end{bmatrix}\\mathbf{x}(t) +\\begin{bmatrix}1\\\\\\vdots\\\\1 \\end{bmatrix}\\mathbf{u}(t)",
+										JNF1);
+					</script>
+					<script>
+						katex
+								.render(
+										" {   \\mathbf{y}(t)=\\begin{bmatrix}r_1&...&r_n\\end{bmatrix} \\mathbf{x}(t)} \\; \\; r_i: \\text{Residuuen}",
+										JNF2);
+					</script>
+
+				</div>
+
+				<div class="right">
+
+					<h3>Stability:</h3>
+					<div id="stablility1" class="equation_small" data-expr=""></div>
+					<div id="stablility2" class="equation_small" data-expr=""></div>
+					<div id="stablility3" class="equation_small" data-expr=""></div>
+					<script>
+						katex.render("\\text{Sys is stable if Eigenvalues}",
+								stablility1);
+					</script>
+					<script>
+						katex.render(
+								"\\text{are all on the left plane of the}",
+								stablility2);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\text{IM Axis cause }e^{\\text{eigenvalue t}} \\text{function decays}",
+										stablility3);
+					</script>
+
+					<h3>Transfere Function:</h3>
+					<div id="transfereopen1" class="equation_small" data-expr=""></div>
+					<script>
+						katex.render("G_O(s)=C(sI_n-A)^{-1} B", transfereopen1);
+					</script>
+					<!-- open loop!-->
+
+					<div id="transfereopen2" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										"G_O(s)=\\frac{b_{n-1}s^{n-1}+...+b_0}{s^n+a_{n-1}z^{n-1}+...+a_0}",
+										transfereopen2);
+					</script>
+					<!-- open loop!-->
+
+					<div id="transfereopen3" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										"Y(s)= \\sum_{i=1}^n r_i \\frac{1}{s-\\lambda_i} \\; \\; \\text{for JNF}",
+										transfereopen3);
+					</script>
+					<!-- open loop!-->
 
 
-<h3>Kalman:</h3>
-<div id ="controlability" class="equation_small" data-expr="" ></div>
-<div id ="controlability_tilde" class="equation_small" data-expr="" ></div>
-<div id ="observability" class="equation_small" data-expr="" ></div>
-<div id ="observability_tilde" class="equation_small" data-expr="" ></div>
-<script>katex.render("\\textbf{Controllability:}\\; \\;  rank(Q_S) = n \\rightarrow \\text{Sys is controllable}", controlability);</script>
-<script>katex.render("\\textbf{Observability:}\\; \\;    rank(Q_B) = n \\rightarrow \\text{Sys is observable}", observability);</script>
-<script>katex.render("\\mathbf{Q_S}=\\begin{bmatrix}b&AB&...&A^{n-1}B\\end{bmatrix} \\; \\; \\; \\mathbf{{q}}_S=\\mathbf{Q_S}\\begin{bmatrix}0&...&1\\end{bmatrix}", controlability_tilde);</script>
-<script>katex.render("\\mathbf{Q_B}=\\begin{bmatrix}C\\\\CA\\\\...\\\\CA^{n-1}\\end{bmatrix} \\; \\; \\; \\mathbf{\\tilde{q}}_B=\\mathbf{Q_B}\\begin{bmatrix}0\\\\\\vdots\\\\1\\end{bmatrix}", observability_tilde);</script>
-
-<h3>Gilbert</h3>
-<div id ="cont_gilbert1" class="equation_small" data-expr="" ></div>
-<div id ="cont_gilbert2" class="equation_small" data-expr="" ></div>
-<script>katex.render("\\textbf{controllable if} \\; \\; \\; \\mathbf{\\tilde{b}_{i,JNF}^T} \\ne \\mathbf{0}^T", cont_gilbert1);</script>
-<script>katex.render("\\text{Eigval. of zero row is not controllable}", cont_gilbert2);</script>
-
-<div id ="observ_gilbert1" class="equation_small" data-expr="" ></div>
-<div id ="observ_gilbert2" class="equation_small" data-expr="" ></div>
-<script>katex.render("\\textbf{observable if} \\; \\; \\; \\mathbf{\\tilde{c}_{i,JNF}} \\ne \\mathbf{0}^T", observ_gilbert1);</script>
-<script>katex.render("\\text{Eigval. of zero column is not observable}", observ_gilbert2);</script>
 
 
-<h3>Hautus</h3>
-<div id ="cont_hautus1" class="equation_small" data-expr="" ></div>
-<div id ="cont_hautus2" class="equation_small" data-expr="" ></div>
-<script>katex.render("\\textbf{controllable if} \\; \\; \\; Rank \\begin{bmatrix} \\lambda_i\\mathbf{I_n - A}&\\mathbf{B} \\end{bmatrix} = n", cont_hautus1);</script>
-<script>katex.render("i=1,...n \\; \\; \\text{if} \\; Rank <n \\; \\; \\lambda_i \\; \\; \\text{is not controllable}", cont_hautus2);</script>
+					<h3>Kalman:</h3>
+					<div id="controlability" class="equation_small" data-expr=""></div>
+					<div id="controlability_tilde" class="equation_small" data-expr=""></div>
+					<div id="observability" class="equation_small" data-expr=""></div>
+					<div id="observability_tilde" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										"\\textbf{Controllability:}\\; \\;  rank(Q_S) = n \\rightarrow \\text{Sys is controllable}",
+										controlability);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\textbf{Observability:}\\; \\;    rank(Q_B) = n \\rightarrow \\text{Sys is observable}",
+										observability);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{Q_S}=\\begin{bmatrix}b&AB&...&A^{n-1}B\\end{bmatrix} \\; \\; \\; \\mathbf{{q}}_S=\\mathbf{Q_S}\\begin{bmatrix}0&...&1\\end{bmatrix}",
+										controlability_tilde);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{Q_B}=\\begin{bmatrix}C\\\\CA\\\\...\\\\CA^{n-1}\\end{bmatrix} \\; \\; \\; \\mathbf{\\tilde{q}}_B=\\mathbf{Q_B}\\begin{bmatrix}0\\\\\\vdots\\\\1\\end{bmatrix}",
+										observability_tilde);
+					</script>
 
-<div id ="observ_hautus1" class="equation_small" data-expr="" ></div>
-<div id ="observ_hautus2" class="equation_small" data-expr="" ></div>
-<script>katex.render("\\textbf{observable if} \\; \\; \\; Rank \\begin{bmatrix} \\lambda_i\\mathbf{I_n - A}\\\\\\mathbf{C} \\end{bmatrix} = n", observ_hautus1);</script>
-<script>katex.render("i=1,...n \\; \\; \\text{if} \\; Rank <n \\; \\; \\lambda_i \\; \\; \\text{is not observable}", observ_hautus2);</script>
+					<h3>Gilbert</h3>
+					<div id="cont_gilbert1" class="equation_small" data-expr=""></div>
+					<div id="cont_gilbert2" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										"\\textbf{controllable if} \\; \\; \\; \\mathbf{\\tilde{b}_{i,JNF}^T} \\ne \\mathbf{0}^T",
+										cont_gilbert1);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\text{Eigval. of zero row is not controllable}",
+										cont_gilbert2);
+					</script>
 
-<h3> Pole Placement: </h3>
-<div id ="pole_placement" class="equation_small" data-expr="" ></div>
-<script>katex.render("Ackermann: R=", pole_placement);</script>
+					<div id="observ_gilbert1" class="equation_small" data-expr=""></div>
+					<div id="observ_gilbert2" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										"\\textbf{observable if} \\; \\; \\; \\mathbf{\\tilde{c}_{i,JNF}} \\ne \\mathbf{0}^T",
+										observ_gilbert1);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\text{Eigval. of zero column is not observable}",
+										observ_gilbert2);
+					</script>
 
-<h3> Zeitlösung </h3>
 
-</div><!-- end of right box-->
+					<h3>Hautus</h3>
+					<div id="cont_hautus1" class="equation_small" data-expr=""></div>
+					<div id="cont_hautus2" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										"\\textbf{controllable if} \\; \\; \\; Rank \\begin{bmatrix} \\lambda_i\\mathbf{I_n - A}&\\mathbf{B} \\end{bmatrix} = n",
+										cont_hautus1);
+					</script>
+					<script>
+						katex
+								.render(
+										"i=1,...n \\; \\; \\text{if} \\; Rank <n \\; \\; \\lambda_i \\; \\; \\text{is not controllable}",
+										cont_hautus2);
+					</script>
 
-<div class="clearer"></div>
-</div><!--end of main box-->
+					<div id="observ_hautus1" class="equation_small" data-expr=""></div>
+					<div id="observ_hautus2" class="equation_small" data-expr=""></div>
+					<script>
+						katex
+								.render(
+										"\\textbf{observable if} \\; \\; \\; Rank \\begin{bmatrix} \\lambda_i\\mathbf{I_n - A}\\\\\\mathbf{C} \\end{bmatrix} = n",
+										observ_hautus1);
+					</script>
+					<script>
+						katex
+								.render(
+										"i=1,...n \\; \\; \\text{if} \\; Rank <n \\; \\; \\lambda_i \\; \\; \\text{is not observable}",
+										observ_hautus2);
+					</script>
+
+					<h3>Pole Placement:</h3>
+					<div id="pole_placement" class="equation_small" data-expr=""></div>
+					<script>katex.render("Ackermann: R=", pole_placement);</script>
+
+					<h3>Zeitlösung</h3>
+
+				</div>
+				<!-- end of right box-->
+
+				<div class="clearer"></div>
+			</div>
+			<!--end of main box-->
 
 
-<h3> similar powerfull websites: https://www.softintegration.com/chhtml/toolkit/control/ </h3>
-<h3> Display code on your website use: http://codemirror.net/demo/fullscreen.html </h3>
-<h3> TODO: for bigger screen load other website?</h3>
+			<h3>similar powerfull websites:
+				https://www.softintegration.com/chhtml/toolkit/control/</h3>
+			<h3>Display code on your website use:
+				http://codemirror.net/demo/fullscreen.html</h3>
+			<h3>TODO: for bigger screen load other website?</h3>
 
-      </section>
+		</section>
 
-    </div>
+	</div>
 
-  <!--  <script src="scale.js"></script>-->
+	<!--  <script src="scale.js"></script>-->
 
-</body></html>
+</body>
+</html>
+
