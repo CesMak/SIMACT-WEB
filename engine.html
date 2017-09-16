@@ -86,15 +86,17 @@
 			<textarea rows="10" cols="60" type="text" id="engine_area"
 				class="textareaengine">10!
 x+x
-A=[[1,1],[2,7]] #just defines (assignes) A
+A=[[8,1],[2,7]] #just defines (assignes) A
 B=[[1,2],[2,3]] 
 C=[[1,1],[1,1]]
+AA=[1,1]
+AA
 A
 B
 C
 A+B
-A*B 
-A*B*C
+dot(A,B) #this is actually A*B
+dot(A,B,C)
 det(A)
 inv(A)
 denominator(1/(x-1)/(x-2))
@@ -112,7 +114,11 @@ simplify(n!/(n+1)!)
 <div id="output"></div>
 
 
-<p><strong>TODO:</strong> <br> Matrices no additional line <br> symbolinfo gescheit machen <br>funktionen außerhalb von algebrite? <br>matrix produkt  </p>
+<p><strong>TODO:</strong>
+ <br> Matrices no additional line <br> 
+ symbolinfo gescheit machen <br>funktionen außerhalb von algebrite?
+  <br>matrix produkt <br>
+  ignore all after # commenting style. </p>
 		</section>
 
 <script type="text/javascript" language="javascript">
@@ -171,7 +177,11 @@ function output(resArr){
 		div.setAttribute('class', 'equation_small'); 
 		div.setAttribute('id', p); 
 		//console.log(inpArr[p]+"="+resArr[p]);
-		div.setAttribute('data-expr', inpArr[p]+"="+math.parse(resArr[p]).toTex()); 
+		var parsedoutput = math.parse(resArr[p]).toTex();
+		if(parsedoutput.includes("\\\\end{bmatrix}")){
+			parsedoutput=parsedoutput.replace("\\\\end{bmatrix}","\end{bmatrix}");
+		}
+		div.setAttribute('data-expr', inpArr[p]+"="+parsedoutput); 
 		//console.log(div);
 		document.getElementById("output").appendChild(div);
 	}
