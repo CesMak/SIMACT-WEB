@@ -83,9 +83,10 @@
 
 		<section>
 			<h2>Input:</h2>
-			<textarea rows="10" cols="60" type="text" id="engine_area"
+			<textarea rows="10" cols="40" type="text" id="engine_area"
 				class="textareaengine">10!
 x+x
+#comments here
 A=[[8,1],[2,7]] #just defines (assignes) A
 B=[[1,2],[2,3]] 
 C=[[1,1],[1,1]]
@@ -109,91 +110,74 @@ simplify(n!/(n+1)!)
 				class="textareaengine">Assigned Variables: 
 </textarea>
 	<button class="button" id="button_Gleichung" onclick="calculate()">RUN</button>
-
+	<button class="button" id="button_Gleichung" onclick="delete_storage(variables_area)">delete_Storage</button>
 			<h2>Output:</h2>
 <div id="output"></div>
 
+  <br> <br> <br>
+  <h2>Examples:</h2>
+  
+    
+  <textarea readonly rows="100" cols="40" type="text" id="ex_input"
+				class="ex_input">#possible Input:
+# internal scripting language
+x+x
+
+#Arbitrary-precision arithmetic
+5!
+#factor(5!) # does not work yet
+
+#Fractions
+13579/99999 + 13580/100000
+numerator(1/a+1/b)
+denominator(1/(x-1)/(x-2))
+rationalize(a/b+b/a)
+
+#Complex quantities
+A=1+i
+A #prints A 
+B=sqrt(2)*exp(i*pi/4)
+B #prints B
+A-B
+
+#Simplification
+simplify(cos(x)^2 + sin(x)^2)
+simplify(a*b+a*c)
+simplify(n!/(n+1)!)
+
+#Expansion
+(x-1)(x-2)^3
+
+#Substitution
+subst( u, exp(x), 2*exp(x) )
+</textarea>
+  
+  <div id="ex_rechts">
+<div class="equation_small" id="0" data-expr="x+x=2~ x">  </div>
+<div class="equation_small" id="1" data-expr="5!=120">  </div>
+<div class="equation_small" id="2" data-expr="13579/99999 + 13580/100000=\frac{135794321}{499995000}">  </div>
+<div class="equation_small" id="3" data-expr="numerator(1/a+1/b)= a+\mathrm{b}">  </div>
+<div class="equation_small" id="4" data-expr="denominator(1/(x-1)/(x-2))={ x}^{2}-3~ x+2">  </div>
+<div class="equation_small" id="5" data-expr="rationalize(a/b+b/a)=\frac{\left({ a}^{2}+{\mathrm{b}}^{2}\right)}{\left( a~\mathrm{b}\right)}">  </div>
+<div class="equation_small" id="6" data-expr="A =1+ i">  </div>
+<div class="equation_small" id="7" data-expr="B =1+ i">  </div>
+<div class="equation_small" id="8" data-expr="A-B=0">  </div>
+<div class="equation_small" id="9" data-expr="simplify(cos(x)^2 + sin(x)^2)=1">  </div>
+<div class="equation_small" id="10" data-expr="simplify(a*b+a*c)=\mathrm{a}\left(\mathrm{b}+ c\right)">  </div>
+<div class="equation_small" id="11" data-expr="simplify(n!/(n+1)!)=\frac{1}{\left(1+ n\right)}">  </div>
+<div class="equation_small" id="12" data-expr="(x-1)(x-2)^3=-1">  </div>
+<div class="equation_small" id="13" data-expr="subst( u, exp(x), 2*exp(x) )=2~ u">  </div>
+
+        
+</div> <!--  end div ex_rechts -->
+
 
 <p><strong>TODO:</strong>
- <br> Matrices no additional line <br> 
- symbolinfo gescheit machen <br>funktionen außerhalb von algebrite?
-  <br>matrix produkt <br>
-  ignore all after # commenting style. </p>
+ <br>funktionen außerhalb von algebrite?
+ </p>
+  
 		</section>
 
-<script type="text/javascript" language="javascript">
-
-var resArr;
-
-function calculate(){
-	deleteoldDivs();
-	execute();
-    //console.log(resArr);
-	output(resArr);
-	myRenderer();
-	document.getElementById('variables_area').value = Algebrite.symbolsinfo().toString();
-	console.log(Algebrite.symbolsinfo().toString());
-}
-
-function execute () {
-   // var sandbox = $('sandbox');
-    //var jsResult = $('jsResult');
-    try {
-      var textToBeExecuted = $('#engine_area').val();
-    //  console.log("Input:    "+textToBeExecuted);
-      var result;
-      if (/Algebrite\.[a-z]/.test(textToBeExecuted) || /;[ \t]*$/.test(textToBeExecuted)) {
-    	  result = eval(textToBeExecuted);
-      }
-      else {
-        result = Algebrite.run(textToBeExecuted);
-      }
-      //alert(result);
-      //console.log("Result:  "+result);
-    resArr = result.split("\n");
-      // $('#output' + whichTerminal).val(result) -> store outut in here!
-    }
-    catch (err) {
-    //	console.log(err);
-    /*   var errDesc = err;
-      errorBox.update('<h4>Error!<\/h4><code>' + errDesc + '<\/code>' );
-      errorBox.show(); */ 
-    }
-}
-
-//resArr: Array [ "120", "720" ]
-function output(resArr){
-	var textArea = document.getElementById("engine_area");
-	//delete assigments with = in input area!
-	// delete also empty lines!
-	textArea= textArea.value.replace(/^.*=.*$/mg, "");
-	textArea = textArea.replace(/(^[ \t]*\n)/gm, "");
-	//console.log(textArea);
-	inpArr=textArea.split("\n");
-	
-	for(var p = 0;p<resArr.length;p++){
-		var div = document.createElement("div");
-		//div.innerHTML = "Hello";
-		div.setAttribute('class', 'equation_small'); 
-		div.setAttribute('id', p); 
-		//console.log(inpArr[p]+"="+resArr[p]);
-		var parsedoutput = math.parse(resArr[p]).toTex();
-		if(parsedoutput.includes("\\\\end{bmatrix}")){
-			parsedoutput=parsedoutput.replace("\\\\end{bmatrix}","\end{bmatrix}");
-		}
-		div.setAttribute('data-expr', inpArr[p]+"="+parsedoutput); 
-		//console.log(div);
-		document.getElementById("output").appendChild(div);
-	}
-}
-
-function deleteoldDivs(){
-	var element = document.getElementById("output");
-	element.innerHTML = "";
-	delete element;
-}
-    
-  </script>
 <script type="text/javascript"> myRenderer()</script>
 
 </body>
