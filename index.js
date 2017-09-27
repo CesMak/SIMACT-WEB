@@ -1,7 +1,24 @@
 //global variables:
 var speicher = [];  // stores Matrixes A,B,C
 
-var functionslist = ["size","getQ_B"]; //list of own functions.
+var functionslist = ["size","getQ_B"]; // list of own functions.
+
+
+/*
+ * FUNCTIONS: Markus Library:
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+/*
+ * Interpreter:
+*/
+
+
+
 
 function read_textarea() {
     // Input: Textarea
@@ -27,11 +44,11 @@ function read_textarea() {
 }
 
 /*
- * Functions for engine: 
+ * Functions for engine:
  */
 
-//delete the storage of Algebrite.
-//print the result to the id
+// delete the storage of Algebrite.
+// print the result to the id
 function delete_storage(textareaid){
 	Algebrite.run("clearall");
 	document.getElementById(textareaid.id).value = Algebrite.symbolsinfo();
@@ -41,25 +58,41 @@ function delete_storage(textareaid){
 var resArr;
 
 function calculate(){
-	console.log(functionslist);
-	deleteoldDivs();
-	execute();
-  //console.log(resArr);
-	output(resArr);
-	myRenderer();
-	document.getElementById('variables_area').value = Algebrite.symbolsinfo().toString();
-	//console.log(Algebrite.symbolsinfo().toString());
+	console.log(simact.Algebrite.tan("0.2").toString());
+	console.log(simact.addPP(0.2));
+	simact.Algebrite.run('A='+"[[1,2],[3,4]]");
+	//console.log(Algebrite.run("shape([[1,2]])").toString());
+	console.log(simact.Algebrite.eval('A').toString());
+	console.log(simact.Algebrite.shape('A').toString());
+	
+	console.log(simact.Algebrite.shape("[[1,2],[2,3]]").toString());
+//	console.log(functionslist);
+//	deleteoldDivs();
+//	execute();
+//  // console.log(resArr);
+//	output(resArr);
+//	myRenderer();
+//	document.getElementById('variables_area').value = Algebrite.symbolsinfo().toString();
+//	// console.log(Algebrite.symbolsinfo().toString());
+//    myInterpreter.appendCode('(size(3,4));');
+//	myInterpreter.run();
+//	console.log(myInterpreter.value);
+//	console.log(Algebrite.shape("([[1],[2]])"));
+//	console.log(Algebrite.tanh("0.2"));
+//	console.log(Algebrite.shape("([[1,2],[1,2]])").toLatexString());
+	//console.log(Algebrite.shape("([[1,2],[1,2]])").toLatexString());
+	//console.log(Algebrite.run("size([[1,2]])"));
 }
 
 function execute () {
  // var sandbox = $('sandbox');
-  //var jsResult = $('jsResult');
+  // var jsResult = $('jsResult');
   try {
     var textToBeExecuted = $('#engine_area').val();
-  //  console.log("Input:    "+textToBeExecuted);
+  // console.log("Input: "+textToBeExecuted);
   
           // check here if resut contains ownfunction list!
-          //check that line per line.
+          // check that line per line.
           console.log(textToBeExecuted);
     var result;
     if (/Algebrite\.[a-z]/.test(textToBeExecuted) || /;[ \t]*$/.test(textToBeExecuted)) {
@@ -68,23 +101,24 @@ function execute () {
     else {
       result = Algebrite.run(textToBeExecuted);
     }
-    //alert(result);
-    //console.log("Result:  "+result);
+    // alert(result);
+    // console.log("Result: "+result);
   resArr = result.split("\n");
     // $('#output' + whichTerminal).val(result) -> store outut in here!
   }
   catch (err) {
-  //	console.log(err);
-  /*   var errDesc = err;
-    errorBox.update('<h4>Error!<\/h4><code>' + errDesc + '<\/code>' );
-    errorBox.show(); */ 
+  // console.log(err);
+  /*
+	 * var errDesc = err; errorBox.update('<h4>Error!<\/h4><code>' +
+	 * errDesc + '<\/code>' ); errorBox.show();
+	 */ 
   }
 }
 
-//resArr: Array [ "120", "720" ]
+// resArr: Array [ "120", "720" ]
 function output(resArr){
 	var textArea = document.getElementById("engine_area");
-	//TODO: delete all after #
+	// TODO: delete all after #
 	var inpArr=textArea.value.split("\n");
 	console.log(inpArr);
 	var le=(inpArr.length);
@@ -107,10 +141,10 @@ function output(resArr){
 	
 	for(var p = 0;p<resArr.length;p++){
 		var div = document.createElement("div");
-		//div.innerHTML = "Hello";
+		// div.innerHTML = "Hello";
 		div.setAttribute('class', 'equation_small'); 
 		div.setAttribute('id', p); 
-		//console.log(inpArr[p]+"="+resArr[p]);
+		// console.log(inpArr[p]+"="+resArr[p]);
 		var parsedoutput = math.parse(resArr[p]).toTex();
 		if(parsedoutput.includes("\\\\end{bmatrix}")){
 			parsedoutput=parsedoutput.replace("\\\\end{bmatrix}","\end{bmatrix}");
@@ -127,17 +161,7 @@ function deleteoldDivs(){
 	delete element;
 }
 
-
-/*
- * FUNCTIONS: 
- * Markus Library:
- * 
- * 
- * 
- * 
- */
-
-    
+  
 
 // eigArray: [-0.464102,6.4641]
 // system: 's' or 'z'
