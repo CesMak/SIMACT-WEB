@@ -14,37 +14,19 @@
 
 <link rel="stylesheet" href="index.css">
 <meta name="viewport" content="width=device-width">
-<!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
 <!-- KATEX-Latex fast rendering: and information sites:     -->
 <link rel="stylesheet" type="text/css" href="libs/katex/katex.min.css" />
 <script type="text/javascript" src="libs/katex/katex.min.js"></script>
 
-<!-- Load Numeric.js for eigenvalues!: -->
-<script type="text/javascript" src="libs/numeric.js"></script>
-<!-- script for Matrices etc. Damit kann man math.im und math.re(...) nutzen geht das mit der standart Math. Bibliothek nicht? TODO-->
-<script type="text/javascript" src="libs/math2.js"></script>
-
-
-<!--   <script type="text/javascript" src="libs/jquery-3.2.1.min.js"></script>
-
-<script type="text/javascript" src="libs/require.js"></script> 
- -->
-<!-- Load Algebrite: 
-<script type="text/javascript" src="libs/Algebrite.js"></script>
--->
-
-<!-- logic for this website -->
-<script type="text/javascript" src="index.js"></script>
-
-<!-- logic for this website  t-->
+<!-- Simact-->
 <script type="text/javascript" src="libs/simact.bundle.js"></script>
 
+<!-- JS Interpreter: -->
+<script type="text/javascript" src="libs/acorn_interpreter.js"></script>
 
-
-
+<!-- Logic for this website: -->
+<script type="text/javascript" src="engine.js"></script>
 
 </head>
 <body>
@@ -118,8 +100,7 @@ simplify(n!/(n+1)!)
 <textarea readonly rows="10" cols="30" type="text" id="variables_area"
 				class="textareaengine">Assigned Variables: 
 </textarea>
-	<button class="button" id="button_Gleichung" onclick="calculate()">RUN</button>
-	<button class="button" id="button_Gleichung" onclick="delete_storage(variables_area)">delete_Storage</button>
+	<button class="button" id="button_Gleichung" onclick="run()">RUN</button>
 			<h2>Output:</h2>
 <div id="output"></div>
 

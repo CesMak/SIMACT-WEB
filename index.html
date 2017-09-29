@@ -204,7 +204,7 @@ PR(s)=[-10,-20];
 PL(s)=[-40,-50]; (Observer)
 </textarea>
 					<br> <br>
-					<button class="button" id="button_Gleichung" onclick="main()">RUN</button>
+					<button class="button" id="button_Gleichung" onclick="run()">RUN</button>
 
 					<button class="button" id="button_next" onclick="next()">Next</button>
 				</div>
@@ -447,13 +447,13 @@ PL(s)=[-40,-50]; (Observer)
 					<script>
 						katex
 								.render(
-										"\\textbf{controllable if} \\; \\; \\; Rank \\begin{bmatrix} \\lambda_i\\mathbf{I_n - A}&\\mathbf{B} \\end{bmatrix} = n",
+										"\\textbf{controllable if} \\; \\; \\; rg(M_{SH})=n, \\; M_{SH}= \\begin{bmatrix} \\lambda_i\\mathbf{I_n - A}&\\mathbf{B} \\end{bmatrix}",
 										cont_hautus1);
 					</script>
 					<script>
 						katex
 								.render(
-										"i=1,...n \\; \\; \\text{if} \\; Rank <n \\; \\; \\lambda_i \\; \\; \\text{is not controllable}",
+										"i=1,...n \\; \\; \\text{if} \\; rg <n \\; \\; \\lambda_i \\; \\; \\text{is not controllable}",
 										cont_hautus2);
 					</script>
 
@@ -462,13 +462,13 @@ PL(s)=[-40,-50]; (Observer)
 					<script>
 						katex
 								.render(
-										"\\textbf{observable if} \\; \\; \\; Rank \\begin{bmatrix} \\lambda_i\\mathbf{I_n - A}\\\\\\mathbf{C} \\end{bmatrix} = n",
+										"\\textbf{observable if} \\; \\; \\; rg(M_{BH})=n,\\; M_{BH}= \\begin{bmatrix} \\lambda_i\\mathbf{I_n - A}\\\\\\mathbf{C} \\end{bmatrix}",
 										observ_hautus1);
 					</script>
 					<script>
 						katex
 								.render(
-										"i=1,...n \\; \\; \\text{if} \\; Rank <n \\; \\; \\lambda_i \\; \\; \\text{is not observable}",
+										"i=1,...n \\; \\; \\text{if} \\; rg <n \\; \\; \\lambda_i \\; \\; \\text{is not observable}",
 										observ_hautus2);
 					</script>
 
@@ -495,6 +495,7 @@ PL(s)=[-40,-50]; (Observer)
 		</section>
 
 	</div>
+
 
 	<!--  <script src="scale.js"></script>-->
 

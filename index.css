@@ -288,8 +288,8 @@ vertical-align: top;
 }
 
 .ex_input{
-/* width: 150px;
-height: 160px; */
+width: 300px;
+height: 400px;
 background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
 border-radius: 5px 5px 5px 5px;
 border-style: none solid solid none;
@@ -379,3 +379,8 @@ float:right;
     color:#444;
   }
 }
+
+
+
+
+
