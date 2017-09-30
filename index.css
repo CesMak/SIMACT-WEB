@@ -6,13 +6,17 @@ body {
   font-weight:400;
 }
 
+p{
+	margin: 8px 0px 0px 0px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color:#222;
   margin:0px 0 0px;
 }
 
 
-p, ul, ol, table, pre, dl {
+ul, ol, table, pre, dl {
   margin:0 0 15px;
 }
 
@@ -303,6 +307,18 @@ padding: 5px 8px;
 transition: background-color 0.2s ease 0s;
 vertical-align: top;
 float:right;
+}
+
+.container{
+	display:flex;
+}
+
+.div_left{
+	flex:0 0 45%;
+}
+
+.div_right{
+	flex:1;
 }
 
 @media print, screen and (max-width: 750px) {

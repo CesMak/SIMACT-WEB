@@ -8,20 +8,33 @@
 // checkHautusB("[[1,2],[2,3]]","[[1,2]]")
 // A=[[1,2],[2,3]]
 // A
-function run(){
+function run(id){
 	  delete_storage();
-	  var textToBeExecuted = document.getElementById("engine_area").value;
+	  var textToBeExecuted = document.getElementById(id.id).value;
 	  var lines = textToBeExecuted.split("\n");
 	  var res = {};
 	  var fnclist = simact.getfnclist();
 	  for(var p =0;p<lines.length;p++){
 		  tmp = lines[p];
-		  if(!listcontains(tmp,["//","#"])){ // for comments ignore whole
+		  tmp = tmp.replace(/ /g,''); //delete white spaces!
+		  if(!listcontains(tmp,["//","#"])&&tmp.length!==0){ // for comments ignore whole
 												// line.
 			  if(listcontains(tmp,fnclist)){ // simact function
-				  console.log("simact "+tmp);
-				  var str = "simact."+tmp;
-				  res[tmp]=(eval(str));
+				  if(listcontains(tmp,["="])){
+					  //z.B: B=setMatValue("[[1,2],[2,3]]",1,0,12.232)
+					  var justfnc=tmp.substring(tmp.indexOf("=")+1,tmp.length);
+					  var str = "simact."+repldefinedsymbols(justfnc);
+					  console.log(str);
+					  res[tmp]=(eval(str));
+					  //console.log(getsymbolOflineleft(tmp)+"="+ res[tmp]);
+					  simact.Algebrite.run(getsymbolOflineleft(tmp)+"="+ res[tmp]);
+					  simact.Algebrite.run(getsymbolOflineleft(tmp)); // <- print it! to last
+				  }
+				  else{
+					  var str = "simact."+repldefinedsymbols(tmp);
+					  console.log("simact "+str);
+					  res[tmp]=(eval(str));  
+				  }
 			  }
 			  else{ // algebrite
 				  console.log("algebrite "+tmp);
@@ -41,11 +54,33 @@ function run(){
 	  filloutputarea();
 }
 
+//id: the area to be played!
+function play(id){
+	run(id);
+}
+
 // AA  = [[1,1]]; -> prints just AA
 //gets the symbol of a line before =!
 function getsymbolOflineleft(tmp){
 	tmp = tmp.replace(/ /g,'');
 	return tmp.substring(0,tmp.indexOf("="));
+}
+
+//checkHautusB(A,"[[1,2]]") -> checkHautusB("[[1,2],[2,3]]","[[1,2]]")
+//what for multiple inputs? checkHautusB(A,A)?
+function repldefinedsymbols(tmp){
+	var a = simact.Algebrite.symbolsinfo().str;
+	tmp = tmp.replace(/ /g,'');
+	var tmp2 = tmp.substring(tmp.indexOf("(")+1,tmp.indexOf(")"));
+	var tt = tmp2;
+	var tmp3=tmp2;
+    for (var i in a){
+   	  if(tmp3.indexOf(i)!==-1){
+   		  tmp3=tmp2.replace(i,"\""+a[i]+"\"");
+   		  tmp2=tmp3;
+   		  }
+    }
+  return tmp.replace(tt,tmp2);
 }
 
 function listcontains(tmp,fnclist){
@@ -77,9 +112,24 @@ function printoutput(res){
 	for (var i in res){
 		var div = document.createElement("div");
 		div.setAttribute('class', 'equation_small'); 
-		div.setAttribute('id', p); 
-		div.setAttribute('data-expr', i+"="+simact.Algebrite.run('printlatex('+res[i].toString()+')')); 
-		//console.log(div);
+		div.setAttribute('id', p);
+		if(typeof(res[i])=="object" &&!listcontains(res[i].toString(),["[["])){//for arrays e.g: eigenvalue("[[1.789,0,0],[0,0,0],[0,0,1]]")
+			var arr=res[i];
+			var tmp ="";
+			for(var u=0;u<arr.length;u++){
+				if(u<arr.length-1){
+					tmp+=arr[u].toString()+" ,";
+				}
+				else{
+					tmp+=arr[u].toString();
+				}
+			}
+			div.setAttribute('data-expr', i+"="+tmp); 
+		}
+		else{
+			div.setAttribute('data-expr', i+"="+simact.Algebrite.run('printlatex('+res[i].toString()+')')); 
+		}
+		//console.log(div); important if you want to copy that to engine.html
 		document.getElementById("output").appendChild(div);
 		p++;
 	  }
@@ -127,6 +177,7 @@ function myRenderer() {
     for (var i = 0; i < y.length; i++) {
         try {
             var aa = y[i].getAttribute("data-expr");
+            aa = aa.replace(/−/g, '-'); //damit latex - zu richtigem minus wird!
             if (y[i].tagName == "DIV") {
                 t = katex.render(String.raw `${aa}`, y[i], {
                                      displayMode: false
