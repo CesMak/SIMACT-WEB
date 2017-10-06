@@ -6,11 +6,12 @@
  * 1. Use this Documentation style: http://usejsdoc.org/
  */
 
+
 var myWorker = new Worker('worker.js');
 myWorker.onmessage = function(e) { // function is called when calc is done
 	  sys = e.data;
 	  console.log("Calculation finished!");
-	  
+
 	  str2div("systemgleichung_werte1","{   \\underbrace{\\dot{{x}}(t)}_{"+sys['nA']+
 			  " \\times 1}=\\underbrace{{"+str2latex(sys['A'])+"}}_{"+sys['nA']+" \\times "+sys['nB']+"} {x}(t) +\\underbrace{{"
 			  +str2latex(sys['B'])+"}}_{"+sys['nB']+" \\times "+sys['mB']+"}  {u}(t) }");
@@ -77,29 +78,40 @@ myWorker.onmessage = function(e) { // function is called when calc is done
 	  str2div("observ_hautus1","M_{BH}="+str2latex(sys['M_BH']));
 	  str2div("observ_hautus2","\\text{not observable eigenvalues:} \\; \\;"+sys['hno']);
 	  
+	  //Results of Drawing:	  
+	  str2div("time1","\\textbf{y}(t)=\\underbrace{\\textbf{C} e^{\\textbf{A} t} x_0}_{y_{E(t)}}+\\underbrace{\\int_0^t{\\textbf{C} e^{\\textbf{A}(t-\\tau)} \\textbf{Bu}(\\tau) d \\tau}}_{y_{E,A(t)}}");
+	  str2div("time2","\\textbf{x}(t)="+str2latex(sys["eigensol"])+"+"+str2latex(sys["inoutsol"]));
+	  str2div("time3","\\textbf{x}_1(x)="+str2latex(sys["states"][0])+"\\; \\; x_2(x)="+str2latex(sys["states"][1]));
+	  str2div("transition1","e^{A*t}="+str2latex(sys["transitionA"]));
+	  
+	  draw2states(sys["states"]);
+	  
+	  
 	  myRenderer();
 }
 
 function read_textarea() {
-   speicher=[];
+   var speicher={};
 
     var textArea = document.getElementById("textarea1");
     var lines = textArea.value.split("\n");
 
     for (var j = 0; j < (lines.length); j++) {
-        var zeile_j = lines[j];
-
-        if (zeile_j[0] == "A" || zeile_j[0] == "B" || zeile_j[0] == "C") {
-            speicher[j]=((zeile_j.substring(zeile_j.lastIndexOf("=") + 1, zeile_j.lastIndexOf(";"))));
+        var zeile = lines[j];
+        if(zeile[0]!=null && zeile.length>1){
+        	var left = zeile.substring(0,zeile.indexOf("="));
+        	var right = ((zeile.substring(zeile.lastIndexOf("=") + 1, zeile.lastIndexOf(";"))));
+           speicher[left] = right; 
         }
+       
     }
     return speicher;
 }
 
 //run button pressed:
-function run(){
-	var matices=read_textarea();
-	myWorker.postMessage(matices); // start calculation
+function run(){	
+	var input=read_textarea();
+	myWorker.postMessage(input); // start calculation
 	console.log("Please wait some time this is hard!"); // show alert.
 }
 
@@ -166,5 +178,37 @@ function myRenderer() {
     }
 }
 
+// Drawing stuff:
+function draw2states(functions){
+	draw("#plot","Step response x_i",functions[0],functions[1]);
+	//console.log(functions);
+}
 
+function draw(tt,title,fn1,fn2){
+	try{
+		functionPlot({
+			  title: title,
+			  target: tt,
+			  width: 300,
+			  height: 200,
+			  fontsize:6,
+			  disableZoom: false,
+			  grid: true,
+			  xAxis: {
+			    label: 'x - axis',
+			    domain: [0, 6]
+			  },
+			  yAxis: {
+			    label: 'y - axis'
+			  },
+			  data: [
+			    {fn: fn1},
+			    {fn: fn2},
+			  ],
+			});
+	}
+	catch(err){
+		console.log(err);
+	}
+}
 

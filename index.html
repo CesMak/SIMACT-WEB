@@ -19,12 +19,11 @@
     <![endif]-->
 
 
-<!-- High Charts Scripts: (offline source): -->
-<script type="text/javascript" src="libs/HighCharts/code/highcharts.js"></script>
-<script type="text/javascript"
-	src="libs/HighCharts/code/highcharts-3d.js"></script>
-<script type="text/javascript"
-	src="libs/HighCharts/code/modules/exporting.js"></script>
+<!-- Function Plot Logic:-->
+<script type="text/javascript" src="libs/d3/d3.min.js"></script>
+<script type="text/javascript" src="libs/function-plot.js"></script>
+
+
 <!-- <script type="text/javascript" src="libs/jquery-3.2.1.min.js"></script> -->
 
 
@@ -194,10 +193,11 @@
 				</div>
 
 				<div class="inputarea">
-					<textarea rows="5" cols="30" type="text" id="textarea1"
+					<textarea rows="7" cols="30" type="text" id="textarea1"
 						class="textarea">A=[[1,2],[4,5]];
 B=[[0],[1]];
 C=[[1,0]];
+x_0=[[1],[0]];
 
 Pole Placement:
 PR(s)=[-10,-20];
@@ -240,15 +240,15 @@ PL(s)=[-40,-50]; (Observer)
 						data-expr=" \mathbf{x}=\mathbf{T} \mathbf{\tilde{x}}\; \; \dot{\mathbf{\tilde{x}}}(t)=\mathbf{T^{-1}}\mathbf{A}\mathbf{T}\mathbf{\tilde{x}}(t) +\mathbf{T^{-1} B}\mathbf{u}(t)"></div>
 					<div id="trans2" class="equation_small"
 						data-expr=" \mathbf{y}(t)=\mathbf{C T \tilde{x}}(t)"></div>
-					<br>
+					
 					<div id="trans3" class="equation_small" data-expr=""></div>
 					<div id="trans4" class="equation_small" data-expr=""></div>
 					<div id="trans5" class="equation_small" data-expr=""></div>
-					<br>
+				
 					<div id="trans6" class="equation_small" data-expr=""></div>
 					<div id="trans7" class="equation_small" data-expr=""></div>
 					<div id="trans8" class="equation_small" data-expr=""></div>
-					<br>
+				
 					<div id="trans9" class="equation_small" data-expr=""></div>
 					<div id="trans10" class="equation_small" data-expr=""></div>
 					<div id="trans11" class="equation_small" data-expr=""></div>
@@ -326,8 +326,33 @@ PL(s)=[-40,-50]; (Observer)
 										" {   \\mathbf{y}(t)=\\begin{bmatrix}r_1&...&r_n\\end{bmatrix} \\mathbf{x}(t)} \\; \\; r_i: \\text{Residuuen}",
 										JNF2);
 					</script>
+					
+										<h3>Zeitlösung</h3>
+					<div id="time1" class="equation_small" data-expr=""></div>
+					<div id="time2" class="equation_small" data-expr=""></div>
+					<div id="time3" class="equation_small" data-expr=""></div>
+					<script>katex.render("\\textbf{y}(t)=\\underbrace{\\textbf{C} e^{\\textbf{A} t} x_0}_{y_{E(t)}}+\\underbrace{\\int_0^t{\\textbf{C} e^{\\textbf{A}(t-\\tau)} \\textbf{Bu}(\\tau) d \\tau}}_{y_{E,A(t)}}", time1);</script>
+					<script>katex.render("y_{E(t)}: \\text{Eigenverhalten}", time2);</script>
+					<script>katex.render("y_{E,A(t)}: \\text{Ein/Ausgangsverhalten}", time3);</script>
+					
+					<h3>Transitionsmatrix</h3>
+					<div id="transition1" class="equation_small" data-expr=""></div>
+					<div id="transition2" class="equation_small" data-expr=""></div>
+					<div id="transition3" class="equation_small" data-expr=""></div>
+					<div id="transition4" class="equation_small" data-expr=""></div>
+					<div id="transition5" class="equation_small" data-expr=""></div>
+					<script>katex.render("\\text{1. A is diagonal:} \\; \\; e^{At}=\\begin{bmatrix}e^{a_{11}t}&0\\\\0&e^{a_{22}t}\\end{bmatrix}", transition1);</script>
+					<script>katex.render("\\text{2. A is not diagonal but has only single ev: (use JNF)} \\; \\;e^{At}=T e^{T^{-1}AT}T^{-1}", transition2);</script>
+					<script>katex.render("\\text{3. A has multiple eigenvalues  } \\; \\; e^{At}=\\mathcal{L}^{-1}(sI-A)^{-1}", transition3);</script>
+					<script>katex.render("\\text{4. A has multiple eigenvalues: use Sentence of Leonard}", transition4);</script>
+					<script>katex.render("\\text{5. A has multiple eigenvalues} \\; \\; \\phi(t)= e^{\\textbf{A}t} =\\sum_{v=1}^{\\infty}{\\frac{ (\\textbf{A} t)^v}{v!}}=\\textbf{I}+\\textbf{A}t+\\textbf{A}^2\\frac{t^2}{2!}+...", transition5);</script>
+	
+					
+					<!--  Drawing stuff: -->
+					<div id="plot"> </div>
+					
 
-				</div>
+				</div><!--  end of left box -->
 
 				<div class="right">
 
@@ -475,9 +500,7 @@ PL(s)=[-40,-50]; (Observer)
 					<h3>Pole Placement:</h3>
 					<div id="pole_placement" class="equation_small" data-expr=""></div>
 					<script>katex.render("Ackermann: R=", pole_placement);</script>
-
-					<h3>Zeitlösung</h3>
-
+					
 				</div>
 				<!-- end of right box-->
 
@@ -485,13 +508,14 @@ PL(s)=[-40,-50]; (Observer)
 			</div>
 			<!--end of main box-->
 
-
-			<h3>similar powerfull websites:
+					
+								<h3>similar powerfull websites:
 				https://www.softintegration.com/chhtml/toolkit/control/</h3>
 			<h3>Display code on your website use:
 				http://codemirror.net/demo/fullscreen.html</h3>
 			<h3>TODO: for bigger screen load other website?</h3>
 
+					
 		</section>
 
 	</div>
