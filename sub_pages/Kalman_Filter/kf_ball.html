@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="description" content="SIMACT home page">
+<meta name="keywords" content="TODO">
+<meta name="author" content="Markus Lamprecht">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<title>simact</title>
+
+<link rel="stylesheet" href="../index.css">
+<meta name="viewport" content="width=device-width">
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- KATEX-Latex fast rendering: and information sites:     -->
+<link rel="stylesheet" type="text/css"
+	href="../libs/katex/katex.min.css" />
+<script type="text/javascript" src="../libs/katex/katex.min.js"></script>
+
+<!-- logic for this website -->
+<script type="text/javascript" src="../index.js"></script>
+
+
+</head>
+<body>
+	<div class="heading">
+		<h1>Kalman Filter(discrete, linear) with Ball Detection Example</h1>
+	</div>
+	<div class="wrapper">
+		<header>
+			<!-- the right part -->
+			<a href="http://simact.org/index.html"><img
+				src="../img/simactlogo.png" alt="simact logo" width="60%">
+				<h1>SIMACT</h1></a>
+			<p>
+				Simulative Adaptive Control Theory.<br> <small><a
+					href="https://github.com/CesMak/simact">View on GitHub</a> <br>
+					<a href="lang/de/index.html"><img src="../img/de.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index.html"><img src="../img/en.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_sp.html"><img src="../img/sp.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_ch.html"><img src="../img/ch.png"
+						alt="de logo" width="10%"></a> </small>
+			</p>
+
+
+			<strong>
+				<p class="view">
+					<a href="index.html"> ZRD</a><a href="ZRD_ex.html"> ex</a>
+				</p>
+				<p class="view">
+					<a href="engine.html"> Engine</a>
+				</p>
+				<p class="view">
+					<a href="TODO">ZRD Theory</a>
+				</p>
+				<p class="view">
+					<a href="doc/global.html">Documentation</a>
+				</p>
+				<p class="view">
+					<a href="TODO">Contact</a>
+				</p>
+			</strong>
+		</header>
+		<section>
+
+			<div class="topbox"></div>
+			<!--end of top box-->
+
+
+			<div class="mainbox">
+
+				<div class="left">
+					<h2>Equations</h2>
+					<h3>System:</h3>
+					<div class="equation"
+						data-expr="\mathbf{x}_{k}=\mathbf{A} \mathbf{x}_{k-1} +\mathbf{B}u_{k-1}+\mathbf{W}_{k-1}"></div>
+
+					<h3>Measurement:</h3>
+					<div class="equation"
+						data-expr="\mathbf{z}_{k}=\mathbf{H} \mathbf{x}_{k}+\mathbf{V}_{k}"></div>
+
+					<h3>W,V Noise white and Gaussian</h3>
+					<div class="equation"
+						data-expr="\mathbf{E} [\mathbf{W}_{k}\mathbf{W}^T_{i} ]= \mathbf{Q}_{k} \text{, für i=k, sonst 0}"></div>
+					<div class="equation"
+						data-expr="\mathbf{E} [\mathbf{V}_{k}\mathbf{V}^T_{i} ]= \mathbf{R}_{k} \text{, für i=k, sonst 0}"></div>
+					<div class="equation"
+						data-expr="\mathbf{E} [\mathbf{W}_{k}\mathbf{V}^T_{i} ]= 0"></div>
+
+					<h3>Time Update / Prediction:</h3>
+					<div class="equation" data-expr="x^{-}_{k}=A x_{k-1}+B u_{k}"></div>
+					<div class="equation" data-expr="P^{-1}_{k}=A P_{k-1} A^T + Q_k"></div>
+
+
+					<h3>Measurement Update / Correction:</h3>
+					<div class="equation"
+						data-expr="K_{k}=P^{-}_{k} H^T (H P^{-}_{k} H^T+R)^{-1} "></div>
+					<div class="equation"
+						data-expr="x_{k}=x^{-}_{k}+K_{k} (z_{k}-H x^{-}_{k}) "></div>
+					<div class="equation" data-expr="P_{k}=(I-K_{k} H) P^{-}_{k}"></div>
+
+					<h3>Algorithm:</h3>
+					<div class="equation"
+						data-expr="\text{1. Initialize: } x^{-}_k = ... \text{ , } P_k = .."></div>
+					<div class="equation"
+						data-expr="\text{2. Time Update / Prediction }"></div>
+					<div class="equation"
+						data-expr="\text{3. Measurement Update / Correction }"></div>
+					<div class="equation"
+						data-expr="\text{4. continue with  2. Time Update with new matrices}"></div>
+					<div class="equation"
+						data-expr="\text{4. when condition for reinit continue with  1.}"></div>
+
+					<h3>Estimate vs real state</h3>
+					<img src="img/kalmanfig.png" alt="Kalman Fig" width="90%">
+				</div>
+				<!--  end of left box -->
+
+				<div class="right">
+
+					<h2>List of Names</h2>
+					<div id="1" class="equation"
+						data-expr="\mathbf{M}^{-}: \text{minus: priori Matrix value}"></div>
+					<div id="1" class="equation"
+						data-expr="\mathbf{M}:  \text{  posteriori Matrix value}"></div>
+					<br>
+					<div id="1" class="equation"
+						data-expr="\mathbf{x}_k: \text{current state}"></div>
+					<div id="1" class="equation"
+						data-expr="\mathbf{x}_{k-1}: \text{past state at time k-1}"></div>
+					<br>
+					<div id="1" class="equation"
+						data-expr="\mathbf{A}:  \text{State / Transition Matrix}"></div>
+					<div id="1" class="equation"
+						data-expr="\mathbf{B}:  \text{Matrix for Control Vector}"></div>
+					<div id="1" class="equation"
+						data-expr="\mathbf{H}: \text{Measurment Matrix}"></div>
+					<br>
+					<div id="1" class="equation"
+						data-expr="\mathbf{W}: \text{System Noise}"></div>
+					<div id="1" class="equation"
+						data-expr="\mathbf{V}: \text{Measurement Noise}"></div>
+					<br>
+					<div id="1" class="equation"
+						data-expr="\mathbf{u}: \text{control vector, for outside influences e.g. gravity}"></div>
+					<br>
+					<div id="1" class="equation"
+						data-expr="\mathbf{Q}: \text{Error Covariance System Matrix}"></div>
+					<div id="1" class="equation"
+						data-expr="\mathbf{R}: \text{Error Covariance Measurement Matrix}"></div>
+					<br>
+					<div id="1" class="equation"
+						data-expr="\mathbf{K_k}: \text{Kalman Gain}"></div>
+					<div id="1" class="equation"
+						data-expr="\mathbf{x}_k: \text{corrected state (posterior)}"></div>
+					<div id="1" class="equation"
+						data-expr="\mathbf{x}^{-}_k: \text{predicted state (prior)}"></div>
+					<br>
+					<div id="1" class="equation"
+						data-expr="\mathbf{P_k}: \text{Error Covariance Matrix (posterior) }"></div>
+					<div id="1" class="equation"
+						data-expr="\mathbf{P^{-}_k}: \text{Error Covariance Matrix (prior) }"></div>
+
+				</div>
+				<!-- end of right box-->
+
+				<div class="clearer"></div>
+			</div>
+			<!--end of main box-->
+
+			<h3>Notes:</h3>
+			<p>Note that the above x values are basically all hat values this
+				means they are estimate values and not the true state vector</p>
+			<p>P^{-} = P' both refer to the prior value</p>
+			<p>priori value x_k^{-} bzw. x(k|k-1) bzw. x(k+1|k): Before the
+				Observation / before new measurement data comes in.
+			<p>
+			<p>posteriori value x_k bzw. x(k|k) bzw. x(k+1|k+1): After an
+				Observation / with the input of new measturement data
+			<p>
+			<p>Die Indizierungsschreibweise k|k-1 drückt die Bedingtheit der
+				Schätzungen zu den Zeitpunkten k und k-1 voneinander aus
+			<p>
+			<h3>What I still do not understand:</h3>
+			<p>Die Matrix A hängt in meinem Beispiel von der Zeit ab?! dT?!
+			<p>
+			<h3>References:</h3>
+			<a
+				href="https://docs.opencv.org/trunk/dd/d6a/classcv_1_1KalmanFilter.html#details ">OpenCV
+				Kalman Filter</a> <br> <a
+				href="http://www.mi.hs-rm.de/~schwan/Projects/CG/P4/Dokumentation/node16.html">Kalman
+				Filter explained (german)</a> <br> <a
+				href="https://www.youtube.com/watch?v=iFNhkw4oe7A">Youtube
+				explanation of Kalman Filter at Image Processing</a> <br> <a
+				href="http://www.swarthmore.edu/NatSci/echeeve1/Ref/Kalman/ScalarKalman.html">http://www.swarthmore.edu/NatSci/echeeve1/Ref/Kalman/ScalarKalman.html</a>
+			<br> <br> <br>
+			<h1>Ball detection with Kalman Filter [1]</h1>
+
+			<h2>System</h2>
+			<div id="1" class="equation"
+				data-expr="\mathbf{x}_k=\begin{bmatrix} 1&0&0&0&0&0 \\ 0&1&0&0&0&0 \\ 0&0&1&0&0&0 \\ 0&0&0&1&0&0 \\ 0&0&0&0&1&0\\0&0&0&0&0&1 \end{bmatrix} \mathbf{x}_{k-1}"></div>
+
+
+			<h2>Algorithm:</h2>
+			<img src="img/balloverview.png" alt="Algorithm Ball Flow Chart"
+				width="60%">
+
+			<h2>At start:</h2>
+			<img src="img/1.png" alt="Kalman Fig" width="90%"> <img
+				src="img/2.png" alt="Kalman Fig" width="90%"> <img
+				src="img/3.png" alt="Kalman Fig" width="90%"> <br> <br>
+			<h2>Power of Kalman Filter:</h2>
+			<img src="img/288.png" alt="Kalman Fig" width="90%"> <img
+				src="img/289.png" alt="Kalman Fig" width="90%"> <img
+				src="img/290.png" alt="Kalman Fig" width="90%"> <img
+				src="img/291.png" alt="Kalman Fig" width="90%"> <img
+				src="img/292.png" alt="Kalman Fig" width="90%"> <img
+				src="img/293.png" alt="Kalman Fig" width="90%"> <img
+				src="img/294.png" alt="Kalman Fig" width="90%"> <img
+				src="img/295.png" alt="Kalman Fig" width="90%"> <br> <br>
+			<h1>Ball detection with Kalman Filter [2]</h1>
+			<img src="img/kf2.png" alt="Kalman Fig" width="90%"> <br>
+			<br>
+			<h1>Ball detection with Kalman Filter [3]</h1>
+			<img src="img/kf3.png" alt="Kalman Fig" width="90%"> <br>
+			<br>
+			<h1>Ball detection with Kalman Filter [4]</h1>
+
+			<h2>System</h2>
+			<div id="1" class="equation"
+				data-expr="\mathbf{x}_k=\begin{bmatrix} \text{pos x[m]} \\
+			  \text{pos y[m]} \\  \text{vel v}_x \text{[m/sec]} \\  \text{vel v}_y \text{[m/sec]}
+			  \\ \text{width [m]} \\ \text{height [m]}  \end{bmatrix} \quad \quad
+			 "></div>
+
+			<h2>Initialization:</h2>
+			<div id="1" class="equation"
+				data-expr="			  A_k=I \text{( for k=0 )} \quad A_k=
+			\begin{bmatrix} 1&0&dT&0&0&0 \\ 0&1&0&dT&0&0 \\ 0&0&1&0&0&0 \\ 0&0&0&1&0&0 \\ 0&0&0&0&1&0\\0&0&0&0&0&1 \end{bmatrix}
+			 \text{(for k>0)}
+			 \quad  H=\begin{bmatrix} 0.0002646&0&0&0&0&0 \\ 0&0.0002646&0&0&0&0 \\ 0&0&0&0&0.0002646&0 \\ 0&0&0&0&0&0.0002646\end{bmatrix}
+			  		  "></div>
+			<div id="1" class="equation"
+				data-expr="
+			 		 \quad Q= \begin{bmatrix} 0.000002646[m]& & & & &  \\ & 0.000002646[m]& & & & \\& &0.0013  [m/sec] & & &\\ & & &0.0013 [m/sec]& & \\& & & & 0.000002646[m] & \\& & & & &0.000002646[m]) \end{bmatrix}   
+	"></div>
+			<div id="1" class="equation"
+				data-expr="	\quad R=0.000026458* \textbf{I} [m] \quad (4x4 matrix)  		  "></div>
+
+
+
+		</section>
+
+	</div>
+
+	<script>
+		myRenderer();
+	</script>
+
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-107698126-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-107698126-1');
+	</script>
+
+
+</body>
+</html>
+

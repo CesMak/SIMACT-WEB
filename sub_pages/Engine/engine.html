@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  TODO-language changing?! -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="description" content="SIMACT home page">
+<meta name="keywords" content="TODO">
+<meta name="author" content="Markus Lamprecht">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<title>engine</title>
+
+<link rel="stylesheet" href="engine.css">
+<meta name="viewport" content="width=device-width">
+
+<!-- KATEX-Latex fast rendering: and information sites:     -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>	
+
+<!-- Simact-->
+<script type="text/javascript" src="../../libs/simact.bundle.js"></script>
+
+<!-- Logic for this website: -->
+<script type="text/javascript" src="engine.js"></script>
+
+</head>
+<body>
+	<div class="heading">
+		<h1>Math engine </h1>
+	</div>
+	<div class="wrapper">
+		<header>
+			<!-- the right part -->
+			<a href="http://simact.org/index.html"><img
+				src="../../img/simactlogo.png" alt="simact logo" width="60%">
+				<h1>SIMACT</h1></a>
+			<p>
+				Simulative Adaptive Control Theory.<br> <small><a
+					href="https://github.com/CesMak/simact">View on GitHub</a> <br>
+					<a href="http://simact.org/index_de.html"><img
+						src="../../img/de.png" alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index.html"><img src="../../img/en.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_sp.html"><img
+						src="../../img/sp.png" alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_ch.html"><img
+						src="../../img/ch.png" alt="de logo" width="10%"></a> </small>
+			</p>
+
+
+			<strong>
+				<p class="view">
+					<a href="index.html"> ZRD</a><a href="ZRD_ex.html"> ex</a>
+				</p>
+				<p class="view">
+					<a href="engine.html"> Engine</a>   <a href="engine_help.html"> Help</a>
+				</p>
+				<p class="view">
+					<a href="TODO">ZRD Theory</a>
+				</p>
+				<p class="view">
+					<a href="doc/global.html">Documentation</a>
+				</p>
+				<p class="view">
+					<a href="TODO">Contact</a>
+				</p>
+			</strong>
+		</header>
+
+		<section>
+			<h2>Input:</h2>
+			<textarea rows="5" cols="25" type="text" id="engine_area"
+				onkeydown="return runScript(event)"
+				class="textareaengine">#possible Input:
+A=[[1,2],[2,3]]
+B=[[1],[0]]
+C=[[1,2]]
+checkHautusB(A,C)
+checkHautusS(A,B)
+dot(A,B,C)
+</textarea>
+
+			<textarea readonly rows="5" cols="25" type="text" id="variables_area"
+				class="textareaengine">Assigned Variables: 
+</textarea>
+
+			<button class="button" id="button_Gleichung"
+				onclick="run(engine_area)">RUN</button>
+
+
+
+
+			<h2>Output:</h2>
+			<div id="output"></div>
+
+			<h2>Plots:</h2>
+			<div id="plot1"></div>
+		
+		
+		</section>
+
+	<!--  Script to Enter input area -->
+		<script  type="text/javascript">
+		var strg_pressed = false;
+    	var enter_pressed = false;
+        function runScript(e) {
+            if(strg_pressed && enter_pressed){
+            	run(engine_area);
+            	strg_pressed = false;
+            	enter_pressed = false;
+            	return false;
+            }	
+        	if (e.keyCode == 17){	
+        		strg_pressed = true;
+        	}
+        	else if (e.keyCode == 13) {
+				enter_pressed = true;
+            }
+        } 
+    	</script>
+
+		<script type="text/javascript"> myRenderer()</script>
+</body>
+</html>

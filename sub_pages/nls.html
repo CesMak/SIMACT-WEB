@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="description" content="SIMACT home page">
+<meta name="keywords" content="TODO">
+<meta name="author" content="Markus Lamprecht">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<title>simact</title>
+
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width">
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+<!-- Function Plot Logic:-->
+<script type="text/javascript" src="libs/d3/d3.min.js"></script>
+<script type="text/javascript" src="libs/function-plot.js"></script>
+
+
+<!-- <script type="text/javascript" src="libs/jquery-3.2.1.min.js"></script> -->
+
+
+<!-- KATEX-Latex fast rendering: and information sites:     -->
+<link rel="stylesheet" type="text/css" href="libs/katex/katex.min.css" />
+<script type="text/javascript" src="libs/katex/katex.min.js"></script>
+
+<!-- Load SIMACT LIB (SIMACT,ALGEBRITE,NUMERIC): -->
+<script type="text/javascript" src="libs/simact.bundle.js"></script>
+
+<!-- logic for this website -->
+<script type="text/javascript" src="index.js"></script>
+
+
+</head>
+<body>
+	<div class="heading">
+		<h1>Not Linear Systems(NLS)</h1>
+	</div>
+	<div class="wrapper">
+		<header>
+			<!-- the right part -->
+			<a href="http://simact.org/index.html"><img
+				src="img/simactlogo.png" alt="simact logo" width="60%">
+				<h1>SIMACT</h1></a>
+			<p>
+				Simulative Adaptive Control Theory.<br> <small><a
+					href="https://github.com/CesMak/simact">View on GitHub</a> <br>
+					<a href="lang/de/index.html"><img src="img/de.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index.html"><img src="img/en.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_sp.html"><img src="img/sp.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_ch.html"><img src="img/ch.png"
+						alt="de logo" width="10%"></a> </small>
+			</p>
+
+
+			<strong>
+			  <p class="view">
+					<a href="index.html">
+						ZRD</a><a href="ZRD_ex.html">
+						ex</a>
+				</p>
+				<p class="view">
+					<a href="engine.html">
+						Engine</a>
+				</p>
+				<p class="view">
+					<a href="TODO">ZRD
+						Theory</a>
+				</p>
+				<p class="view">
+					<a href="doc/global.html">Documentation</a>
+				</p>
+				<p class="view">
+					<a href="TODO">Contact</a>
+				</p>
+			</strong>
+		</header>
+		<section>
+
+			<div class="topbox">
+				<div class="pic">
+					<img src="img/ZRD.png" alt="Selfhtml" width="100%" />
+				</div>
+				<!--end of image box-->
+
+				<div class="explbox">
+
+					<div id="expl_1" class="equation"
+						data-expr="\mathbf{x}(t): (n \times 1) \text{  States vector"></div>
+					<div id="expl_2" class="equation"
+						data-expr="\mathbf{y}(t): (q \times 1) \text{  Output vector"></div>
+					<div id="expl_3" class="equation"
+						data-expr="\mathbf{u}(t): (p \times 1) \text{  Stellgröße}"></div>
+					<div id="expl_4" class="equation"
+						data-expr="\mathbf{A}(t): (n \times n) \text{  Systemmatrix}"></div>
+					<div id="expl_5" class="equation"
+						data-expr="\mathbf{B}(t): (p \times n) \text{  Input matrix"></div>
+					<div id="expl_6" class="equation"
+						data-expr="\mathbf{C}(t): (q \times n) \text{  output matrix"></div>
+					<div id="expl_7" class="equation"
+						data-expr="\mathbf{D}(t): (q \times p) \text{  Durchgriffsmatrix}"></div>
+					<div id="expl_8" class="equation"
+						data-expr="q\quad  	\; \; :  \textnormal{  Mess oder Regelgrößen}"></div>
+					<div id="expl_9" class="equation"
+						data-expr="p\quad  	\; \; :  \textnormal{  Stellgrößen}"></div>
+					<div id="expl_10" class="equation"
+						data-expr="n\quad  	\; \; :  \textnormal{  States"></div>
+					<script>
+						katex
+								.render(
+										"\\mathbf{x}(t): (n \\times 1) \\text{  States vector}",
+										expl_1);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{y}(t): (q \\times 1) \\text{  Output vector}",
+										expl_2);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{u}(t): (p \\times 1) \\text{  Stellgröße}",
+										expl_3);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{A}(t): (n \\times n) \\text{  Systemmatrix}",
+										expl_4);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{B}(t): (p \\times n) \\text{  Input matrix}",
+										expl_5);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{C}(t): (q \\times n) \\text{  Output matrix}",
+										expl_6);
+					</script>
+					<script>
+						katex
+								.render(
+										"\\mathbf{D}(t): (q \\times p) \\text{  Durchgriffsmatrix}",
+										expl_7);
+					</script>
+					<script>
+						katex
+								.render(
+										"q\\quad  	\\; \\; :  \\textnormal{  Mess oder Regelgrößen}",
+										expl_8);
+					</script>
+					<script>
+						katex
+								.render(
+										"p\\quad  	\\; \\; :  \\textnormal{  Stellgrößen}",
+										expl_9);
+					</script>
+					<script>
+						katex
+								.render(
+										"n\\quad  	\\; \\; :  \\textnormal{  States}",
+										expl_10);
+					</script>
+
+					<div id="systemgleichungl1" class="equation"
+						data-expr="{   \dot{\mathbf{x}}(t)=\mathbf{A}(t) \mathbf{x}(t) +\mathbf{B}  \mathbf{u}(t) }"></div>
+					<div id="systemgleichungl2" class="equation"
+						data-expr="{   \mathbf{y}(t)=\mathbf{C} \mathbf{x}(t) +\mathbf{D}  \mathbf{u}(t) }"></div>
+					<script>
+						katex
+								.render(
+										"{   \\dot{\\mathbf{x}}(t)=\\mathbf{A}(t) \\mathbf{x}(t) +\\mathbf{B}  \\mathbf{u}(t) }",
+										systemgleichungl1);
+					</script>
+					<script>
+						katex
+								.render(
+										"{   \\mathbf{y}(t)=\\mathbf{C} \\mathbf{x}(t) +\\mathbf{D}  \\mathbf{u}(t) }",
+										systemgleichungl2);
+					</script>
+
+				</div>
+
+				<div class="inputarea">
+					<textarea rows="9" cols="30" type="text" id="textarea1"
+						class="textarea">A=[[1,2],[4,5]];
+B=[[0],[1]];
+C=[[1,0]];
+x_0=[[1],[0]];
+
+Pole Placement:
+PR(s)=[-10,-20];
+PL(s)=[-40,-50]; (Observer)
+</textarea>
+					<br> <br>
+					<button class="button" id="button_Gleichung" onclick="run()">RUN</button>
+
+					<button class="button" id="button_next" onclick="next()">Next</button>
+				</div>
+
+				<div class="clearer"></div>
+			</div>
+			<!--end of top box-->
+
+
+			<div class="mainbox">
+
+				<div class="left">
+					<h3>Systemgleichungen:</h3>
+					<div id="systemgleichung_werte1" class="equation_small"
+						data-expr=""></div>
+					<div id="systemgleichung_werte2" class="equation_small"
+						data-expr=""></div>
+					<script>
+						katex.render("\\dot{\\textbf{x}}=\\textbf{f(x,u)}",systemgleichung_werte1);
+					</script>
+					<script>
+						katex
+								.render(
+										"{\\textbf{y}}=\\textbf{g(x,u)}",
+										systemgleichung_werte2);
+					</script>
+
+					<h3>Linearisierung um Ruhelage:</h3>
+					
+					
+
+				</div><!--  end of left box -->
+
+				<div class="right">
+
+					<h3>Ruhelage (equilibrium point):</h3>
+					
+					
+
+				</div>
+				<!-- end of right box-->
+
+				<div class="clearer"></div>
+			</div>
+			<!--end of main box-->
+	
+		</section>
+
+	</div>
+
+
+	<!--  <script src="scale.js"></script>-->
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107698126-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107698126-1');
+</script>
+	
+
+</body>
+</html>
+

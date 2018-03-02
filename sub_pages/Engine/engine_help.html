@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  TODO-language changing?! -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="description" content="SIMACT home page">
+<meta name="keywords" content="TODO">
+<meta name="author" content="Markus Lamprecht">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<title>engine Help</title>
+
+<link rel="stylesheet" href="engine.css" />
+<meta name="viewport" content="width=device-width">
+
+<!-- KATEX-Latex fast rendering: and information sites:     -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>	
+
+<!-- Simact-->
+<script type="text/javascript" src="../../libs/simact.bundle.js"></script>
+
+<!-- Logic for this website: -->
+<script type="text/javascript" src="engine.js"></script>
+
+</head>
+<body>
+	<div class="heading">
+		<h1>Help</h1>
+	</div>
+	<div class="wrapper">
+		<header>
+			<!-- the right part -->
+			<a href="http://simact.org/index.html"><img
+				src="../../img/simactlogo.png" alt="simact logo" width="60%">
+				<h1>SIMACT</h1></a>
+			<p>
+				Simulative Adaptive Control Theory.<br> <small><a
+					href="https://github.com/CesMak/simact">View on GitHub</a> <br>
+					<a href="http://simact.org/index_de.html"><img
+						src="../../img/de.png" alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index.html"><img src="../../img/en.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_sp.html"><img
+						src="../../img/sp.png" alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_ch.html"><img
+						src="../../img/ch.png" alt="de logo" width="10%"></a> </small>
+			</p>
+
+
+			<strong>
+				<p class="view">
+					<a href="index.html"> ZRD</a><a href="ZRD_ex.html"> ex</a>
+				</p>
+				<p class="view">
+					<a href="engine.html"> Engine</a>
+				</p>
+				<p class="view">
+					<a href="TODO">ZRD Theory</a>
+				</p>
+				<p class="view">
+					<a href="doc/global.html">Documentation</a>
+				</p>
+				<p class="view">
+					<a href="TODO">Contact</a>
+				</p>
+			</strong>
+		</header>
+
+		<section>
+
+
+
+			<h2>Current stored values:</h2>
+			<textarea readonly rows="3" cols="15" type="text" id="variables_area"
+				class="textareaengine">Assigned Variables: 
+			</textarea>
+			<h2>Output:</h2>
+			<div id="output"></div>
+
+			<br>
+			<h2>Examples:</h2>
+			<a href="doc/global.html"><h3>Simact Functions</h3></a> <a
+				href="doc/global.html#getMatValue"><p>Matrix set&get</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="8" cols="40" type="text" id="simarea1"
+						class="textareaengine">a=getMatValue("[[11,2],[2,3]]", 0, 0)
+B=setMatValue("[[1,2],[2,3]]",1,0,a)
+setColumnVectorOfMatrix(B,1,"[[2.2],[2.2]]")
+setRowVectorOfMatrix(B,0,"[[1.1],[1.1]]")
+getColumnVectorOfMatrix(B,2,1)
+getRowVectorOfMatrix(B,2,1)
+checkzeroColumn("[[0,0],[1,0]]")
+checkzeroRow("[[0,0],[1,0]]")</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea1)">►</button>
+				</div>
+				<div class=div_right>
+					<div class="equation_small" id="0"
+						data-expr="a=getMatValue(&quot;[[11,2],[2,3]]&quot;,0,0)=11"></div>
+					<div class="equation_small" id="1"
+						data-expr="B=setMatValue(&quot;[[1,2],[2,3]]&quot;,1,0,a)=\begin{bmatrix} 1 &amp; 2 \\ 11 &amp; 3 \end{bmatrix}"></div>
+					<div class="equation_small" id="2"
+						data-expr="setColumnVectorOfMatrix(B,1,&quot;[[2.2],[2.2]]&quot;)=\begin{bmatrix} 1 &amp; 2.2 \\ 11 &amp; 2.2 \end{bmatrix}"></div>
+					<div class="equation_small" id="3"
+						data-expr="setRowVectorOfMatrix(B,0,&quot;[[1.1],[1.1]]&quot;)=\begin{bmatrix} 1.1 &amp; 2 \\ 11 &amp; 3 \end{bmatrix}"></div>
+					<div class="equation_small" id="4"
+						data-expr="getColumnVectorOfMatrix(B,2,1)=\begin{bmatrix} 2 \\ 3 \end{bmatrix}"></div>
+					<div class="equation_small" id="5"
+						data-expr="getRowVectorOfMatrix(B,2,1)=\begin{bmatrix} 11 &amp; 3 \end{bmatrix}"></div>
+					<div class="equation_small" id="0"
+						data-expr="checkzeroColumn(&quot;[[0,0],[1,0]]&quot;)=2"></div>
+					<div class="equation_small" id="0"
+						data-expr="checkzeroRow(&quot;[[0,0],[1,0]]&quot;)=1"></div>
+				</div>
+			</div>
+
+			<a href="doc/global.html#getColumnsM"><p>Matrix dimensions</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="2" cols="40" type="text" id="simarea2"
+						class="textareaengine">getColumnsM("[[1,0]]")
+getRowsM("[[1,0]]")</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea2)">►</button>
+				</div>
+				<div class=div_right>
+					<div class="equation_small" id="0"
+						data-expr="getColumnsM(&quot;[[1,0]]&quot;)=2"></div>
+					<div class="equation_small" id="1"
+						data-expr="getRowsM(&quot;[[1,0]]&quot;)=1"></div>
+				</div>
+			</div>
+
+			<a href="doc/global.html#eigenvalue"><p>Matrix eigenvalues</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="1" cols="40" type="text" id="simarea3"
+						class="textareaengine">eigenvalue("[[1.789,0,0],[0,0,0],[0,0,1]]")</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea3)">►</button>
+				</div>
+				<div class=div_right>
+					<div class="equation_small" id="0"
+						data-expr="eigenvalue(&quot;[[1.789,0,0],[0,0,0],[0,0,1]]&quot;)=1.789 ,1.0 ,0 ,"></div>
+				</div>
+			</div>
+
+			<a href="doc/global.html#kerofMatrix"><p>Matrix
+					kernel,pow,rank,generalvector</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="4" cols="40" type="text" id="simarea4"
+						class="textareaengine">kerofMatrix("[[1,2],[1,2]]")
+matrixpow("[[2,2],[2,2]]",3)
+rankofMatrix("[[1,2],[1,2]]")
+generalvector("[ [ 1, 0 ], [ 0, 1 ] ]",1,2)</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea4)">►</button>
+				</div>
+				<div class=div_right>
+					<div class="equation_small" id="0"
+						data-expr="kerofMatrix(&quot;[[1,2],[1,2]]&quot;)=1,-0.5 ,"></div>
+					<div class="equation_small" id="1"
+						data-expr="matrixpow(&quot;[[2,2],[2,2]]&quot;,3)=\begin{bmatrix} 128 &amp; 128 \\ 128 &amp; 128 \end{bmatrix}"></div>
+					<div class="equation_small" id="2"
+						data-expr="rankofMatrix(&quot;[[1,2],[1,2]]&quot;)=1"></div>
+					<div class="equation_small" id="0"
+						data-expr="generalvector(&quot;[[1,0],[0,1]]&quot;,1,2)=1,0 ,0,1"></div>
+				</div>
+			</div>
+
+			<a href="doc/global.html#jordantransform"><p>Matrix jordan
+					normal transform</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="2" cols="40" type="text" id="simarea5"
+						class="textareaengine">jordantransform("[[-10,1,7],[-7,2,3],[-16,2,12]]")
+T_JNF=arrayToMatrixStringC("1,1,1,1,−1,2,1,0,2",3,3)</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea5)">►</button>
+				</div>
+				<div class=div_right>
+					<div class="equation_small" id="0"
+						data-expr="jordantransform(&quot;[[-10,1,7],[-7,2,3],[-16,2,12]]&quot;)=1,1,1 ,1,-1,2,1,0,2"></div>
+					<div class="equation_small" id="1"
+						data-expr="T_JNF=arrayToMatrixStringC(&quot;1,1,1,1,−1,2,1,0,2&quot;,3,3)=\begin{bmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; -1 &amp; 0 \\ 1 &amp; 2 &amp; 2 \end{bmatrix}"></div>
+				</div>
+			</div>
+
+			<a href="doc/global.html#getQ_S"><p>Controllability,
+					Observability Matrix</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="5" cols="40" type="text" id="simarea6"
+						class="textareaengine">A=[[1,2],[2,3]]
+B=[[1],[0]]
+C=[[1,0]]
+getQ_S(A,B)
+getQ_B(A,C)</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea6)">►</button>
+				</div>
+				<div class=div_right>
+					<div class="equation_small" id="0"
+						data-expr="A=[[1,2],[2,3]]=\begin{bmatrix} 1 &amp; 2 \\ 2 &amp; 3 \end{bmatrix}"></div>
+					<div class="equation_small" id="1"
+						data-expr="B=[[1],[0]]=\begin{bmatrix} 1 \\ 0 \end{bmatrix}"></div>
+					<div class="equation_small" id="2"
+						data-expr="C=[[1,0]]=\begin{bmatrix} 1 &amp; 0 \end{bmatrix}"></div>
+					<div class="equation_small" id="3"
+						data-expr="getQ_S(A,B)=\begin{bmatrix} 1 &amp; 1 \\ 0 &amp; 2 \end{bmatrix}"></div>
+					<div class="equation_small" id="4"
+						data-expr="getQ_B(A,C)=\begin{bmatrix} 1 &amp; 0 \\ 1 &amp; 2 \end{bmatrix}"></div>
+				</div>
+			</div>
+
+			<a href="doc/global.html#checkHautusB"><p>Hautus
+					Controllability and Observability Matrix</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="2" cols="40" type="text" id="simarea7"
+						class="textareaengine">checkHautusS("[[1,2],[2,3]]","[[1],[0]]")
+checkHautusB("[[1,2],[2,3]]","[[1,0]]")</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea7)">►</button>
+				</div>
+				<div class=div_right>
+					<div class="equation_small" id="0"
+						data-expr="checkHautusS(&quot;[[1,2],[2,3]]&quot;,&quot;[[1],[0]]&quot;)=\begin{bmatrix} -1+s &amp; -2 &amp; 1 \\ -2 &amp; -3+s &amp; 0 \end{bmatrix}"></div>
+					<div class="equation_small" id="1"
+						data-expr="checkHautusB(&quot;[[1,2],[2,3]]&quot;,&quot;[[1,0]]&quot;)=\begin{bmatrix} -1+s &amp; -2 \\ -2 &amp; -3+s \\ 1 &amp; 0 \end{bmatrix}"></div>
+				</div>
+			</div>
+
+			<a href="doc/global.html#getQ_S"><p>Check Stability of
+					Eigenvalues (TODO)</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="1" cols="40" type="text" id="simarea8"
+						class="textareaengine">check_stability("[1,0,-1]","s")</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea8)">►</button>
+				</div>
+				<div class=div_right></div>
+			</div>
+
+			<h3>Algebrite Functions:</h3>
+
+			<a href="http://algebrite.org/docs/latest-stable/reference.html"><p>Matrix
+					operations</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="7" cols="40" type="text" id="algebrite1"
+						class="textareaengine">A=[[2.1,2],[0,2.2]]
+B=[[1.2],[3]]
+C=[[4,1]]
+D=dot(A,B,C)
+det(A)
+inv(A)
+transpose(A)</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(algebrite1)">►</button>
+				</div>
+				<div class=div_right>
+					<div class="equation_small" id="0"
+						data-expr="A=[[2.1,2],[0,2.2]]=\begin{bmatrix} 2.1 &amp; 2 \\ 0 &amp; 2.2 \end{bmatrix}"></div>
+					<div class="equation_small" id="1"
+						data-expr="B=[[1.2],[3]]=\begin{bmatrix} 1.2 \\ 3 \end{bmatrix}"></div>
+					<div class="equation_small" id="2"
+						data-expr="C=[[4,1]]=\begin{bmatrix} 4 &amp; 1 \end{bmatrix}"></div>
+					<div class="equation_small" id="3"
+						data-expr="D=dot(A,B,C)=\begin{bmatrix} 34.08 &amp; 8.52 \\ 26.4 &amp; 6.6 \end{bmatrix}"></div>
+					<div class="equation_small" id="4" data-expr="det(A)=4.62"></div>
+					<div class="equation_small" id="5"
+						data-expr="inv(A)=\begin{bmatrix} 0.47619 &amp; -0.4329 \\ 0.0 &amp; 0.454545 \end{bmatrix}"></div>
+					<div class="equation_small" id="6"
+						data-expr="transpose(A)=\begin{bmatrix} 2.1 &amp; 0 \\ 2 &amp; 2.2 \end{bmatrix}"></div>
+				</div>
+			</div>
+
+			<h3>Numeric Functions:</h3>
+			TODO: e.g like this: console.log(simact.numeric.eig([[1,1],[1,1]]));
+
+		</section>
+
+		<!--  Script to Enter input area -->
+		<script>
+    	var strg_pressed = false;
+    	var enter_pressed = false;
+        function runScript(e) {
+        	if (e.keyCode == 17){	
+        		strg_pressed = true;
+        	}
+			if (e.keyCode == 13) {
+				enter_pressed = true;
+            }
+            if(strg_pressed && enter_pressed){
+            	run(engine_area);
+            	strg_pressed = false;
+            	enter_pressed = false;
+            	return false;
+            }	
+        	}
+    </script>
+
+		<script type="text/javascript"> myRenderer()</script>
+</body>
+</html>

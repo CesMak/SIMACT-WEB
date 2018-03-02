@@ -62,24 +62,26 @@
 
 
 			<strong>
-			  <p class="view">
-					<a href="index.html">
-						ZRD</a><a href="ZRD_ex.html">
-						ex</a>
+				<p class="view">
+					<a href="index.html"> ZRD</a><a href="sub_pages/ZRD_ex.html"> ex</a>
 				</p>
 				<p class="view">
-					<a href="engine.html">
-						Engine</a>
+					<a href="sub_pages/Engine/engine.html"> Engine</a>
 				</p>
 				<p class="view">
-					<a href="TODO">ZRD
-						Theory</a>
+					<a href="TODO">ZRD Theory</a>
 				</p>
 				<p class="view">
 					<a href="doc/global.html">Documentation</a>
 				</p>
 				<p class="view">
-					<a href="TODO">Contact</a>
+					<a href="http://www.me.simact.de/">Contact</a>
+				</p>
+				<p class="view">
+					<a href="sub_pages/nls.html">NLS</a>
+				</p>
+				<p class="view">
+					<a href="sub_pages/Kalman_Filter/kf_ball.html">Kalman Filter</a>
 				</p>
 			</strong>
 		</header>
@@ -94,17 +96,17 @@
 				<div class="explbox">
 
 					<div id="expl_1" class="equation"
-						data-expr="\mathbf{x}(t): (n \times 1) \text{  Zustandsvektor}"></div>
+						data-expr="\mathbf{x}(t): (n \times 1) \text{  States vector"></div>
 					<div id="expl_2" class="equation"
-						data-expr="\mathbf{y}(t): (q \times 1) \text{  Ausgangsvektor}"></div>
+						data-expr="\mathbf{y}(t): (q \times 1) \text{  Output vector"></div>
 					<div id="expl_3" class="equation"
 						data-expr="\mathbf{u}(t): (p \times 1) \text{  Stellgröße}"></div>
 					<div id="expl_4" class="equation"
 						data-expr="\mathbf{A}(t): (n \times n) \text{  Systemmatrix}"></div>
 					<div id="expl_5" class="equation"
-						data-expr="\mathbf{B}(t): (p \times n) \text{  Eingangsmatrix}"></div>
+						data-expr="\mathbf{B}(t): (p \times n) \text{  Input matrix"></div>
 					<div id="expl_6" class="equation"
-						data-expr="\mathbf{C}(t): (q \times n) \text{  Ausgangsmatrix}"></div>
+						data-expr="\mathbf{C}(t): (q \times n) \text{  output matrix"></div>
 					<div id="expl_7" class="equation"
 						data-expr="\mathbf{D}(t): (q \times p) \text{  Durchgriffsmatrix}"></div>
 					<div id="expl_8" class="equation"
@@ -112,17 +114,17 @@
 					<div id="expl_9" class="equation"
 						data-expr="p\quad  	\; \; :  \textnormal{  Stellgrößen}"></div>
 					<div id="expl_10" class="equation"
-						data-expr="n\quad  	\; \; :  \textnormal{  Zustände}"></div>
+						data-expr="n\quad  	\; \; :  \textnormal{  States"></div>
 					<script>
 						katex
 								.render(
-										"\\mathbf{x}(t): (n \\times 1) \\text{  Zustandsvektor}",
+										"\\mathbf{x}(t): (n \\times 1) \\text{  States vector}",
 										expl_1);
 					</script>
 					<script>
 						katex
 								.render(
-										"\\mathbf{y}(t): (q \\times 1) \\text{  Ausgangsvektor}",
+										"\\mathbf{y}(t): (q \\times 1) \\text{  Output vector}",
 										expl_2);
 					</script>
 					<script>
@@ -140,13 +142,13 @@
 					<script>
 						katex
 								.render(
-										"\\mathbf{B}(t): (p \\times n) \\text{  Eingangsmatrix}",
+										"\\mathbf{B}(t): (p \\times n) \\text{  Input matrix}",
 										expl_5);
 					</script>
 					<script>
 						katex
 								.render(
-										"\\mathbf{C}(t): (q \\times n) \\text{  Ausgangsmatrix}",
+										"\\mathbf{C}(t): (q \\times n) \\text{  Output matrix}",
 										expl_6);
 					</script>
 					<script>
@@ -170,7 +172,7 @@
 					<script>
 						katex
 								.render(
-										"n\\quad  	\\; \\; :  \\textnormal{  Zustände}",
+										"n\\quad  	\\; \\; :  \\textnormal{  States}",
 										expl_10);
 					</script>
 
@@ -194,7 +196,7 @@
 				</div>
 
 				<div class="inputarea">
-					<textarea rows="7" cols="30" type="text" id="textarea1"
+					<textarea rows="9" cols="30" type="text" id="textarea1"
 						class="textarea">A=[[1,2],[4,5]];
 B=[[0],[1]];
 C=[[1,0]];
@@ -241,15 +243,15 @@ PL(s)=[-40,-50]; (Observer)
 						data-expr=" \mathbf{x}=\mathbf{T} \mathbf{\tilde{x}}\; \; \dot{\mathbf{\tilde{x}}}(t)=\mathbf{T^{-1}}\mathbf{A}\mathbf{T}\mathbf{\tilde{x}}(t) +\mathbf{T^{-1} B}\mathbf{u}(t)"></div>
 					<div id="trans2" class="equation_small"
 						data-expr=" \mathbf{y}(t)=\mathbf{C T \tilde{x}}(t)"></div>
-					
+
 					<div id="trans3" class="equation_small" data-expr=""></div>
 					<div id="trans4" class="equation_small" data-expr=""></div>
 					<div id="trans5" class="equation_small" data-expr=""></div>
-				
+
 					<div id="trans6" class="equation_small" data-expr=""></div>
 					<div id="trans7" class="equation_small" data-expr=""></div>
 					<div id="trans8" class="equation_small" data-expr=""></div>
-				
+
 					<div id="trans9" class="equation_small" data-expr=""></div>
 					<div id="trans10" class="equation_small" data-expr=""></div>
 					<div id="trans11" class="equation_small" data-expr=""></div>
@@ -327,15 +329,15 @@ PL(s)=[-40,-50]; (Observer)
 										" {   \\mathbf{y}(t)=\\begin{bmatrix}r_1&...&r_n\\end{bmatrix} \\mathbf{x}(t)} \\; \\; r_i: \\text{Residuuen}",
 										JNF2);
 					</script>
-					
-										<h3>Zeitlösung</h3>
+
+					<h3>Zeitlösung</h3>
 					<div id="time1" class="equation_small" data-expr=""></div>
 					<div id="time2" class="equation_small" data-expr=""></div>
 					<div id="time3" class="equation_small" data-expr=""></div>
 					<script>katex.render("\\textbf{y}(t)=\\underbrace{\\textbf{C} e^{\\textbf{A} t} x_0}_{y_{E(t)}}+\\underbrace{\\int_0^t{\\textbf{C} e^{\\textbf{A}(t-\\tau)} \\textbf{Bu}(\\tau) d \\tau}}_{y_{E,A(t)}}", time1);</script>
 					<script>katex.render("y_{E(t)}: \\text{Eigenverhalten}", time2);</script>
 					<script>katex.render("y_{E,A(t)}: \\text{Ein/Ausgangsverhalten}", time3);</script>
-					
+
 					<h3>Transitionsmatrix</h3>
 					<div id="transition1" class="equation_small" data-expr=""></div>
 					<div id="transition2" class="equation_small" data-expr=""></div>
@@ -347,13 +349,21 @@ PL(s)=[-40,-50]; (Observer)
 					<script>katex.render("\\text{3. A has multiple eigenvalues  } \\; \\; e^{At}=\\mathcal{L}^{-1}(sI-A)^{-1}", transition3);</script>
 					<script>katex.render("\\text{4. A has multiple eigenvalues: use Sentence of Leonard}", transition4);</script>
 					<script>katex.render("\\text{5. A has multiple eigenvalues} \\; \\; \\phi(t)= e^{\\textbf{A}t} =\\sum_{v=1}^{\\infty}{\\frac{ (\\textbf{A} t)^v}{v!}}=\\textbf{I}+\\textbf{A}t+\\textbf{A}^2\\frac{t^2}{2!}+...", transition5);</script>
-	
-					
-					<!--  Drawing stuff: -->
-					<div id="plot"> </div>
-					
 
-				</div><!--  end of left box -->
+
+					<!--  Drawing stuff: -->
+					<h3>States solution:</h3>
+					<div id="plot"></div>
+
+					<h3>Bodediagramm:</h3>
+
+					<h3>Root locus:</h3>
+
+					<h3>Nyquist diagramm:</h3>
+
+
+				</div>
+				<!--  end of left box -->
 
 				<div class="right">
 
@@ -361,6 +371,9 @@ PL(s)=[-40,-50]; (Observer)
 					<div id="stablility1" class="equation_small" data-expr=""></div>
 					<div id="stablility2" class="equation_small" data-expr=""></div>
 					<div id="stablility3" class="equation_small" data-expr=""></div>
+					<div id="stablility4" class="equation_small" data-expr=""></div>
+					<div id="stablility5" class="equation_small" data-expr=""></div>
+					<div id="stablility6" class="equation_small" data-expr=""></div>
 					<script>
 						katex.render("\\text{Sys is stable if Eigenvalues}",
 								stablility1);
@@ -371,10 +384,19 @@ PL(s)=[-40,-50]; (Observer)
 								stablility2);
 					</script>
 					<script>
-						katex
-								.render(
-										"\\text{IM Axis cause }e^{\\text{eigenvalue t}} \\text{function decays}",
-										stablility3);
+						katex.render("\\text{IM Axis cause }e^{\\text{eigenvalue t}} \\text{function decays}",stablility3);
+					</script>
+
+					<script>
+						katex.render("\\textbf{Hurwitz:} a_ns^n+...+a_1s+a_0=0 \\; \\; \\text{ n=2, } a_i>0",stablility4);
+					</script>
+
+					<script>
+						katex.render("\\text{n=3: } det(\\begin{bmatrix}a_2&a_0& 0\\\\a_3&a_1&0\\\\0&a_2&a_0\\end{bmatrix})>0",stablility5);
+					</script>
+
+					<script>
+						katex.render("\\textbf{Nyquist: rechts von -1}",stablility6);
 					</script>
 
 					<h3>Transfere Function:</h3>
@@ -498,10 +520,21 @@ PL(s)=[-40,-50]; (Observer)
 										observ_hautus2);
 					</script>
 
-					<h3>Pole Placement:</h3>
+					<h3>Pole Placement: Control</h3>
 					<div id="pole_placement" class="equation_small" data-expr=""></div>
 					<script>katex.render("Ackermann: R=", pole_placement);</script>
-					
+
+					<h3>Pole Placement: Observer</h3>
+					<div id="pole_placementobs" class="equation_small" data-expr=""></div>
+					<script>katex.render("Ackermann: L=", pole_placementobs);</script>
+
+					<h3>Filter F</h3>
+					<div id="filter1" class="equation_small" data-expr="F="></div>
+					<div id="filter2" class="equation_small"
+						data-expr="\\text{stat. Verstärkung:} G(0)"></div>
+					<script>katex.render("F_{stat}=", filter1);</script>
+					<script>katex.render("\\text{stat. Verstärkung: } G(0)", filter2);</script>
+
 				</div>
 				<!-- end of right box-->
 
@@ -509,20 +542,32 @@ PL(s)=[-40,-50]; (Observer)
 			</div>
 			<!--end of main box-->
 
-					
-								<h3>similar powerfull websites:
+
+			<h3>similar powerfull websites:
 				https://www.softintegration.com/chhtml/toolkit/control/</h3>
 			<h3>Display code on your website use:
 				http://codemirror.net/demo/fullscreen.html</h3>
 			<h3>TODO: for bigger screen load other website?</h3>
 
-					
+
 		</section>
 
 	</div>
 
 
 	<!--  <script src="scale.js"></script>-->
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-107698126-1"></script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107698126-1');
+</script>
+
 
 </body>
 </html>

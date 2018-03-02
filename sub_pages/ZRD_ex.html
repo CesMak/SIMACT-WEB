@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="description" content="SIMACT home page">
+<meta name="keywords" content="TODO">
+<meta name="author" content="Markus Lamprecht">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<title>zrd_ex</title>
+
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width">
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+<!-- Function Plot Logic:-->
+<script type="text/javascript" src="libs/d3/d3.min.js"></script>
+<script type="text/javascript" src="libs/function-plot.js"></script>
+
+
+<!-- <script type="text/javascript" src="libs/jquery-3.2.1.min.js"></script> -->
+
+
+<!-- KATEX-Latex fast rendering: and information sites:     -->
+<link rel="stylesheet" type="text/css" href="libs/katex/katex.min.css" />
+<script type="text/javascript" src="libs/katex/katex.min.js"></script>
+
+<!-- Load SIMACT LIB (SIMACT,ALGEBRITE,NUMERIC): 
+<script type="text/javascript" src="libs/simact.bundle.js"></script>
+-->
+
+<!-- logic for this website -->
+<script type="text/javascript" src="index.js"></script>
+
+
+</head>
+<body>
+	<div class="heading">
+		<h1>Examples Zustandsraumdarstellung (ZRD)</h1>
+	</div>
+	<div class="wrapper">
+		<header>
+			<!-- the right part -->
+			<a href="http://simact.org/index.html"><img
+				src="img/simactlogo.png" alt="simact logo" width="60%">
+				<h1>SIMACT</h1></a>
+			<p>
+				Simulative Adaptive Control Theory.<br> <small><a
+					href="https://github.com/CesMak/simact">View on GitHub</a> <br>
+					<a href="http://simact.org/index_de.html"><img src="img/de.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index.html"><img src="img/en.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_sp.html"><img src="img/sp.png"
+						alt="de logo" width="10%"></a> <a
+					href="http://simact.org/index_ch.html"><img src="img/ch.png"
+						alt="de logo" width="10%"></a> </small>
+			</p>
+
+
+			<strong>
+			  <p class="view">
+					<a href="index.html">
+						ZRD</a><a href="ZRD_ex.html">
+						ex</a>
+				</p>
+				<p class="view">
+					<a href="engine.html">
+						Engine</a>
+				</p>
+				<p class="view">
+					<a href="TODO">ZRD
+						Theory</a>
+				</p>
+				<p class="view">
+					<a href="doc/global.html">Documentation</a>
+				</p>
+				<p class="view">
+					<a href="TODO">Contact</a>
+				</p>
+			</strong>
+		</header>
+		<section>
+
+
+			<div class="topbox">
+				<div class="pic">
+					<h2>Given:</h2>
+										<img src="img/schw.png" alt="Selfhtml" width="50%"
+						style='float: left;' />
+					<p>
+						<strong>States: </strong> i, u
+					<p>
+					<p>
+						<strong>Energy Storages: </strong> L, C
+					<p>
+					<p>
+						<strong>Values:</strong> <br> R=2Ohm C=1mF L=1mH
+					<p>
+					
+						<br>		
+					<h3>Differential Equations:</h3>
+					<div id="trans1" class="equation" data-expr=" \dot{u}=\frac{1}{C}I"></div>
+					<div id="trans2" class="equation"
+						data-expr="\dot{I}=-\frac{R}{L}I-\frac{1}{L}u+\frac{1}{L}u_0"></div>
+
+					<div id="trans1" class="equation_small"
+						data-expr="\begin{bmatrix}\dot{u}\\\dot{I} \end{bmatrix}=\begin{bmatrix}0&\frac{1}{C}\\-\frac{1}{L}&-\frac{R}{L} \end{bmatrix} \begin{bmatrix}{u}\\{I} \end{bmatrix}+\begin{bmatrix}0\\\frac{1}{L} \end{bmatrix}u_0 "></div>
+					<div id="trans2" class="equation_small"
+						data-expr="y=\begin{bmatrix} 0&1 \end{bmatrix}    \begin{bmatrix}{u}\\{I} \end{bmatrix}"></div>
+			
+									</div>
+					
+				
+				<!--end of image box-->
+
+				<div class="explbox">
+				<div class="clearer"></div>
+				<div id="systemgleichung_werte1" class="equation_small"
+						data-expr="\underbrace{\dot{\mathbf{x}}(t)}_{2 \times 1}=\underbrace{\mathbf{ \begin{bmatrix}0&1000\\-1000&-2000\end{bmatrix} }}_{2 \times 2} \mathbf{x}(t) +\underbrace{\mathbf{\begin{bmatrix}0\\1000\end{bmatrix}}}_{2 \times 1}  \mathbf{u}(t) "></div>
+					<div id="systemgleichung_werte2" class="equation"
+						data-expr=" \underbrace{\mathbf{y}(t)}_{1 \times 1}=\underbrace{\mathbf{\begin{bmatrix}0&1\end{bmatrix}}}_{1 \times 2} \mathbf{x}(t)=x_2(t)=I(t)"></div>
+	
+				</div>
+					
+				<div class="inputarea">
+						<img src="img/ZRD.png" alt="Selfhtml" width="100%" />
+								</div>
+
+				<div class="clearer"></div>
+			</div>
+			<!--end of top box-->
+
+
+
+			<div class="mainbox">
+
+				<div class="left">
+
+					<h2>(1) Analysis:</h2>
+
+					<h3>Transformations:</h3>
+					<div id="trans1" class="equation_small"
+						data-expr=" \mathbf{x}=\mathbf{T} \mathbf{\tilde{x}}\; \; \dot{\mathbf{\tilde{x}}}(t)=\mathbf{T^{-1}}\mathbf{A}\mathbf{T}\mathbf{\tilde{x}}(t) +\mathbf{T^{-1} B}\mathbf{u}(t)"></div>
+					<div id="trans2" class="equation_small"
+						data-expr=" \mathbf{y}(t)=\mathbf{C T \tilde{x}}(t)"></div>
+					<h4>Transformation to Jordannormal Form:</h4>
+					<div id="trans3" class="equation_small"
+						data-expr="T_{JNF}=\begin{bmatrix}1&0\\0&1\end{bmatrix}\; \; \; T_{JNF}^{-1}=\begin{bmatrix}1&0\\0&1\end{bmatrix}"></div>
+					<div id="trans4" class="equation_small"
+						data-expr="\dot{\tilde{\mathbf{x}}}_{JNF}(t)=\begin{bmatrix}1&0\\0&5\end{bmatrix}\mathbf{\tilde{x}}_{JNF}(t) +\begin{bmatrix}1\\1\end{bmatrix}\mathbf{u}(t)"></div>
+					<div id="trans5" class="equation_small"
+						data-expr="\mathbf{y}(t)=\begin{bmatrix}1&0\end{bmatrix}\mathbf{\tilde{x}}_{JNF}(t)"></div>
+					<h4>Transformation to Steuerungsnormal Form:</h4>
+					<div id="trans6" class="equation_small"
+						data-expr="T_{SNF}=\begin{bmatrix}-5.0&1.0\\-1.0&1.0\end{bmatrix}\; \; \; T_{SNF}^{-1}=\begin{bmatrix}-0.25&0.25\\-0.25&1.25\end{bmatrix}"></div>
+					<div id="trans7" class="equation_small"
+						data-expr="\dot{\tilde{\mathbf{x}}}_{SNF}(t)=\begin{bmatrix}0&1.0\\-5.0&6.0\end{bmatrix}\mathbf{\tilde{x}}_{SNF}(t) +\begin{bmatrix}0\\1.0\end{bmatrix}\mathbf{u}(t)"></div>
+					<div id="trans8" class="equation_small"
+						data-expr="\mathbf{y}(t)=\begin{bmatrix}-5.0&1.0\end{bmatrix}\mathbf{\tilde{x}}_{SNF}(t)"></div>
+					<h4>Transformation to Beobachtungsnormal Form:</h4>
+					<div id="trans9" class="equation_small"
+						data-expr="T_{BNF}=none\; \; \; T_{BNF}^{-1}=none"></div>
+					<div id="trans10" class="equation_small"
+						data-expr="\text{As} \; \; det(Q_B)=0 \; \; Q_B^{-1} \; \; \text{does not exist}"></div>
+					<div id="trans11" class="equation_small"
+						data-expr="\rightarrow \text{Sys cannot be transformed to BNF}"></div>
+
+				</div>
+
+				<div class="right">
+
+					<h3>Stability:</h3>
+					<div id="stablility1" class="equation_small"
+						data-expr="\text{char. Poly.:}\; \; P(s)={\mathrm{s}}^{2}-6~\mathrm{s}+5"></div>
+					<div id="stablility2" class="equation_small"
+						data-expr="\text{Eigenvalues:}\; \; \lambda_i=1,5"></div>
+					<div id="stablility3" class="equation_small"
+						data-expr="\text{s-Sys is:}\; \; \;unstable"></div>
+
+					<h3>Transfere Function:</h3>
+					<div id="transfereopen1" class="equation_small"
+						data-expr="G_o(s)=\frac{1}{\left(\mathrm{s}-1\right)}=\frac{1}{\left(\mathrm{s}-1\right)}"></div>
+
+					<div id="transfereopen2" class="equation_small"
+						data-expr="G_O(s)=\frac{-5}{\left(5-6~\mathrm{s}+{\mathrm{s}}^{2}\right)}+\frac{\mathrm{s}}{\left(5-6~\mathrm{s}+{\mathrm{s}}^{2}\right)}"></div>
+
+
+					<h3>Kalman:</h3>
+					<div id="controlability" class="equation_small"
+						data-expr="\text{Controllability:}\; \; \text{Sys is} \;controllable"></div>
+					<div id="controlability_tilde" class="equation_small"
+						data-expr="Q_S=\begin{bmatrix}1&1\\1&5\end{bmatrix}\; Q_S^{-1}=\begin{bmatrix}\frac{5}{4}&\frac{-1}{4}\\\frac{-1}{4}&\frac{1}{4}\end{bmatrix}\mathbf{\tilde{q}}_S=\begin{bmatrix}\frac{-1}{4}&\frac{1}{4}\end{bmatrix}"></div>
+					<div id="observability" class="equation_small"
+						data-expr="\text{Observability:}\; \; \; \text{Sys is} \; not\text{ }observalbe"></div>
+					<div id="observability_tilde" class="equation_small"
+						data-expr="Q_B=\begin{bmatrix}1&0\\1&0\end{bmatrix}\; Q_B^{-1}=none\; \mathbf{\tilde{q}}_B=none"></div>
+
+					<h3>Gilbert</h3>
+					<div id="cont_gilbert1" class="equation_small"
+						data-expr="\mathbf{\tilde{b}_{JNF}}=\begin{bmatrix}1\\1\end{bmatrix}"></div>
+					<div id="cont_gilbert2" class="equation_small"
+						data-expr="\rightarrow \text{not controllable eigenvalues:} \; \;none"></div>
+
+					<div id="observ_gilbert1" class="equation_small"
+						data-expr="\mathbf{\tilde{C}_{JNF}}=\begin{bmatrix}1&0\end{bmatrix}"></div>
+					<div id="observ_gilbert2" class="equation_small"
+						data-expr="\rightarrow \text{not observable eigenvalues:} \; \;\lambda_i, i=2"></div>
+
+					<h3>Hautus</h3>
+					<div id="cont_hautus1" class="equation_small"
+						data-expr="\text{not controllable eigenvalues:} \; \; none "></div>
+					<div id="cont_hautus2" class="equation_small"
+						data-expr="\text{not observable eigenvalues:} \; \;5"></div>
+
+				</div>
+				<!-- end of right box -->
+				<div class="clearer"></div>
+			</div>
+			<!--end of main box-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="topbox">
+				<div class="pic">
+					<h2>(2) Not controllable SISO</h2>
+					<img src="img/ZRD.png" alt="Selfhtml" width="100%" />
+				</div>
+				<!--end of image box-->
+
+				<div class="explbox">
+					<h2>2x2 System:</h2>
+					<div id="systemgleichung_werte1" class="equation"
+						data-expr="\underbrace{\dot{\mathbf{x}}(t)}_{2 \times 1}=\underbrace{\mathbf{ \begin{bmatrix}1&0\\0&5\end{bmatrix} }}_{2 \times 2} \mathbf{x}(t) +\underbrace{\mathbf{\begin{bmatrix}1\\1\end{bmatrix}}}_{2 \times 1}  \mathbf{u}(t) "></div>
+					<div id="systemgleichung_werte2" class="equation"
+						data-expr=" \underbrace{\mathbf{y}(t)}_{1 \times 1}=\underbrace{\mathbf{\begin{bmatrix}1&0\end{bmatrix}}}_{1 \times 2} \mathbf{x}(t)=x_1(t)"></div>
+					<br>
+					<p>hier blockschaltbild des systems aufmalen.</p>
+				</div>
+
+				<div class="inputarea">
+					<img src="img/schw.png" alt="Selfhtml" width="50%"
+						style='float: left;' />
+					<p>
+						<strong>States: </strong> i, u
+					<p>
+					<p>
+						<strong>Energy Storages: </strong> L, C
+					<p>
+					<p>
+						<strong>Values:</strong> <br> R=2Ohm C=1mF L=1mH
+					<p>
+					<div class="clearer"></div>
+					<h3>Differential Equations:</h3>
+					<div id="trans1" class="equation" data-expr=" \dot{u}=\frac{1}{C}I"></div>
+					<div id="trans2" class="equation"
+						data-expr="\dot{I}=-\frac{R}{L}I-\frac{1}{L}u+\frac{1}{L}u_0"></div>
+
+					<div id="trans1" class="equation_small"
+						data-expr="\begin{bmatrix}\dot{u}\\\dot{I} \end{bmatrix}=\begin{bmatrix}0&\frac{1}{C}\\-\frac{1}{L}&-\frac{R}{L} \end{bmatrix} \begin{bmatrix}{u}\\{I} \end{bmatrix}+\begin{bmatrix}0\\\frac{1}{L} \end{bmatrix}u_0 "></div>
+					<div id="trans2" class="equation_small"
+						data-expr="y=\begin{bmatrix} 0&1 \end{bmatrix}    \begin{bmatrix}{u}\\{I} \end{bmatrix}"></div>
+				</div>
+
+				<div class="clearer"></div>
+			</div>
+			<!--end of top box-->
+
+
+
+			<div class="mainbox">
+
+				<div class="left">
+
+					<h2>(1) Analysis:</h2>
+
+					<h3>Transformations:</h3>
+					<div id="trans1" class="equation_small"
+						data-expr=" \mathbf{x}=\mathbf{T} \mathbf{\tilde{x}}\; \; \dot{\mathbf{\tilde{x}}}(t)=\mathbf{T^{-1}}\mathbf{A}\mathbf{T}\mathbf{\tilde{x}}(t) +\mathbf{T^{-1} B}\mathbf{u}(t)"></div>
+					<div id="trans2" class="equation_small"
+						data-expr=" \mathbf{y}(t)=\mathbf{C T \tilde{x}}(t)"></div>
+					<h4>Transformation to Jordannormal Form:</h4>
+					<div id="trans3" class="equation_small"
+						data-expr="T_{JNF}=\begin{bmatrix}1&0\\0&1\end{bmatrix}\; \; \; T_{JNF}^{-1}=\begin{bmatrix}1&0\\0&1\end{bmatrix}"></div>
+					<div id="trans4" class="equation_small"
+						data-expr="\dot{\tilde{\mathbf{x}}}_{JNF}(t)=\begin{bmatrix}1&0\\0&5\end{bmatrix}\mathbf{\tilde{x}}_{JNF}(t) +\begin{bmatrix}1\\1\end{bmatrix}\mathbf{u}(t)"></div>
+					<div id="trans5" class="equation_small"
+						data-expr="\mathbf{y}(t)=\begin{bmatrix}1&0\end{bmatrix}\mathbf{\tilde{x}}_{JNF}(t)"></div>
+					<h4>Transformation to Steuerungsnormal Form:</h4>
+					<div id="trans6" class="equation_small"
+						data-expr="T_{SNF}=\begin{bmatrix}-5.0&1.0\\-1.0&1.0\end{bmatrix}\; \; \; T_{SNF}^{-1}=\begin{bmatrix}-0.25&0.25\\-0.25&1.25\end{bmatrix}"></div>
+					<div id="trans7" class="equation_small"
+						data-expr="\dot{\tilde{\mathbf{x}}}_{SNF}(t)=\begin{bmatrix}0&1.0\\-5.0&6.0\end{bmatrix}\mathbf{\tilde{x}}_{SNF}(t) +\begin{bmatrix}0\\1.0\end{bmatrix}\mathbf{u}(t)"></div>
+					<div id="trans8" class="equation_small"
+						data-expr="\mathbf{y}(t)=\begin{bmatrix}-5.0&1.0\end{bmatrix}\mathbf{\tilde{x}}_{SNF}(t)"></div>
+					<h4>Transformation to Beobachtungsnormal Form:</h4>
+					<div id="trans9" class="equation_small"
+						data-expr="T_{BNF}=none\; \; \; T_{BNF}^{-1}=none"></div>
+					<div id="trans10" class="equation_small"
+						data-expr="\text{As} \; \; det(Q_B)=0 \; \; Q_B^{-1} \; \; \text{does not exist}"></div>
+					<div id="trans11" class="equation_small"
+						data-expr="\rightarrow \text{Sys cannot be transformed to BNF}"></div>
+
+				</div>
+
+				<div class="right">
+
+					<h3>Stability:</h3>
+					<div id="stablility1" class="equation_small"
+						data-expr="\text{char. Poly.:}\; \; P(s)={\mathrm{s}}^{2}-6~\mathrm{s}+5"></div>
+					<div id="stablility2" class="equation_small"
+						data-expr="\text{Eigenvalues:}\; \; \lambda_i=1,5"></div>
+					<div id="stablility3" class="equation_small"
+						data-expr="\text{s-Sys is:}\; \; \;unstable"></div>
+
+					<h3>Transfere Function:</h3>
+					<div id="transfereopen1" class="equation_small"
+						data-expr="G_o(s)=\frac{1}{\left(\mathrm{s}-1\right)}=\frac{1}{\left(\mathrm{s}-1\right)}"></div>
+
+					<div id="transfereopen2" class="equation_small"
+						data-expr="G_O(s)=\frac{-5}{\left(5-6~\mathrm{s}+{\mathrm{s}}^{2}\right)}+\frac{\mathrm{s}}{\left(5-6~\mathrm{s}+{\mathrm{s}}^{2}\right)}"></div>
+
+
+					<h3>Kalman:</h3>
+					<div id="controlability" class="equation_small"
+						data-expr="\text{Controllability:}\; \; \text{Sys is} \;controllable"></div>
+					<div id="controlability_tilde" class="equation_small"
+						data-expr="Q_S=\begin{bmatrix}1&1\\1&5\end{bmatrix}\; Q_S^{-1}=\begin{bmatrix}\frac{5}{4}&\frac{-1}{4}\\\frac{-1}{4}&\frac{1}{4}\end{bmatrix}\mathbf{\tilde{q}}_S=\begin{bmatrix}\frac{-1}{4}&\frac{1}{4}\end{bmatrix}"></div>
+					<div id="observability" class="equation_small"
+						data-expr="\text{Observability:}\; \; \; \text{Sys is} \; not\text{ }observalbe"></div>
+					<div id="observability_tilde" class="equation_small"
+						data-expr="Q_B=\begin{bmatrix}1&0\\1&0\end{bmatrix}\; Q_B^{-1}=none\; \mathbf{\tilde{q}}_B=none"></div>
+
+					<h3>Gilbert</h3>
+					<div id="cont_gilbert1" class="equation_small"
+						data-expr="\mathbf{\tilde{b}_{JNF}}=\begin{bmatrix}1\\1\end{bmatrix}"></div>
+					<div id="cont_gilbert2" class="equation_small"
+						data-expr="\rightarrow \text{not controllable eigenvalues:} \; \;none"></div>
+
+					<div id="observ_gilbert1" class="equation_small"
+						data-expr="\mathbf{\tilde{C}_{JNF}}=\begin{bmatrix}1&0\end{bmatrix}"></div>
+					<div id="observ_gilbert2" class="equation_small"
+						data-expr="\rightarrow \text{not observable eigenvalues:} \; \;\lambda_i, i=2"></div>
+
+					<h3>Hautus</h3>
+					<div id="cont_hautus1" class="equation_small"
+						data-expr="\text{not controllable eigenvalues:} \; \; none "></div>
+					<div id="cont_hautus2" class="equation_small"
+						data-expr="\text{not observable eigenvalues:} \; \;5"></div>
+
+				</div>
+				<!-- end of right box -->
+				<div class="clearer"></div>
+			</div>
+			<!--end of main box-->
+
+
+
+
+
+			<div class="topbox">
+				<div class="pic">
+					<h2>(1) Not observable SISO</h2>
+					<img src="img/ZRD.png" alt="Selfhtml" width="100%" />
+				</div>
+				<!--end of image box-->
+
+				<div class="explbox">
+					<h2>2x2 System:</h2>
+					<div id="systemgleichung_werte1" class="equation"
+						data-expr="\underbrace{\dot{\mathbf{x}}(t)}_{2 \times 1}=\underbrace{\mathbf{ \begin{bmatrix}1&0\\0&5\end{bmatrix} }}_{2 \times 2} \mathbf{x}(t) +\underbrace{\mathbf{\begin{bmatrix}1\\1\end{bmatrix}}}_{2 \times 1}  \mathbf{u}(t) "></div>
+					<div id="systemgleichung_werte2" class="equation"
+						data-expr=" \underbrace{\mathbf{y}(t)}_{1 \times 1}=\underbrace{\mathbf{\begin{bmatrix}1&0\end{bmatrix}}}_{1 \times 2} \mathbf{x}(t)=x_1(t)"></div>
+					<br>
+					<p>hier blockschaltbild des systems aufmalen.</p>
+				</div>
+
+				<div class="inputarea">
+					<img src="img/schw.png" alt="Selfhtml" width="50%"
+						style='float: left;' />
+					<p>
+						<strong>States: </strong> i, u
+					<p>
+					<p>
+						<strong>Energy Storages: </strong> L, C
+					<p>
+					<p>
+						<strong>Values:</strong> <br> R=2Ohm C=1mF L=1mH
+					<p>
+					<div class="clearer"></div>
+					<h3>Differential Equations:</h3>
+					<div id="trans1" class="equation" data-expr=" \dot{u}=\frac{1}{C}I"></div>
+					<div id="trans2" class="equation"
+						data-expr="\dot{I}=-\frac{R}{L}I-\frac{1}{L}u+\frac{1}{L}u_0"></div>
+
+					<div id="trans1" class="equation_small"
+						data-expr="\begin{bmatrix}\dot{u}\\\dot{I} \end{bmatrix}=\begin{bmatrix}0&\frac{1}{C}\\-\frac{1}{L}&-\frac{R}{L} \end{bmatrix} \begin{bmatrix}{u}\\{I} \end{bmatrix}+\begin{bmatrix}0\\\frac{1}{L} \end{bmatrix}u_0 "></div>
+					<div id="trans2" class="equation_small"
+						data-expr="y=\begin{bmatrix} 0&1 \end{bmatrix}    \begin{bmatrix}{u}\\{I} \end{bmatrix}"></div>
+				</div>
+
+				<div class="clearer"></div>
+			</div>
+			<!--end of top box-->
+
+
+
+
+
+
+
+			<div class="mainbox">
+
+				<div class="left">
+
+					<h2>(1) Analysis:</h2>
+
+					<h3>Transformations:</h3>
+					<div id="trans1" class="equation_small"
+						data-expr=" \mathbf{x}=\mathbf{T} \mathbf{\tilde{x}}\; \; \dot{\mathbf{\tilde{x}}}(t)=\mathbf{T^{-1}}\mathbf{A}\mathbf{T}\mathbf{\tilde{x}}(t) +\mathbf{T^{-1} B}\mathbf{u}(t)"></div>
+					<div id="trans2" class="equation_small"
+						data-expr=" \mathbf{y}(t)=\mathbf{C T \tilde{x}}(t)"></div>
+					<h4>Transformation to Jordannormal Form:</h4>
+					<div id="trans3" class="equation_small"
+						data-expr="T_{JNF}=\begin{bmatrix}1&0\\0&1\end{bmatrix}\; \; \; T_{JNF}^{-1}=\begin{bmatrix}1&0\\0&1\end{bmatrix}"></div>
+					<div id="trans4" class="equation_small"
+						data-expr="\dot{\tilde{\mathbf{x}}}_{JNF}(t)=\begin{bmatrix}1&0\\0&5\end{bmatrix}\mathbf{\tilde{x}}_{JNF}(t) +\begin{bmatrix}1\\1\end{bmatrix}\mathbf{u}(t)"></div>
+					<div id="trans5" class="equation_small"
+						data-expr="\mathbf{y}(t)=\begin{bmatrix}1&0\end{bmatrix}\mathbf{\tilde{x}}_{JNF}(t)"></div>
+					<h4>Transformation to Steuerungsnormal Form:</h4>
+					<div id="trans6" class="equation_small"
+						data-expr="T_{SNF}=\begin{bmatrix}-5.0&1.0\\-1.0&1.0\end{bmatrix}\; \; \; T_{SNF}^{-1}=\begin{bmatrix}-0.25&0.25\\-0.25&1.25\end{bmatrix}"></div>
+					<div id="trans7" class="equation_small"
+						data-expr="\dot{\tilde{\mathbf{x}}}_{SNF}(t)=\begin{bmatrix}0&1.0\\-5.0&6.0\end{bmatrix}\mathbf{\tilde{x}}_{SNF}(t) +\begin{bmatrix}0\\1.0\end{bmatrix}\mathbf{u}(t)"></div>
+					<div id="trans8" class="equation_small"
+						data-expr="\mathbf{y}(t)=\begin{bmatrix}-5.0&1.0\end{bmatrix}\mathbf{\tilde{x}}_{SNF}(t)"></div>
+					<h4>Transformation to Beobachtungsnormal Form:</h4>
+					<div id="trans9" class="equation_small"
+						data-expr="T_{BNF}=none\; \; \; T_{BNF}^{-1}=none"></div>
+					<div id="trans10" class="equation_small"
+						data-expr="\text{As} \; \; det(Q_B)=0 \; \; Q_B^{-1} \; \; \text{does not exist}"></div>
+					<div id="trans11" class="equation_small"
+						data-expr="\rightarrow \text{Sys cannot be transformed to BNF}"></div>
+
+				</div>
+
+				<div class="right">
+
+					<h3>Stability:</h3>
+					<div id="stablility1" class="equation_small"
+						data-expr="\text{char. Poly.:}\; \; P(s)={\mathrm{s}}^{2}-6~\mathrm{s}+5"></div>
+					<div id="stablility2" class="equation_small"
+						data-expr="\text{Eigenvalues:}\; \; \lambda_i=1,5"></div>
+					<div id="stablility3" class="equation_small"
+						data-expr="\text{s-Sys is:}\; \; \;unstable"></div>
+
+					<h3>Transfere Function:</h3>
+					<div id="transfereopen1" class="equation_small"
+						data-expr="G_o(s)=\frac{1}{\left(\mathrm{s}-1\right)}=\frac{1}{\left(\mathrm{s}-1\right)}"></div>
+
+					<div id="transfereopen2" class="equation_small"
+						data-expr="G_O(s)=\frac{-5}{\left(5-6~\mathrm{s}+{\mathrm{s}}^{2}\right)}+\frac{\mathrm{s}}{\left(5-6~\mathrm{s}+{\mathrm{s}}^{2}\right)}"></div>
+
+
+					<h3>Kalman:</h3>
+					<div id="controlability" class="equation_small"
+						data-expr="\text{Controllability:}\; \; \text{Sys is} \;controllable"></div>
+					<div id="controlability_tilde" class="equation_small"
+						data-expr="Q_S=\begin{bmatrix}1&1\\1&5\end{bmatrix}\; Q_S^{-1}=\begin{bmatrix}\frac{5}{4}&\frac{-1}{4}\\\frac{-1}{4}&\frac{1}{4}\end{bmatrix}\mathbf{\tilde{q}}_S=\begin{bmatrix}\frac{-1}{4}&\frac{1}{4}\end{bmatrix}"></div>
+					<div id="observability" class="equation_small"
+						data-expr="\text{Observability:}\; \; \; \text{Sys is} \; not\text{ }observalbe"></div>
+					<div id="observability_tilde" class="equation_small"
+						data-expr="Q_B=\begin{bmatrix}1&0\\1&0\end{bmatrix}\; Q_B^{-1}=none\; \mathbf{\tilde{q}}_B=none"></div>
+
+					<h3>Gilbert</h3>
+					<div id="cont_gilbert1" class="equation_small"
+						data-expr="\mathbf{\tilde{b}_{JNF}}=\begin{bmatrix}1\\1\end{bmatrix}"></div>
+					<div id="cont_gilbert2" class="equation_small"
+						data-expr="\rightarrow \text{not controllable eigenvalues:} \; \;none"></div>
+
+					<div id="observ_gilbert1" class="equation_small"
+						data-expr="\mathbf{\tilde{C}_{JNF}}=\begin{bmatrix}1&0\end{bmatrix}"></div>
+					<div id="observ_gilbert2" class="equation_small"
+						data-expr="\rightarrow \text{not observable eigenvalues:} \; \;\lambda_i, i=2"></div>
+
+					<h3>Hautus</h3>
+					<div id="cont_hautus1" class="equation_small"
+						data-expr="\text{not controllable eigenvalues:} \; \; none "></div>
+					<div id="cont_hautus2" class="equation_small"
+						data-expr="\text{not observable eigenvalues:} \; \;5"></div>
+
+				</div>
+				<!-- end of right box -->
+				<div class="clearer"></div>
+			</div>
+			<!--end of main box-->
+
+		</section>
+
+	</div>
+
+	<script type="text/javascript"> myRenderer()</script>
+
+</body>
+</html>
