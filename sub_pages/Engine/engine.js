@@ -62,10 +62,8 @@ function run(id){
 	  filloutputarea();
 }
 
-//id: the area to be played!
-function play(id){
-	run(id);
-}
+
+
 
 // AA  = [[1,1]]; -> prints just AA
 //gets the symbol of a line before =!
@@ -150,6 +148,19 @@ function deleteoldDivs(){
 }
 
 
+/**
+ * the area to be played! used in engine_help page!
+ * @param id
+ * @returns
+ */
+function play(id){
+	execute_text_area(id);
+}
+
+/**
+ * 
+ * @returns
+ */
 function myRenderer() {
     var x = document.getElementsByClassName('equation');
 
@@ -192,9 +203,6 @@ function myRenderer() {
         }
     }
 }
-
-
-
 
 
 /**
@@ -255,8 +263,12 @@ function get_most_inwards_method(input_line){
  */
 function get_most_inwards_character(input_line, character="(", param="last"){
 	var index = 0;
+	var num_of_gaens = 0; // count number of " bzw. ' and ignore all ( within!
 	for(var i = 0;i<input_line.length;i++){
-		if(input_line[i]==character && param == "last"){
+		if(input_line[i]=="'" || input_line[i] =="\""){
+			num_of_gaens=num_of_gaens+1
+		}
+		if(input_line[i]==character && param == "last" && (num_of_gaens%2==0)){
 			index = i;
 		}
 		if(input_line[i]==character && param == "first"){
@@ -398,7 +410,7 @@ function analyse_input_line(input_str, param=10){
 		 return "\\text{open webpage}";
 	}
 	
-	if(!input_str.includes("(")){ // handles lines like: A=[[2,3],[1,2]]
+	if(!input_str.includes("(")){ // no method handles lines like: A=[[2,3],[1,2]]
 		return input_str;
 	}
 	
@@ -464,7 +476,17 @@ function parse_result_line(input_line_str){
  */
 function latex_output(res){
 	var p = 0;
+	output_latex="";
+	if(res[1].includes(",") &&! res[1].includes("[")){ // e.g. method eigenvalue("[[1.789,0,0],[0,0,0],[0,0,1]]")
+		arr_of_outputs = res[1].split(",");
+		for(var i in arr_of_outputs){
+			output_latex=output_latex+simact.Algebrite.run('printlatex('+arr_of_outputs[i].toString()+')')+"\\quad";
+		}
+	}
+	else{
 	output_latex = (simact.Algebrite.run('printlatex('+res[1].toString()+')'));
+	}
+	
 	if(output_latex.length>1000){
 		output_latex = "\\text{sry. output to huge parsing would cost too much time.}";
 	}
@@ -529,7 +551,8 @@ function test(){
 	var str1 = "u=dot(dot(A,B),dot(A,B),dot(F,A))" // works
 	var str2 = "f=dot(A,B)" // works
 	var str3 = "linspace(1,2,0.001)";
-	console.log(parse_result_line(analyse_input_line(str)));
+	var str4 = "plot('sin(x)')";
+	console.log(parse_result_line(analyse_input_line(str4)));
 //	console.log(parse_result_line(analyse_input_line(str2)));
 //	console.log(parse_result_line(analyse_input_line(str3)));
 //	console.log(parse_result_line(analyse_input_line(str2)));

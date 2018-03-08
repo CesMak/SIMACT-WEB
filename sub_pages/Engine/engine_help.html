@@ -21,6 +21,9 @@
 <!-- Simact-->
 <script type="text/javascript" src="../../libs/simact.bundle.js"></script>
 
+<!--  Plotly js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 <!-- Logic for this website: -->
 <script type="text/javascript" src="engine.js"></script>
 
@@ -78,6 +81,9 @@
 			</textarea>
 			<h2>Output:</h2>
 			<div id="output"></div>
+			
+			<h2>Plots:</h2>
+			<div id="plot1"></div>
 
 			<br>
 			<h2>Examples:</h2>
@@ -86,7 +92,7 @@
 			<div class=container>
 				<div class=div_left>
 					<textarea rows="8" cols="40" type="text" id="simarea1"
-						class="textareaengine">a=getMatValue("[[11,2],[2,3]]", 0, 0)
+						class="textareaengine">a=getMatValue([[11,2],[2,3]], 0, 0)
 B=setMatValue("[[1,2],[2,3]]",1,0,a)
 setColumnVectorOfMatrix(B,1,"[[2.2],[2.2]]")
 setRowVectorOfMatrix(B,0,"[[1.1],[1.1]]")
@@ -246,6 +252,28 @@ checkHautusB("[[1,2],[2,3]]","[[1,0]]")</textarea>
 				</div>
 				<div class=div_right></div>
 			</div>
+			
+			<a href="doc/global.html#plot"><p>Plot Stuff (TODO)</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="12" cols="40" type="text" id="simarea9"
+						class="textareaengine">#important "expression" is required!
+#for e use 2.71^(x) = e^x
+#plot("x*x")
+#plot("sin(x)")
+#plot("sin(x)*cos(x)*ln(x+3)*2.71^(x)*sqrt(x*x)")
+#plot('x*x')
+#a=linspace(-1, 1, 0.1)
+#plot('x^6',a)
+plot('x^2',linspace(-1,2,0.4),"plot1","title","xname","yname")
+	#  how to multiplot in one plot?
+	#  return as matrix?!
+</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea9)">►</button>
+				</div>
+				<div class=div_right></div>
+			</div>
 
 			<h3>Algebrite Functions:</h3>
 
@@ -253,11 +281,13 @@ checkHautusB("[[1,2],[2,3]]","[[1,0]]")</textarea>
 					operations</p></a>
 			<div class=container>
 				<div class=div_left>
-					<textarea rows="7" cols="40" type="text" id="algebrite1"
+					<textarea rows="9" cols="40" type="text" id="algebrite1"
 						class="textareaengine">A=[[2.1,2],[0,2.2]]
 B=[[1.2],[3]]
 C=[[4,1]]
 D=dot(A,B,C)
+E=dot(A,A,A,A)
+F=dot(A,dot(A,A),dot(A,A))
 det(A)
 inv(A)
 transpose(A)</textarea>
