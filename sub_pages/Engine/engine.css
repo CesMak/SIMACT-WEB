@@ -397,6 +397,11 @@ float:right;
 }
 
 
+#output{
+	overflow: auto;
+	width: auto;
+	height: 100px;
+}
 
 
 

@@ -21,7 +21,10 @@
 <!-- Simact-->
 <script type="text/javascript" src="../../libs/simact.bundle.js"></script>
 
-<!-- Logic for this website: -->
+<!--  Plotly js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- Logic for this website: Important preparses! -->
 <script type="text/javascript" src="engine.js"></script>
 
 </head>
@@ -86,8 +89,10 @@ dot(A,B,C)
 </textarea>
 
 			<button class="button" id="button_Gleichung"
-				onclick="run(engine_area)">RUN</button>
-
+				onclick="execute_text_area(engine_area)">RUN</button>
+			
+			<button class="button" id="test"
+				onclick="test()">Test</button>
 
 
 
