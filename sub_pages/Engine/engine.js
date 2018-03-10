@@ -423,8 +423,12 @@ function analyse_input_line(input_str, param=10){
 	console.log(method_name);
 	
 	var method_result = execute_method(method_name, arguments_replaced);
-	console.log(method_result);
-	
+	console.log((method_result));
+	// if eg. with bode function you want to directly print something:
+	if(method_result[method_result.length-1] == "direct_print"){
+		return method_result;
+	}
+
 	var to_be_replaced_str = method_name+args_before;
 	input_str = input_str.replace(to_be_replaced_str, method_result);
 	
@@ -463,7 +467,7 @@ function parse_result_line(input_line_str){
    filloutputarea();//print whole local storage!
    
    if(!contains_exclamation_point){
-	   console.log("print to latex")
+	   console.log("print to latex: (see: latex_output)")
 	   console.log(tmp);
 	   latex_output(tmp);
    }
@@ -477,15 +481,21 @@ function parse_result_line(input_line_str){
 function latex_output(res){
 	var p = 0;
 	output_latex="";
-	if(res[1].includes(",") &&! res[1].includes("[")){ // e.g. method eigenvalue("[[1.789,0,0],[0,0,0],[0,0,1]]")
-		arr_of_outputs = res[1].split(",");
-		for(var i in arr_of_outputs){
-			output_latex=output_latex+simact.Algebrite.run('printlatex('+arr_of_outputs[i].toString()+')')+"\\quad";
+	var args = res[1];
+	var left_of_gleich = res[0];
+	if(args[args.length-1]=="direct_print" && args.length>1){ // e.g. method eigenvalue("[[1.789,0,0],[0,0,0],[0,0,1]]") or bode
+		console.log("direct print!")
+		var tmp = args;
+		tmp.splice(-1,1); // remove last element of array direct_print is removed!
+		for(var i in tmp){
+			output_latex=output_latex+simact.Algebrite.run('printlatex('+tmp[i].toString()+')')+"\\quad";
 		}
+		console.log(output_latex);
 	}
 	else{
-	output_latex = (simact.Algebrite.run('printlatex('+res[1].toString()+')'));
+		output_latex = (simact.Algebrite.run('printlatex('+args.toString()+')'));
 	}
+	console.log(output_latex);
 	
 	if(output_latex.length>1000){
 		output_latex = "\\text{sry. output to huge parsing would cost too much time.}";
@@ -541,18 +551,18 @@ function test(){
 //	console.log(get_most_inwards_method(str3));
 //	console.log(get_most_inwards_method(str4))
 	
-	simact.Algebrite.run("a=5");
-	simact.Algebrite.run("xend=12");
-	simact.Algebrite.run("a*b");
-	simact.Algebrite.run("A=[[2,3],[1,2]]");
-	simact.Algebrite.run("B=[[2,4],[1,2]]");
-	simact.Algebrite.run("F=dot(A,B)");
-	var str = "A=[[2,3],[1,2]]" // works NOT!
-	var str1 = "u=dot(dot(A,B),dot(A,B),dot(F,A))" // works
-	var str2 = "f=dot(A,B)" // works
-	var str3 = "linspace(1,2,0.001)";
-	var str4 = "plot('sin(x)')";
-	console.log(parse_result_line(analyse_input_line(str4)));
+//	simact.Algebrite.run("a=5");
+//	simact.Algebrite.run("xend=12");
+//	simact.Algebrite.run("a*b");
+//	simact.Algebrite.run("A=[[2,3],[1,2]]");
+//	simact.Algebrite.run("B=[[2,4],[1,2]]");
+//	simact.Algebrite.run("F=dot(A,B)");
+//	var str = "A=[[2,3],[1,2]]" // works NOT!
+//	var str1 = "u=dot(dot(A,B),dot(A,B),dot(F,A))" // works
+//	var str2 = "f=dot(A,B)" // works
+//	var str3 = "linspace(1,2,0.001)";
+//	var str4 = "plot('sin(x)')";
+//	console.log(parse_result_line(analyse_input_line(str4)));
 //	console.log(parse_result_line(analyse_input_line(str2)));
 //	console.log(parse_result_line(analyse_input_line(str3)));
 //	console.log(parse_result_line(analyse_input_line(str2)));
@@ -561,6 +571,13 @@ function test(){
 	// 5*45+78 works yes.
 	// clearall works
 	// plot("x*x") works
+	
+//	var input = simact.Algebrite.run("a=(1)/(1+i*1)").toString();
+//	console.log(input);
+//	var real_ = simact.Algebrite.real("a").toString();
+//	var imag_ = simact.Algebrite.imag("a").toString();
+//	console.log(real_);
+//	console.log(imag_);
 	
 }
 

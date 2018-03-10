@@ -84,6 +84,9 @@
 			
 			<h2>Plots:</h2>
 			<div id="plot1"></div>
+			<div id="plot2"></div>
+			<div id="plot3"></div>
+			<div id="plot4"></div>
 
 			<br>
 			<h2>Examples:</h2>
@@ -274,6 +277,44 @@ plot('x^2',linspace(-1,2,0.4),"plot1","title","xname","yname")
 				</div>
 				<div class=div_right></div>
 			</div>
+			
+						<a href="doc/global.html#mplot"><p>Multi Plot</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="12" cols="40" type="text" id="simarea10"
+						class="textareaengine">a=linspace(-5,5,1)
+b=linspace(-2,2,1)
+c=linspace(-1,1,0.1)
+d=linspace(-1.5, 1.5, 0.2)
+#mplot(a,"x",c,"-x",b,"1",d,"-1","not_in_one") #(1)
+mplot(a,"x",c,"-x",b,"1",d,"-1") #(2)
+</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea10)">►</button>
+				</div>
+				<div class=div_right>
+				 <img src="img/mplot_ex.png" alt="">
+				</div>
+			</div>
+			
+			
+			<h3>Control Theory Examples:</h3>	
+			<a href="doc/global.html#tf"><p>Frequenzkennlinien verfahren</p></a>
+			<div class=container>
+				<div class=div_left>
+					<textarea rows="12" cols="40" type="text" id="simarea11"
+						class="textareaengine">#bode([zaehler],[nenner])
+#give it some time!
+bode([1],[1,1])
+					</textarea>
+					<button class="button" id="button_Gleichung"
+						onclick="play(simarea11)">►</button>
+				</div>
+				<div class=div_right>
+				 <img src="img/bode_ex.png" alt="">
+				</div>
+			</div>
+			
 
 			<h3>Algebrite Functions:</h3>
 
